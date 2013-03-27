@@ -1,0 +1,4 @@
+Scala
+=====
+
+Cousera Scala class
