@@ -1,4 +1,4 @@
-Scala
+ Scala
 =====
 
 Cousera Scala class
