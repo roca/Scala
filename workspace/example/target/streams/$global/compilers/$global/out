@@ -1,25 +1,8 @@
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.1[0m
 [0m[[0mdebug[0m] [0mOther repositories:[0m
 [0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@55ddc3ea)[0m
+[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@26f04d94)[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.1[0m
 [0m[[0mdebug[0m] [0mOther repositories:[0m
 [0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@2b650cea)[0m
-[0m[[0minfo[0m] [0m'compiler-interface' not yet compiled for Scala 2.10.1. Compiling...[0m
-[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.10.1  with arguments: [0m
-[0m[[0mdebug[0m] [0m	-nowarn[0m
-[0m[[0mdebug[0m] [0m	-d[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_a9719575[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/romel.campbell/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/Users/romel.campbell/.sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/xsbti/interface-0.12.1.jar:/Users/romel.campbell/.sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/compiler-interface-src/compiler-interface-src-0.12.1.jar:/Users/romel.campbell/.sbt/boot/scala-2.10.1/lib/scala-compiler.jar:/Users/romel.campbell/.sbt/boot/scala-2.10.1/lib/scala-reflect.jar:/Users/romel.campbell/.sbt/boot/scala-2.10.1/lib/jansi.jar:/Users/romel.campbell/.sbt/boot/scala-2.10.1/lib/jline.jar[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/API.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/Analyzer.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/Command.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/CompilerInterface.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/ConsoleInterface.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/DelegatingReporter.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/Log.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/Message.scala[0m
-[0m[[0mdebug[0m] [0m	/var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/sbt_c6a6efc/ScaladocInterface.scala[0m
+[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@6856c528)[0m

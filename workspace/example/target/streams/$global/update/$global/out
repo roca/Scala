@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/romel.campbell/Scala/workspace/example/}assignment...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/roca/Scala/workspace/example/}assignment...[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: progfun-example#progfun-example_2.10;1.0.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
@@ -13,16 +13,16 @@
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: no namespace defined: using system[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /Users/roca/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
 [0m[[0mdebug[0m] [0m	resolver not found: Maven Central => trying to use the one configured for org.scala-lang#scala-library;2.10.1[0m
 [0m[[0mdebug[0m] [0m	configured resolver found for org.scala-lang#scala-library;2.10.1: sbt-chain: saving this data[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.10.1 (resolved by sbt-chain): /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.10.1 (resolved by sbt-chain): /Users/roca/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.1[0m
 [0m[[0mdebug[0m] [0msbt-chain: no latest strategy defined: using default[0m
 [0m[[0mdebug[0m] [0mlocal: no namespace defined: using system[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.10.1 (resolved by sbt-chain): /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /Users/roca/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.scala-lang#scala-library;2.10.1 (resolved by sbt-chain): /Users/roca/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.1[0m
 [0m[[0mdebug[0m] [0m	checking org.scala-lang#scala-library;2.10.1 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.scala-lang#scala-library;2.10.1 from sbt-chain[0m
@@ -75,42 +75,42 @@
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scalatest#scalatest_2.10;1.9.1[0m
 [0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.10;1.9.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.10;1.9.1 {test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scalatest#scalatest_2.10;1.9.1: res=/Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scalatest#scalatest_2.10;1.9.1: res=/Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalatest#scalatest_2.10;1.9.1[0m
 [0m[[0mdebug[0m] [0mpublic: no namespace defined: using system[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.scalatest#scalatest_2.10;1.9.1[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom (1.9.1)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scalatest#scalatest_2.10;1.9.1: tried /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp8777934583757726116sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp8004492371670390779sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.pom(pom.original) (46ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.pom(pom.original) (70ms)[0m
 [0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /Users/romel.campbell/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
+[0m[[0mdebug[0m] [0mNo entry is found in the ModuleDescriptorCache : /Users/roca/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
 [0m[[0mdebug[0m] [0mpost 1.3 ivy file: using exact as default matcher[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.sonatype.oss#oss-parent;7 (resolved by sbt-chain): /Users/romel.campbell/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.sonatype.oss#oss-parent;7 (resolved by sbt-chain): /Users/roca/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /Users/romel.campbell/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
-[0m[[0mdebug[0m] [0m	found ivy file in cache for org.sonatype.oss#oss-parent;7 (resolved by sbt-chain): /Users/romel.campbell/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
+[0m[[0mdebug[0m] [0mEntry is found in the ModuleDescriptorCache : /Users/roca/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
+[0m[[0mdebug[0m] [0m	found ivy file in cache for org.sonatype.oss#oss-parent;7 (resolved by sbt-chain): /Users/roca/.ivy2/cache/org.sonatype.oss/oss-parent/ivy-7.xml[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
 [0m[[0mdebug[0m] [0m	checking org.sonatype.oss#oss-parent;7 from sbt-chain against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.sonatype.oss#oss-parent;7 from sbt-chain[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scalatest#scalatest_2.10;1.9.1: res=/Users/romel.campbell/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scalatest#scalatest_2.10;1.9.1: res=/Users/roca/.ivy2/local/org.scalatest/scalatest_2.10/1.9.1/jars/scalatest_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar[0m
 [0m[[0mdebug[0m] [0mno source artifact found for org.scalatest#scalatest_2.10;1.9.1[0m
@@ -138,30 +138,30 @@
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-lang#scala-actors;2.10.0[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-actors;2.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-actors;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-actors;2.10.0: res=/Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-actors;2.10.0: res=/Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-actors;2.10.0[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-actors;2.10.0[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom (2.10.0)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-actors;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp3703969151463317309sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp3082022280687002676sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.pom(pom.original) (45ms)[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-actors;2.10.0: res=/Users/romel.campbell/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.pom(pom.original) (113ms)[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-actors;2.10.0: res=/Users/roca/.ivy2/local/org.scala-lang/scala-actors/2.10.0/jars/scala-actors.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0mno source artifact found for org.scala-lang#scala-actors;2.10.0[0m
@@ -188,30 +188,30 @@
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.scala-lang#scala-reflect;2.10.0[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-reflect;2.10.0: res=/Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-reflect;2.10.0: res=/Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-reflect;2.10.0[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-reflect;2.10.0[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom (2.10.0)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.scala-lang#scala-reflect;2.10.0: tried /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp1022570730982503061sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp5436320086266065946sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.pom(pom.original) (40ms)[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-reflect;2.10.0: res=/Users/romel.campbell/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.pom(pom.original) (79ms)[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.scala-lang#scala-reflect;2.10.0: res=/Users/roca/.ivy2/local/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0mno source artifact found for org.scala-lang#scala-reflect;2.10.0[0m
@@ -271,30 +271,30 @@
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve junit#junit;4.10[0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: junit#junit;4.10 {test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/romel.campbell/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/romel.campbell/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for junit#junit;4.10: res=/Users/romel.campbell/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/roca/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/roca/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for junit#junit;4.10: res=/Users/roca/.ivy2/local/junit/junit/4.10/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for junit#junit;4.10[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/romel.campbell/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/roca/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom (4.10)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/romel.campbell/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for junit#junit;4.10: tried /Users/roca/.ivy2/cache/junit/junit/ivy-4.10.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/junit/junit/ivy-4.10.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/junit/junit/ivy-4.10.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp3818925463238310301sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp2020077325150174950sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] junit#junit;4.10!junit.pom(pom.original) (63ms)[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for junit#junit;4.10: res=/Users/romel.campbell/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] junit#junit;4.10!junit.pom(pom.original) (76ms)[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for junit#junit;4.10: res=/Users/roca/.ivy2/local/junit/junit/4.10/jars/junit.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
 [0m[[0mdebug[0m] [0mno source artifact found for junit#junit;4.10[0m
@@ -312,53 +312,53 @@
 [0m[[0mdebug[0m] [0m	using sbt-chain to resolve org.hamcrest#hamcrest-core;1.1[0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-core;1.1: res=/Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-core;1.1: res=/Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.hamcrest#hamcrest-core;1.1[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.hamcrest#hamcrest-core;1.1[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (1.1)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-core;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp612670935575904115sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp5555283996430831772sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.pom(pom.original) (41ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.pom(pom.original) (75ms)[0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-parent;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-parent;1.1 {}[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-parent;1.1: res=/Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-parent;1.1: res=/Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.hamcrest#hamcrest-parent;1.1[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.hamcrest#hamcrest-parent;1.1[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (1.1)[0m
-[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@75dc818d[0m
-[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
+[0m[[0mdebug[0m] [0m	parser = sbt.CustomPomParser@284876e0[0m
+[0m[[0mdebug[0m] [0m	no ivy file in cache for org.hamcrest#hamcrest-parent;1.1: tried /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml[0m
 [0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml.original.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-parent/ivy-1.1.xml.original.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp6216781767087358188sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp1608152159117880662sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-parent;1.1!hamcrest-parent.pom(pom.original) (46ms)[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-parent;1.1: res=/Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-parent;1.1!hamcrest-parent.pom(pom.original) (84ms)[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-parent;1.1: res=/Users/roca/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar[0m
 [0m[[0mdebug[0m] [0mHTTP response status: 404 url=http://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar[0m
@@ -367,9 +367,9 @@
 [0m[[0mdebug[0m] [0m	default-cache: parsed downloaded md file for org.hamcrest#hamcrest-parent;1.1; parsed=org.hamcrest#hamcrest-parent;1.1[0m
 [0m[[0mdebug[0m] [0m	checking org.hamcrest#hamcrest-parent;1.1 from public against [none][0m
 [0m[[0mdebug[0m] [0m	module revision kept as first found: org.hamcrest#hamcrest-parent;1.1 from public[0m
-[0m[[0mdebug[0m] [0m	 trying /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
-[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-core;1.1: res=/Users/romel.campbell/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
+[0m[[0mdebug[0m] [0m	 trying /Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
+[0m[[0mdebug[0m] [0m	local: resource not reachable for org.hamcrest#hamcrest-core;1.1: res=/Users/roca/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
 [0m[[0mdebug[0m] [0mno source artifact found for org.hamcrest#hamcrest-core;1.1[0m
@@ -619,7 +619,7 @@
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-library;2.10.1 in runtime: excluding org.scala-lang#scala-library;2.10.1!scala-library.jar[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-library;2.10.1 in runtime-internal: excluding org.scala-lang#scala-library;2.10.1!scala-library.jar[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-library;2.10.1 in compile-internal: excluding org.scala-lang#scala-library;2.10.1!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/progfun-example/progfun-example_2.10/1.0.0/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/roca/Scala/workspace/example/target/resolution-cache/progfun-example/progfun-example_2.10/1.0.0/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-library;2.10.1 in test-internal: excluding org.scala-lang#scala-library;2.10.1!scala-library.jar[0m
 [0m[[0mdebug[0m] [0morg.scala-lang#scala-library;2.10.1 in test: excluding org.scala-lang#scala-library;2.10.1!scala-library.jar[0m
@@ -637,61 +637,61 @@
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp4546091044948450492sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp4554559693470391052sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar (3174ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar (2372ms)[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/junit/junit/jars/junit-4.10.jar.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/junit/junit/jars/junit-4.10.jar.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp4968166458745733009sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp6143943615722968571sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] junit#junit;4.10!junit.jar (443ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] junit#junit;4.10!junit.jar (242ms)[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp8169468578264207101sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp9002968406091962359sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.jar (628ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.jar (641ms)[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp4177417279622231377sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp3060114905199399899sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar (3613ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar (7681ms)[0m
 [0m[[0mdebug[0m] [0m	 trying http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
-[0m[[0mdebug[0m] [0m		to /Users/romel.campbell/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar.part[0m
+[0m[[0mdebug[0m] [0m		to /Users/roca/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar.part[0m
 [0m[[0mdebug[0m] [0msha1 file found for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar: checking...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0m		to /var/folders/vk/5c079xk576qgg28f28hnz58jf8nh0x/T/ivytmp5502101872670439972sha1[0m
+[0m[[0mdebug[0m] [0m		to /var/folders/12/12UavBBbH7Wbu9XxsWXce++++TI/-Tmp-/ivytmp9018014098937953089sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar (217ms)[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 859ms :: artifacts dl 8100ms[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar (313ms)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1176ms :: artifacts dl 11259ms[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 1[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 compile produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/compile-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 compile produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/compile-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 1[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 runtime produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/runtime-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 runtime produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/runtime-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 6[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
@@ -713,19 +713,19 @@
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-reflect;2.10.0[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.hamcrest#hamcrest-core;1.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 test produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/test-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 test produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/test-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 provided produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/provided-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 provided produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/provided-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 optional produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/optional-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 optional produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/optional-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 1[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 compile-internal produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/compile-internal-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 compile-internal produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/compile-internal-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 1[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 runtime-internal produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/runtime-internal-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 runtime-internal produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/runtime-internal-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 6[0m
 [0m[[0mdebug[0m] [0mSort dependencies of : org.scala-lang#scala-library;2.10.1 / Number of dependencies = 0[0m
 [0m[[0mdebug[0m] [0mSort done for : org.scala-lang#scala-library;2.10.1[0m
@@ -747,14 +747,14 @@
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.scala-lang#scala-reflect;2.10.0[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0mModule descriptor is processed : org.hamcrest#hamcrest-core;1.1[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 test-internal produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/test-internal-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 test-internal produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/test-internal-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 plugin produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/plugin-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 plugin produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/plugin-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 sources produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/sources-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 sources produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/sources-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 docs produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/docs-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 docs produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/docs-resolved.xml[0m
 [0m[[0mdebug[0m] [0mNbr of module to sort : 0[0m
-[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 pom produced in /Users/romel.campbell/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/pom-resolved.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (859ms resolve - 8100ms download)[0m
+[0m[[0mdebug[0m] [0m	report for progfun-example#progfun-example_2.10;1.0.0 pom produced in /Users/roca/Scala/workspace/example/target/resolution-cache/reports/progfun-example-progfun-example_2.10/pom-resolved.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1176ms resolve - 11259ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
