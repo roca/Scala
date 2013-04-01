@@ -2,3 +2,6 @@
 2013-03-28 09:32:11,254 ERROR [Worker-9] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
 2013-03-28 09:32:11,254 ERROR [Worker-9] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 2013-04-01 13:38:52,000  WARN [Worker-3] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-01 16:56:13,382  WARN [Worker-3] - EclipseSbtBuildManager - Error reading API from class file : java.lang.ClassNotFoundException: controllers.routes$ref
+2013-04-01 16:56:13,399  WARN [Worker-3] - EclipseSbtBuildManager - Error reading API from class file : java.lang.ClassNotFoundException: controllers.routes$javascript
+2013-04-01 16:56:13,402  WARN [Worker-3] - EclipseSbtBuildManager - Error reading API from class file : java.lang.ClassNotFoundException: controllers.routes
