@@ -1,9 +1,9 @@
 [0m[[0mdebug[0m] [0mOther repositories:[0m
 [0m[[0mdebug[0m] [0mDefault repositories:[0m
 [0m[[0mdebug[0m] [0m	Raw(ProjectResolver(inter-project, mapped: ))[0m
-[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@5dd41318)[0m
-[0m[[0mdebug[0m] [0m	URLRepository(sbt-plugin-releases,sbt.Patterns@e31bcc8)[0m
-[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@2887e18f)[0m
+[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@1bb25a82)[0m
+[0m[[0mdebug[0m] [0m	URLRepository(sbt-plugin-releases,sbt.Patterns@5a541b02)[0m
+[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@1b65c779)[0m
 [0m[[0mdebug[0m] [0m	namin.github.com/maven-repository: http://namin.github.com/maven-repository/[0m
 [0m[[0mdebug[0m] [0m	Spray Repository: http://repo.spray.cc/[0m
 [0m[[0mdebug[0m] [0m	public: http://repo1.maven.org/maven2/[0m

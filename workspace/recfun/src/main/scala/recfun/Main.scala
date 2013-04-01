@@ -33,8 +33,10 @@ object Main {
     def f(s: List[Char],acc: List[Char]): List[Char]= {
       if (s.isEmpty) acc
       else if (s.head == '(') f(s.tail, s.head :: acc )
-      else if (s.head == ')' && !acc.isEmpty) f(s.tail, acc.tail)
-      else if (s.head == ')' && acc.isEmpty)  f(s.tail, '(' :: acc)
+      else if (s.head == ')') {
+                    if (acc.isEmpty) f(s.tail, '(' :: acc)
+      				else f(s.tail, acc.tail)
+      		}
       else f(s.tail, acc)
     }
     f(chars,List()).isEmpty
@@ -43,5 +45,16 @@ object Main {
   /**
    * Exercise 3
    */
-  def countChange(money: Int, coins: List[Int]): Int = ???
+   def countChange(money: Int, coins: List[Int]): Int = {
+		def loop(money: Int, lcoins: List[Int], count: Int): Int = {
+		  if ( lcoins.isEmpty || money < 0) 0
+		  else{
+		    if (money == 0 ) count + 1   
+		    else
+		      loop(money, lcoins.tail,count) + loop(money - lcoins.head,lcoins, count)
+		  }
+		}
+		
+		loop(money, coins, 0)
+	}
 }
