@@ -13,6 +13,7 @@ object Main {
 
   /**
    * Exercise 1
+   * Used this as a reference : http://www.mathsisfun.com/pascals-triangle.html
    */
   def abs(x:Int) = if (x < 0) -x else x
   def pascal(c: Int, r: Int): Int = {
@@ -44,17 +45,18 @@ object Main {
 
   /**
    * Exercise 3
+   * Used this as a reference : https://subjoin.net/misc/m496pres1.nb.pdf
    */
    def countChange(money: Int, coins: List[Int]): Int = {
-		def loop(money: Int, lcoins: List[Int], count: Int): Int = {
-		  if ( lcoins.isEmpty || money < 0) 0
+		def f(money: Int, remain_ing_coins: List[Int], acc: Int): Int = {
+		  if ( remain_ing_coins.isEmpty || money < 0) 0
 		  else{
-		    if (money == 0 ) count + 1   
+		    if (money == 0 ) acc + 1   
 		    else
-		      loop(money, lcoins.tail,count) + loop(money - lcoins.head,lcoins, count)
+		      f(money, remain_ing_coins.tail,acc) + f(money - remain_ing_coins.head,remain_ing_coins, acc)
 		  }
 		}
 		
-		loop(money, coins, 0)
+		f(money, coins, 0)
 	}
 }
