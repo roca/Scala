@@ -20,26 +20,45 @@ object FunSets {
   /**
    * Returns the set of the one given element.
    */
-  def singletonSet(elem: Int): Set = ???
+  def singletonSet(elem: Int): Set = {
+    def f(x: Int): Boolean = {
+      x == elem
+    }
+    f
+  }
 
   /**
    * Returns the union of the two given sets,
    * the sets of all elements that are in either `s` or `t`.
    */
-  def union(s: Set, t: Set): Set = ???
+  def union(s: Set, t: Set): Set = {
+    def f(x : Int): Boolean = {
+      contains(s, x) || contains(t,x)
+    }
+    f
+  }
 
   /**
    * Returns the intersection of the two given sets,
    * the set of all elements that are both in `s` and `t`.
    */
-  def intersect(s: Set, t: Set): Set = ???
+  def intersect(s: Set, t: Set): Set = {
+    def f(x : Int): Boolean = {
+      contains(s, x) && contains(t,x)
+    }
+    f
+  }
 
   /**
    * Returns the difference of the two given sets,
    * the set of all elements of `s` that are not in `t`.
    */
-  def diff(s: Set, t: Set): Set = ???
-
+  def diff(s: Set, t: Set): Set = {
+    def f(x : Int): Boolean = {
+      contains(s, x) && !contains(t,x)
+    }
+    f
+  }
   /**
    * Returns the subset of `s` for which `p` holds.
    */
