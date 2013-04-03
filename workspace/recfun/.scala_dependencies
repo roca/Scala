@@ -1,0 +1,32 @@
+/Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes:/Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes:/Applications/eclipse/configuration/org.eclipse.osgi/bundles/242/1/.cp/lib/scala-swing.jar:/Applications/eclipse/configuration/org.eclipse.osgi/bundles/242/1/.cp/lib/scala-actors.jar:/Applications/eclipse/configuration/org.eclipse.osgi/bundles/240/1/.cp/lib/scala-reflect.jar:/Users/romel.campbell/Scala/workspace/recfun/lib_managed/jars/org.scalatest/scalatest_2.10/scalatest_2.10-1.9.1.jar:/Users/romel.campbell/Scala/workspace/recfun/lib_managed/jars/org.scala-lang/scala-actors/scala-actors-2.10.0.jar:/Users/romel.campbell/Scala/workspace/recfun/lib_managed/jars/org.scala-lang/scala-reflect/scala-reflect-2.10.0.jar:/Users/romel.campbell/Scala/workspace/recfun/lib_managed/jars/junit/junit/junit-4.10.jar:/Users/romel.campbell/Scala/workspace/recfun/lib_managed/jars/org.hamcrest/hamcrest-core/hamcrest-core-1.1.jar:/Applications/eclipse/configuration/org.eclipse.osgi/bundles/242/1/.cp/lib/scala-library.jar
+-------
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/common/package.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/main/scala/common/package.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala
+-------
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/PascalSuite$$anonfun$3.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/PascalSuite$$anonfun$1.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/PascalSuite.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/PascalSuite$$anonfun$2.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/recfun/Main$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/recfun/Main$$anonfun$main$1.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/recfun/Main$.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/recfun/Main.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/recfun/Main.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/common/package.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/common/package.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/common/package.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/common/package$.class
+/Users/romel.campbell/Scala/workspace/recfun/src/main/scala/common/package.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/classes/common/package$$anonfun$subFile$1.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/CountChangeSuite$$anonfun$1.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/CountChangeSuite$$anonfun$3.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/CountChangeSuite$$anonfun$4.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/CountChangeSuite$$anonfun$2.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/CountChangeSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/CountChangeSuite.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/BalanceSuite.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/BalanceSuite$$anonfun$4.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/BalanceSuite$$anonfun$2.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/BalanceSuite$$anonfun$3.class
+/Users/romel.campbell/Scala/workspace/recfun/src/test/scala/recfun/BalanceSuite.scala -> /Users/romel.campbell/Scala/workspace/recfun/target/scala-2.10/test-classes/recfun/BalanceSuite$$anonfun$1.class

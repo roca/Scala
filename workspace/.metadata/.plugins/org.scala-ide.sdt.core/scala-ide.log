@@ -30,3 +30,4 @@ java.lang.InterruptedException
 	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
 	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2013-04-03 15:14:42,930 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - java.util.ConcurrentModificationException
