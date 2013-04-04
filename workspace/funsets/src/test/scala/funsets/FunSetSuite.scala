@@ -103,7 +103,7 @@ class FunSetSuite extends FunSuite {
 
   test("union contains all elements") {
     new TestSets {
-      val s = union(s1, s2)
+      val s = multiElement(1,2, x => x + 1)  //union(s1, s2)
       assert(contains(s, 1), "Union 1")
       assert(contains(s, 2), "Union 2")
       assert(!contains(s, 3), "Union 3")
@@ -123,13 +123,64 @@ class FunSetSuite extends FunSuite {
   test("diff contains unshared elements") {
     new TestSets {
       val s4 = singletonSet(4)
-      val s_1_2_3_4 = union(union(union(s1, s2),s3),s4)
-      val s_2_3 = union(s2, s3)
+      val s_1_2_3_4 = multiElement(1,4, x => x + 1)
+      val s_2_3 = multiElement(2,3, x => x + 1)
       assert( contains(diff(s_1_2_3_4,s_2_3), 1),  "Diff 1")
       assert(!contains(diff(s_1_2_3_4,s_2_3), 2),  "Diff 2")
       assert(!contains(diff(s_1_2_3_4,s_2_3), 3),  "Diff 3")
       assert( contains(diff(s_1_2_3_4,s_2_3), 4),  "Diff 4")
     }
   }
+  
+  
+   test("filter contains elements for with p is true") {
+    new TestSets {
+      val s_1_2_3_4 = multiElement(1,4, x => x + 1)
+      
+      val filtered = filter(s_1_2_3_4, x => (x == 2 || x == 3))
+      val empty_set = filter(s_1_2_3_4, x => (x == 17))
+      
+      assert(!contains(filtered, 1),  "Filter out 1")
+      assert( contains(filtered, 2),  "Kept 2")
+      assert( contains(filtered, 3),  "Kept 3")
+      assert(!contains(filtered, 4),  "Filter out 4")
+      
+      assert(!contains(empty_set, 1),  "Filter out 1")
+      assert(!contains(empty_set, 2),  "Filter out 2")
+      assert(!contains(empty_set, 3),  "Filter out 3")
+      assert(!contains(empty_set, 4),  "Filter out 4")
+
+    }
+  }
+
+  
+   test("Returns whether all bounded integers within `s` satisfy `p`.") {
+    new TestSets {
+      val s_1_to_100     = multiElement(1,100, x => x + 1)
+      val s_even_numbers = multiElement(-10,100, x => x + 2)
+      val s_odd_numbers  = multiElement(-11,100, x => x + 2)
+       
+      assert( forall(s_1_to_100, x => x >= 0),  "They are all nonnegative number")
+      assert(!forall(s_1_to_100, x => x == 2),  "They are not all equal to 2")
+      assert( forall(s_even_numbers, x => (x % 2) == 0 ),  "They are all even number")
+      assert( forall(s_odd_numbers, x => (x % 2) != 0 ),  "They are all odd number")
+      assert( forall(diff(s_1_to_100,s_odd_numbers), x => (x % 2) == 0 ),  "They are all even number")
+      assert( forall(diff(s_1_to_100,s_even_numbers), x => (x % 2) != 0 ),  "They are all odd number")
+    }
+  }
+   
+   test("exists contains element x") {
+    new TestSets {
+      val s_1_2_3_4 = multiElement(1,4, x => x + 1)
+      
+      
+      assert( exists(s_1_2_3_4, x => x == 1),  "1 exists")
+      assert( exists(s_1_2_3_4, x => x == 2),  "2 exists")
+      assert( exists(s_1_2_3_4, x => x == 3),  "3 exists")
+      assert(!exists(s_1_2_3_4, x => x == 5),  "5 does not")
+      
+
+    }
+  }   
 
 }
