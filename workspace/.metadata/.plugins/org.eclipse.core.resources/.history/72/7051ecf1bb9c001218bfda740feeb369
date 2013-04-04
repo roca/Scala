@@ -1,0 +1,7 @@
+package week2
+
+object currying {
+  def product(f: Int => Int) (a: Int, b: Int): Int= //> Welcome to the Scala worksheet
+  if (a > b) 1
+  else f(a) * f(a+1,b)
+}
