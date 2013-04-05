@@ -1105,3 +1105,32 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel
 
 !ENTRY org.eclipse.core.net 1 0 2013-04-05 11:30:44.987
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-04-05 14:29:47.497 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-04-05 14:30:11.002
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-04-05 14:30:43.514
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:128)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:104)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:96)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)

@@ -43,12 +43,12 @@ class Rational(x:Int, y:Int) {
      this.numer  + "/" + this.denom
     }
     
-    def unary_- : Rational = {
+    def neg : Rational = {
       new Rational(-this.numer,this.denom)
     }
     
     def - (that: Rational): Rational = {
       //new Rational(this.numer * that.denom - that.numer * this.denom, this.denom * that.denom)
-      this + -that
+      this + that.neg
     }
  }

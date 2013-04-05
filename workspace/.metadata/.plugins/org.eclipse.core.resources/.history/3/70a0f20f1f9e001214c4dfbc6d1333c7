@@ -10,9 +10,9 @@ object rationals {
   
   val z = new Rational(3,2)                       //> z  : week2.Rational = 3/2
   
-  x + y                                           //> res2: week2.Rational = 22/21
-  x - y - z                                       //> res3: week2.Rational = -79/42
-  y + y                                           //> res4: week2.Rational = 10/7
+  x.add(y)                                        //> res2: week2.Rational = 22/21
+  x.sub(y).sub(z)                                 //> res3: week2.Rational = -79/42
+  y.add(y)                                        //> res4: week2.Rational = 10/7
   x < y                                           //> res5: Boolean = true
   x max y                                         //> res6: week2.Rational = 5/7
   x min y                                         //> res7: week2.Rational = 1/3
@@ -35,7 +35,7 @@ class Rational(x:Int, y:Int) {
 
     def min(that: Rational): Rational =  {if (this < that) this else that}
     
-    def + (that: Rational) : Rational = {
+    def add(that: Rational) : Rational = {
       new Rational(this.numer * that.denom + that.numer * this.denom, this.denom * that.denom)
     }
     
@@ -43,12 +43,12 @@ class Rational(x:Int, y:Int) {
      this.numer  + "/" + this.denom
     }
     
-    def unary_- : Rational = {
+    def neg() : Rational = {
       new Rational(-this.numer,this.denom)
     }
     
-    def - (that: Rational): Rational = {
+    def sub(that: Rational): Rational = {
       //new Rational(this.numer * that.denom - that.numer * this.denom, this.denom * that.denom)
-      this + -that
+      add(that.neg)
     }
  }

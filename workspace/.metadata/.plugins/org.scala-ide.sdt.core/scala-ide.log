@@ -40,3 +40,19 @@ java.lang.InterruptedException
 2013-04-04 18:48:05,955 ERROR [Worker-11] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 2013-04-05 11:31:51,061  WARN [Worker-0] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
 2013-04-05 11:31:51,665  WARN [Worker-0] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-05 14:30:43,519 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:128)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:104)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:96)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
