@@ -41,7 +41,7 @@ object FunSets {
 
   /**
    * Creates a mutli element set containing 
-   * natural numbers from start to end.
+   * natural numbers from start to end by some increment function.
    * Uses the mapReduce function shown in the video
    */
   def multiElement(start:Int, end: Int, increment: Int => Int): Set ={
@@ -49,7 +49,7 @@ object FunSets {
 	  	if (a > b) zero
 	  	else combine( f(a) , mapReduce(f,combine,zero) (increment(a),b) )
   	}
-  	 mapReduce(singletonSet,union,singletonSet(start))(start, end)
+  	 mapReduce(singletonSet,union,x => false )(start, end)
   }
 
   /**
@@ -104,7 +104,15 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    */
-  def map(s: Set, f: Int => Int): Set = ???
+  def map(s: Set, f: Int => Int): Set = {
+    
+    def iter(a: Int, acc: Set): Set = {
+      if (a > bound) acc
+      else if (contains(s,a)) iter(a+1, union(singletonSet(f(a)),acc))
+      else iter( a + 1, acc)
+    }
+    iter(-1000, x => false)
+  }
 
   /**
    * Displays the contents of a set

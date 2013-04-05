@@ -140,6 +140,11 @@ class FunSetSuite extends FunSuite {
       val filtered = filter(s_1_2_3_4, x => (x == 2 || x == 3))
       val empty_set = filter(s_1_2_3_4, x => (x == 17))
       
+      println("Output from filter test;")
+      printSet(s_1_2_3_4)
+      printSet(filtered)
+ 
+      
       assert(!contains(filtered, 1),  "Filter out 1")
       assert( contains(filtered, 2),  "Kept 2")
       assert( contains(filtered, 3),  "Kept 3")
@@ -171,14 +176,29 @@ class FunSetSuite extends FunSuite {
    
    test("exists contains element x") {
     new TestSets {
-      val s_1_2_3_4 = multiElement(1,4, x => x + 1)
+      val s_even_numbers = multiElement(-10,100, x => x + 2)
       
       
-      assert( exists(s_1_2_3_4, x => x == 1),  "1 exists")
-      assert( exists(s_1_2_3_4, x => x == 2),  "2 exists")
-      assert( exists(s_1_2_3_4, x => x == 3),  "3 exists")
-      assert(!exists(s_1_2_3_4, x => x == 5),  "5 does not")
+      assert(!exists(s_even_numbers, x => x == 1),  "1 does not exist")
+      assert( exists(s_even_numbers, x => x == 2),  "2 exists")
+      assert(!exists(s_even_numbers, x => x == 3),  "3 does not exist")
+      assert( exists(s_even_numbers, x => x == 4),  "4 exists")
+      assert(!exists(s_even_numbers, x => x == 5),  "5 does not exist")
       
+
+    }
+  }   
+
+   
+   test("map Returns a set transformed by applying `f` to each element of `s`.") {
+    new TestSets {
+      val s_odd_numbers  = multiElement(-11,100, x => x + 2)
+      
+      val s_even_numbers = map(s_odd_numbers, x => x * 2)
+      println("Output from map test;")
+      printSet(s_even_numbers)
+      
+      assert( forall(s_even_numbers, x => (x % 2) == 0 ),  "They are all even number")
 
     }
   }   
