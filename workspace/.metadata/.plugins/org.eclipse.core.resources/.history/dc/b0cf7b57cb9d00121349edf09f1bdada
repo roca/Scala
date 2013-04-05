@@ -1,8 +1,0 @@
-package week2
-
-object rationals {
-  call Rational(x:Int, y:Int) {                   //> Welcome to the Scala worksheet
-    def numer = x
-    def denom = y
-  }
-}

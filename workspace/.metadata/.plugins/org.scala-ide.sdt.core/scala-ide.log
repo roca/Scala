@@ -38,3 +38,5 @@ java.lang.InterruptedException
 2013-04-04 18:48:05,935 ERROR [Worker-11] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 2013-04-04 18:48:05,937 ERROR [Worker-11] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
 2013-04-04 18:48:05,955 ERROR [Worker-11] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2013-04-05 11:31:51,061  WARN [Worker-0] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-05 11:31:51,665  WARN [Worker-0] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
