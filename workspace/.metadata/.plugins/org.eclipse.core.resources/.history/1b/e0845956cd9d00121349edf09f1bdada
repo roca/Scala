@@ -1,0 +1,22 @@
+package week2
+
+object rationals {
+  val x = new Rational(1,2)                       //> x  : week2.Rational = 1/2
+  
+  x.numer                                         //> res0: Int = 1
+  
+  x.add(new Rational(2,3)).toString               //> res1: String = 7/6
+}
+
+class Rational(x:Int, y:Int) {
+    def numer = x
+    def denom = y
+    
+    def add(r: Rational) : Rational = {
+      new Rational((x * r.denom) + (r.numer * y), y * r.denom)
+    }
+    
+    override def toString(): String = {
+     x  + "/" + y
+    }
+ }
