@@ -5,13 +5,17 @@ import play.api.Play.current
 
 import anorm._
 import anorm.SqlParser._
+import play.api.libs.json._
 
-case class Sample(id: Pk[Long], name: String)
+
+case class Sample(id: Int, name: String)
+
+
 
 object Sample {
 
   val simple = {
-    get[Pk[Long]]("id") ~
+    get[Int]("id") ~
     get[String]("name") map {
       case id~name => Sample(id, name)
     }
@@ -30,5 +34,7 @@ object Sample {
       ).executeUpdate()
     }
   }
+
+
 
 }

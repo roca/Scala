@@ -3,10 +3,9 @@ package controllers
 import play.api._
 import play.api.mvc._
 import play.api.libs.json._
-//import com.codahale.jerkson.Json
 
-import models.Sample
-
+import models._
+import Formats._
 
 object Application extends Controller {
 
@@ -17,7 +16,8 @@ object Application extends Controller {
   def listSamples() = Action {
     val samples = Sample.findAll()
 
-    val json = Json.generate(samples)
+
+    val json = Json.toJson(samples)
 
     Ok(json).as("application/json")
   }
