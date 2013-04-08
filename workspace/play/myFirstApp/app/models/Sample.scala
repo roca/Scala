@@ -23,7 +23,7 @@ object Sample {
 
   def findAll(): Seq[Sample] = {
     DB.withConnection { implicit connection =>
-      SQL("select id,name from samples where name is not null").as(Sample.simple *)
+      SQL("select id,name from samples where name is not null limit 10 ").as(Sample.simple *)
     }
   }
 
