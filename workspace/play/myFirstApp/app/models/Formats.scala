@@ -1,11 +1,6 @@
 package models
 
-import play.api.libs.json.Format
-import play.api.libs.json.JsValue
-import play.api.libs.json.JsObject
-import play.api.libs.json.JsNumber
-import play.api.libs.json.JsString
-
+import play.api.libs.json._
 
 object Formats {
       implicit object SampleFormat extends Format[Sample] {
@@ -15,10 +10,10 @@ object Formats {
                           )
               )
 
-              def reads(json: JsValue): Sample = Sample(
+              def reads(json: JsValue): JsSuccess[Sample] = JsSuccess( Sample(
                   (json \ "id").as[Int],
                   (json \ "name").as[String]
-              )
+              ))
         }
 }
 

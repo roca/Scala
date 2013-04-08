@@ -13,7 +13,7 @@ object Application extends Controller {
     Ok(views.html.index("Your new application is ready."))
   }
 
-  def listSamples() = Action {
+  def listSamples = Action {
     val samples = Sample.findAll()
 
 
