@@ -1,6 +1,0 @@
-package week1
-
-object session {
-  1+2
-  def abs(x: Double) = if (x<0) -x else x
-}
