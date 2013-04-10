@@ -1258,3 +1258,373 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel
 
 !ENTRY org.eclipse.core.net 1 0 2013-04-09 14:28:02.175
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-04-10 09:09:49.570 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-04-10 09:10:19.416
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:23:18.368
+!MESSAGE File not found: '/progfun/src/week3/Rationals.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week3/Rationals.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:23:18.371
+!MESSAGE Resource '/progfun/src/week3/Rationals.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:23:18.734
+!MESSAGE File not found: '/progfun/src/week3/Rationals.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week3/Rationals.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:23:18.734
+!MESSAGE Resource '/progfun/src/week3/Rationals.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:27:35.077
+!MESSAGE File not found: '/progfun/src/week3/Rationals.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week3/Rationals.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:27:35.078
+!MESSAGE Resource '/progfun/src/week3/Rationals.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:27:35.104
+!MESSAGE File not found: '/progfun/src/week3/Rationals.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week3/Rationals.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:27:35.104
+!MESSAGE Resource '/progfun/src/week3/Rationals.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:33:25.010
+!MESSAGE File not found: '/progfun/src/week2/rational.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week2/rational.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:33:25.011
+!MESSAGE Resource '/progfun/src/week2/rational.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:33:25.060
+!MESSAGE File not found: '/progfun/src/week2/rational.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week2/rational.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:33:25.061
+!MESSAGE Resource '/progfun/src/week2/rational.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:35:23.154
+!MESSAGE File not found: '/progfun/src/week2/rational.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week2/rational.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:35:23.154
+!MESSAGE Resource '/progfun/src/week2/rational.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:37:55.692
+!MESSAGE File not found: '/progfun/src/week2/rational.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week2/rational.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:37:55.693
+!MESSAGE Resource '/progfun/src/week2/rational.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-10 09:44:18.405
+!MESSAGE File not found: '/progfun/src/week2/rational.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week2/rational.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-10 09:44:18.406
+!MESSAGE Resource '/progfun/src/week2/rational.scala' does not exist.

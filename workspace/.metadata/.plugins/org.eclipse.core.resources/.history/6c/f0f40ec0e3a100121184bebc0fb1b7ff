@@ -1,0 +1,7 @@
+package week3
+
+
+
+object class_organization {
+  new  Rational(1,2)
+}

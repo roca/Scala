@@ -1,0 +1,6 @@
+
+import week3.Rational
+
+object class_organization {
+  new  Rational(1,2)
+}

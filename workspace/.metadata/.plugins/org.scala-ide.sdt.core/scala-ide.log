@@ -56,3 +56,6 @@ java.lang.InterruptedException
 	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
 	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2013-04-10 09:23:15,758  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-10 09:26:21,025  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-10 09:33:21,849  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

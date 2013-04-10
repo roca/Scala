@@ -1,0 +1,23 @@
+package week3
+
+
+object class_organization {
+  new  Rational(1,2)                              //> java.lang.NoClassDefFoundError: week3/Rational
+                                                  //| 	at week3.class_organization$$anonfun$main$1.apply$mcV$sp(week3.class_org
+                                                  //| anization.scala:5)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at week3.class_organization$.main(week3.class_organization.scala:4)
+                                                  //| 	at week3.class_organization.main(week3.class_organization.scala)
+                                                  //| Caused by: java.lang.ClassNotFoundException: week3.Rational
+                                                  //| 	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+                                                  //| 	at java.security.AccessController.doPrivileged(Native Method)
+                                                  //| 	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+                                                  //| 	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+                                                  //| 	at sun.misc.Launcher$AppClassLoader.loadClass(Launc
+                                                  //| Output exceeds cutoff limit.
+}
