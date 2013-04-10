@@ -1,0 +1,23 @@
+
+import week3.Rational
+
+object class_organization {
+  new  Rational(1,2)                              //> res0: week3.Rational = 1/2
+  
+  def error(msg: String) = throw new Error(msg)   //> error: (msg: String)Nothing
+  
+  val x = null                                    //> java.lang.Error: test
+  
+                                                  //| 	at class_organization$$anonfun$main$1.error$1(class_organization.scala:7
+                                                  //| )
+                                                  //| 	at class_organization$$anonfun$main$1.apply$mcV$sp(class_organization.sc
+                                                  //| ala:9)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at class_organization$.main(class_organization.scala:4)
+                                                  //| 	at class_organization.main(class_organization.scala)
+}

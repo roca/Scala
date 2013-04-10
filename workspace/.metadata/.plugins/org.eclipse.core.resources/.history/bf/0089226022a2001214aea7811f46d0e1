@@ -9,5 +9,5 @@ object class_organization {
   val x = null                                    //> x  : Null = null
   val y: String = x                               //> y  : String = null
   
-   if (true) 1 else false                         //> res1: AnyVal = 1
+ 
 }

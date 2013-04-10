@@ -1,7 +1,0 @@
-package week3
-
-import week2.Rational
-
-object class_organization {
-  new  Rational(1,2)                              //> res0: <error> = 1/2
-}
