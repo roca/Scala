@@ -1,0 +1,11 @@
+package week4
+
+object Lists {
+  println("Welcome to the Scala worksheet")
+}
+
+
+def singleton[T](elem: T) = new Cons[T](elem, new Nil[T])
+
+def nth(n:Int,xs:List[T]): T = {
+}

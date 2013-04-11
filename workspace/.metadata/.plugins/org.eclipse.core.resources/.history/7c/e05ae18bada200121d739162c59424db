@@ -1,0 +1,6 @@
+package week4
+
+object nth {
+  def nth[T](n: Int, xs: List[T]): T =            //> Welcome to the Scala worksheet
+   if(n == 0) xs.head
+}
