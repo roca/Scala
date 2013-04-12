@@ -126,10 +126,20 @@ class Empty extends TweetSet {
   def foreach(f: Tweet => Unit): Unit = ()
 }
 
+def intersect(s: TweetSet,t: TweetSet): TweetSet = {
+    def f(x : Tweet): Boolean = {
+      s.contains(x) && t.contains(x)
+    }
+    f
+}
+
+
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = ???
 
+  
+  
 
   /**
    * The following methods are already implemented
