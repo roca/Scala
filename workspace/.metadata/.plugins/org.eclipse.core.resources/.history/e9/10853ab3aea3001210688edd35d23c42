@@ -133,11 +133,13 @@ class Empty extends TweetSet {
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
-    val t = new Tweet(elem.user,elem.text,elem.retweets)
-    if (remove(t) == this ) acc
-    else if (!p(t)) filterAcc(p, acc.incl(t))
-         else filterAcc(p, acc)
-   
+    val x = elem
+    this.remove(elem)
+    if (this == new Empty) acc
+    else {  
+           if (p(x)) filterAcc(p, acc.incl(x))
+           else filterAcc(p, acc)
+         }
   }
 
   def union(that: TweetSet): TweetSet = filterAcc(t => contains(t) || that.contains(t), new Empty)

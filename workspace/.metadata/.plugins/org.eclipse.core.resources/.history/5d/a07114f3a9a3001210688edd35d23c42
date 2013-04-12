@@ -35,7 +35,7 @@ class TweetSetSuite extends FunSuite {
   
   test("filter: a on set5") {
     new TestSets {
-      set5.filterAcc(tw => tw.user == "a", new Empty).foreach( t => println(t.user) )
+      set5.filter(tw => tw.user == "a").foreach( t => println(t.user) )
       assert(size(set5.filter(tw => tw.user == "a")) === 1)
     }
   }

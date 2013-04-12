@@ -135,7 +135,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
     val t = new Tweet(elem.user,elem.text,elem.retweets)
     if (remove(t) == this ) acc
-    else if (!p(t)) filterAcc(p, acc.incl(t))
+    else if (p(t)) filterAcc(p, acc.incl(t))
          else filterAcc(p, acc)
    
   }
