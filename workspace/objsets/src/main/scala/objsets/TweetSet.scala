@@ -106,6 +106,13 @@ abstract class TweetSet {
    * This method takes a function and applies it to every element in the set.
    */
   def foreach(f: Tweet => Unit): Unit
+  
+  
+  def asSet(tweets: TweetSet): Set[Tweet] = {
+    var res = Set[Tweet]()
+    tweets.foreach(res += _)
+    res
+  }
 }
 
 class Empty extends TweetSet {
@@ -133,14 +140,19 @@ class Empty extends TweetSet {
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
-    val t = new Tweet(elem.user,elem.text,elem.retweets)
-    if (remove(t) == this ) acc
-    else if (!p(t)) filterAcc(p, acc.incl(t))
-         else filterAcc(p, acc)
-   
+    
+    def f(remaining: Set[Tweet],acc: TweetSet): TweetSet= {
+      if (remaining.isEmpty) acc
+      else if (p(remaining.head)) f(remaining.tail, acc.incl(remaining.head))
+      else f(remaining.tail, acc)
+    }
+    
+    f(asSet(this),acc)
   }
+  
+  
 
-  def union(that: TweetSet): TweetSet = filterAcc(t => contains(t) || that.contains(t), new Empty)
+  def union(that: TweetSet): TweetSet = ???
 
   /**
    * The following methods are already implemented
