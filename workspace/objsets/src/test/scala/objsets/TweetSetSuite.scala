@@ -75,9 +75,7 @@ class TweetSetSuite extends FunSuite {
   
   test("descending: GoogleVsApple.allTweets") {
     new TestSets {
-      GoogleVsApple.trending foreach println
-     assert(size(GoogleVsApple.googleTweets)  +  size(GoogleVsApple.appleTweets) == size(TweetReader.allTweets))
-     //assert(GoogleVsApple.trending   == size(TweetReader.allTweets))
+      assert(size(GoogleVsApple.googleTweets)  +  size(GoogleVsApple.appleTweets) == GoogleVsApple.trending.size)
     }
   }
 }

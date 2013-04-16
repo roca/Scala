@@ -158,9 +158,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
 
 
-  def union(that: TweetSet): TweetSet =  ((left union right) union that) incl elem
-  /*
-  {
+  def union(that: TweetSet): TweetSet = {
     def f(remaining: TweetList,acc: TweetSet): TweetSet= {
       if (remaining.isEmpty) acc
       else if (!acc.contains(remaining.head)) f(remaining.tail, acc.incl(remaining.head))
@@ -169,7 +167,8 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
     f(that.asTweetList,this)  
   }
-*/
+
+    // ((left union right) union that) incl elem
 
   def mostRetweeted : Tweet = {
 
@@ -197,13 +196,13 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   }
 
   def asTweetList: TweetList = {
-    var res_tl = new Cons(new Tweet("","",0),Nil)
+    var res_tl = (new Cons(new Tweet("","",0),Nil)).tail
     foreach(t => { res_tl = new Cons(t,res_tl)} )
     res_tl
   }
 
   def reverse(tl: TweetList): TweetList = {
-     var res_tl = new Cons(new Tweet("","",0),Nil)
+     var res_tl = (new Cons(new Tweet("","",0),Nil)).tail
     tl.foreach(t => { res_tl = new Cons(t,res_tl)} )
     res_tl
 
@@ -245,6 +244,14 @@ trait TweetList {
       f(head)
       tail.foreach(f)
     }
+  
+  def size : Int ={
+    def f(remaining: TweetList,acc: Int): Int = {
+      if (remaining.isEmpty) acc
+      else f(remaining.tail,acc + 1)
+    }
+    f(this,0)
+  }
 }
 
 object Nil extends TweetList {
@@ -252,6 +259,8 @@ object Nil extends TweetList {
   def tail = throw new java.util.NoSuchElementException("tail of EmptyList")
   def isEmpty = true
 }
+
+
 
 class Cons(val head: Tweet, val tail: TweetList) extends TweetList {
   def isEmpty = false
@@ -261,13 +270,13 @@ class Cons(val head: Tweet, val tail: TweetList) extends TweetList {
 object GoogleVsApple {
   val google = List("android", "Android", "galaxy", "Galaxy", "nexus", "Nexus")
   val apple = List("ios", "iOS", "iphone", "iPhone", "ipad", "iPad")
-  val all_tweets = TweetReader.allTweets
+  
 
   lazy val googleTweets: TweetSet = {
-    all_tweets.filter(t => contains(google,t))
+    TweetReader.allTweets.filter(t => contains(google,t))
   }
-  def  appleTweets: TweetSet = {
-    all_tweets.filter(t => contains(apple,t))
+  lazy val  appleTweets: TweetSet = {
+    TweetReader.allTweets.filter(t => contains(apple,t))
   }
   /**
    * A list of all tweets mentioning a keyword from either apple or google,
@@ -277,7 +286,7 @@ object GoogleVsApple {
 
 
   def contains(list: List[String], tweet: Tweet): Boolean = {
-     list.foldLeft(false) (_ && tweet.text.contains(_))
+     list.foldLeft(false) (_ || tweet.text.contains(_))
   }
  }
 
