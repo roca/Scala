@@ -56,6 +56,7 @@ abstract class TweetSet {
    * and be implemented in the subclasses?
    */
    def union(that: TweetSet): TweetSet
+   def intersect(that: TweetSet): TweetSet
 
   /**
    * Returns the tweet from this set which has the smallest retweet count.
@@ -111,6 +112,12 @@ abstract class TweetSet {
   def asTweetList: TweetList
 
   def reverse(tl: TweetList): TweetList
+  
+  def filterList(p: Tweet => Boolean,remaining: TweetList,acc: TweetSet): TweetSet= {
+      if (remaining.isEmpty) acc
+      else if (p(remaining.head)) filterList(p,remaining.tail, acc.incl(remaining.head))
+      else filterList(p,remaining.tail, acc)
+    }
 }
 
 class Empty extends TweetSet {
@@ -118,6 +125,8 @@ class Empty extends TweetSet {
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = this
 
   def union(that: TweetSet): TweetSet = that
+  def intersect(that: TweetSet): TweetSet = this
+
 
   def mostRetweeted  = throw new java.util.NoSuchElementException("mostRetweeted of EmptyList")
 
@@ -146,27 +155,19 @@ class Empty extends TweetSet {
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
-
-    def f(remaining: TweetList,acc: TweetSet): TweetSet= {
-      if (remaining.isEmpty) acc
-      else if (p(remaining.head)) f(remaining.tail, acc.incl(remaining.head))
-      else f(remaining.tail, acc)
-    }
-
-    f(this.asTweetList,acc)
+    filterList(p,this.asTweetList,acc)
   }
 
 
 
   def union(that: TweetSet): TweetSet = {
-    def f(remaining: TweetList,acc: TweetSet): TweetSet= {
-      if (remaining.isEmpty) acc
-      else if (!acc.contains(remaining.head)) f(remaining.tail, acc.incl(remaining.head))
-      else f(remaining.tail, acc)
-    }
-
-    f(that.asTweetList,this)  
+    filterList( t => !this.contains(t), that.asTweetList,this)  
   }
+  
+ def intersect(that: TweetSet): TweetSet = {
+    filterList( t => this.contains(t) , that.asTweetList,new Empty)  
+  }
+
 
     // ((left union right) union that) incl elem
 
@@ -196,7 +197,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   }
 
   def asTweetList: TweetList = {
-    var res_tl = (new Cons(new Tweet("","",0),Nil)).tail
+    var res_tl =(new Cons(new Tweet("","",0),Nil)).tail
     foreach(t => { res_tl = new Cons(t,res_tl)} )
     res_tl
   }
@@ -283,6 +284,7 @@ object GoogleVsApple {
    * sorted by the number of retweets.
    */
   lazy val trending: TweetList = googleTweets.union(appleTweets).descendingByRetweet
+  lazy val sharedTweets: TweetList = appleTweets.intersect(googleTweets).descendingByRetweet
 
 
   def contains(list: List[String], tweet: Tweet): Boolean = {
