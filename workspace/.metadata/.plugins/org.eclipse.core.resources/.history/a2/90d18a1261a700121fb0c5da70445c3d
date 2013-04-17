@@ -1,0 +1,20 @@
+package idealized.scala
+
+
+
+
+abstract class Boolean {
+   def ifThenElse[T](t: => T, e: => T): T
+   def && (x: => Boolean): Boolean = ifThenElse(x, idealized.scala.false)
+   def || (x: => Boolean): Boolean = ifThenElse(idealized.scala.true, x)
+   def unary_!: Boolean = ifThenElse(idealized.scala.false, idealized.scala.true)
+   def == (x: Boolean): Boolean = ifThenElse(x, x.unary_!)
+   def != (x: Boolean): Boolean = ifThenElse(x.unary_!, x)
+}
+
+object true extends Boolean {
+	def ifThenElse[T](t: => T, e: => T) = t
+}
+object false extends Boolean {
+	def ifThenElse[T](t: => T, e: => T) = e
+}

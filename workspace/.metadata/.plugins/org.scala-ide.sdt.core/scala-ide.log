@@ -90,3 +90,4 @@ java.lang.InterruptedException
 2013-04-15 20:44:09,845 ERROR [Worker-23] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 2013-04-16 10:31:44,681  WARN [Worker-5] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
 2013-04-16 10:31:45,809  WARN [Worker-5] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-17 09:31:32,600  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

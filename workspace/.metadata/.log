@@ -2312,3 +2312,133 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel
 
 !ENTRY org.eclipse.core.net 1 0 2013-04-16 11:50:09.097
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-04-17 09:00:33.237 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/romel.campbell/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-04-17 09:00:55.975
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-17 09:07:06.770
+!MESSAGE File not found: '/progfun/src/idealized/Boolean.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/idealized/Boolean.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-17 09:07:06.771
+!MESSAGE Resource '/progfun/src/idealized/Boolean.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-17 09:32:08.407
+!MESSAGE File not found: '/progfun/src/idealized/scala/nat.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/idealized/scala/nat.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-17 09:32:08.408
+!MESSAGE Resource '/progfun/src/idealized/scala/nat.scala' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-04-17 09:32:12.227
+!MESSAGE File not found: '/progfun/src/idealized/Boolean.scala'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/idealized/Boolean.scala' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1187)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:649)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.getContents(ScalaSourceFile.scala:128)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.sourceFile$default$1(InteractiveCompilationUnit.scala:37)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.sourceFile$default$1(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:59)
+	at scala.tools.eclipse.ScalaPresentationCompiler$$anon$1.default(ScalaPresentationCompiler.scala:57)
+	at scala.collection.mutable.HashMap.apply(HashMap.scala:64)
+	at scala.tools.eclipse.ScalaPresentationCompiler.withSourceFile(ScalaPresentationCompiler.scala:99)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:602)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withSourceFile$1.apply(ScalaProject.scala:601)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:595)
+	at scala.tools.eclipse.ScalaProject$$anonfun$withPresentationCompiler$1.apply(ScalaProject.scala:594)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:41)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:51)
+	at scala.tools.eclipse.markoccurrences.ScalaOccurrencesFinder.findOccurrences(ScalaOccurrencesFinder.scala:83)
+	at scala.tools.eclipse.ScalaSourceFileEditor.getAnnotations(ScalaSourceFileEditor.scala:214)
+	at scala.tools.eclipse.ScalaSourceFileEditor.scala$tools$eclipse$ScalaSourceFileEditor$$performOccurrencesUpdate(ScalaSourceFileEditor.scala:205)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply$mcV$sp(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2$$anonfun$apply$2.apply(ScalaSourceFileEditor.scala:240)
+	at scala.tools.eclipse.util.Utils$.debugTimed(Utils.scala:25)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:239)
+	at scala.tools.eclipse.ScalaSourceFileEditor$$anonfun$2.apply(ScalaSourceFileEditor.scala:237)
+	at scala.tools.eclipse.util.EclipseUtils$$anon$1.run(EclipseUtils.scala:99)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2013-04-17 09:32:12.228
+!MESSAGE Resource '/progfun/src/idealized/Boolean.scala' does not exist.
