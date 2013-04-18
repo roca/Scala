@@ -80,9 +80,9 @@ object Huffman {
   def times(chars: List[Char]): List[(Char, Int)] = {
     def f(char: Char , chars: List[Char] , acc: List[(Char, Int)] ):  List[(Char, Int)] = {
       if (chars.isEmpty) acc
-      else f(chars.head , chars.tail,  (char,chars.count(c => c == char)) :: acc)
+      else f(chars.head , chars.tail,  acc :: (chars.head,0))
     }
-    f(chars.head , chars.tail, List() )
+    f(chars.head , chars, List() )
   }
 
   /**
@@ -92,9 +92,7 @@ object Huffman {
    * head of the list should have the smallest weight), where the weight
    * of a leaf is the frequency of the character.
    */
-  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
-    freqs.sortBy( e => (e._2) ).map(e => new Leaf(e._1,e._2))
-  }
+  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
 
   /**
    * Checks whether the list `trees` contains only one single code tree.

@@ -1,6 +1,0 @@
-package week3
-
-
-object class_organization {
-  new  week2.Rational(1,2)                        //> res0: week2.Rational = 1/2
-}
