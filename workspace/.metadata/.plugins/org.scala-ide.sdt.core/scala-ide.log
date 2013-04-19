@@ -1097,3 +1097,6 @@ org.scalaide.worksheet.runtime.MissingTopLevelObjectDeclaration: Couldn't find t
 2013-04-19 11:35:30,004 ERROR [Worker-15] - System.err - at com.aptana.index.core.IndexRequestJob.indexFileStores(IndexRequestJob.java:205)
 2013-04-19 11:35:30,004 ERROR [Worker-15] - System.err - at com.aptana.index.core.IndexContainerJob.run(IndexContainerJob.java:114)
 2013-04-19 11:35:30,004 ERROR [Worker-15] - System.err - at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+2013-04-19 16:10:16,333  WARN [Worker-7] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-19 16:10:16,594  WARN [Worker-7] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-19 16:31:45,703  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
