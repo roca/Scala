@@ -1,7 +1,5 @@
 package week4
 
-import week3.NonEmpty
-
 trait List[+T] {
    def isEmpty: Boolean
    def head: T
@@ -21,7 +19,6 @@ object Nil extends List[Nothing] {
 
 object test {
   val x: List[String] = Nil
-  def f(xs: List[NonEmpty], x: Empty) = xs prepend x 
 }
 
   
