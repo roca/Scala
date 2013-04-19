@@ -1,6 +1,8 @@
 package week4
 
 import week3.NonEmpty
+import week3.Empty   // object Empty
+import week3.cEmpty	 // class E,pty
 
 trait List[+T] {
    def isEmpty: Boolean
@@ -21,7 +23,7 @@ object Nil extends List[Nothing] {
 
 object test {
   val x: List[String] = Nil
-  def f(xs: List[NonEmpty], x: Empty) = xs prepend x 
+  def f(xs: List[NonEmpty], x: cEmpty) = xs prepend Empty
 }
 
   

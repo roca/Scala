@@ -1,0 +1,9 @@
+import week3.
+
+object insets {
+	val t1 = new NonEmpty(3,Empty,Empty)
+	val t2 = t1 incl 2
+	val t3 = t2 incl 1
+	val t4 = new NonEmpty(4,Empty,Empty)
+	val t5 = t3 union t4
+}
