@@ -1,0 +1,8 @@
+package patmat
+
+
+object scratch {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  l = Huffman.times(List('a', 'b', 'a'))          //> res0: List[(Char, Int)] = List((a,2), (b,1))
+  
+}
