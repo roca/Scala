@@ -1,3 +1,7 @@
 //org.eclipse.ui.commands/state/com.aptana.explorer.commands.toggleAppExplorer/org.eclipse.ui.commands.toggleState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+com.aptana.explorer.font=1|Monaco|10.0|0|COCOA|1|Monaco;
 eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|Monaco;
