@@ -18,8 +18,22 @@ object scratch {
  val leaflist = List(Leaf('e', 1), Leaf('t', 2), Leaf('x', 4))
                                                   //> leaflist  : List[patmat.Huffman.Leaf] = List(Leaf(e,1), Leaf(t,2), Leaf(x,4)
                                                   //| )
- combine(leaflist)                                //> res0: List[patmat.Huffman.CodeTree] = List(Fork(Leaf(t,2),Leaf(x,4),List(t, 
-                                                  //| x),6), Fork(Leaf(e,1),Leaf(t,2),List(e, t),3))
+ val c = combine(leaflist)                        //> c  : List[patmat.Huffman.CodeTree] = List(Fork(Leaf(e,1),Leaf(t,2),List(e, t
+                                                  //| ),3), Leaf(x,4))
+                           
+                                 
  
-                            
+ combine(c)                                       //> res0: List[patmat.Huffman.CodeTree] = List(Fork(Fork(Leaf(e,1),Leaf(t,2),Lis
+                                                  //| t(e, t),3),Leaf(x,4),List(e, t, x),7))
+ 
+    
+makeCodeTree(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3),Leaf('x',4))
+                                                  //> res1: patmat.Huffman.CodeTree = Fork(Fork(Leaf(e,1),Leaf(t,2),List(e, t),3),
+                                                  //| Leaf(x,4),List(e, t, x),7)
+ 
+ 
+ until(singleton, combine)(leaflist)              //> res2: List[patmat.Huffman.CodeTree] = List(Fork(Fork(Leaf(e,1),Leaf(t,2),Lis
+                                                  //| t(e, t),3),Leaf(x,4),List(e, t, x),7))
+   createCodeTree(List('a', 'b', 'a','c','c','c'))//> res3: patmat.Huffman.CodeTree = Fork(Fork(Leaf(b,1),Leaf(a,2),List(b, a),3),
+                                                  //| Leaf(c,3),List(b, a, c),6)
 }
