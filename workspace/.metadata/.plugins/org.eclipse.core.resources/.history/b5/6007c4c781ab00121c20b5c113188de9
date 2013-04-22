@@ -17,6 +17,7 @@ object scratch {
  val c = combine(leaflist)
                            
                                  
+                                 
  
  combine(c)
  
@@ -31,5 +32,18 @@ decode(t1,List(0,1,1))
  
 decodedSecret
 
- encode frenchCode decodedSecret
+encode(frenchCode) (decodedSecret)  == secret
+ 
+ 
+ val table = createCodeTable(frenchCode,decodedSecret)
+  
+convert(frenchCode)
+ 
+ codeBits(convert(frenchCode))('h')
+ 
+ getBits('h', frenchCode)
+ 
+ quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
+ 
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode)
 }

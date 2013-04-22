@@ -53,8 +53,7 @@ class HuffmanSuite extends FunSuite {
   }
   
    test("mergeCodeTables should not have duplicates") {
-     assert(mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode))
-     assert(mergeCodeTables(convert(frenchCode), convert(frenchCode)).length == (convert(frenchCode) ::: convert(frenchCode)).length/2)
+     assert(encode(frenchCode)(decodedSecret) == quickEncode(frenchCode)(decodedSecret))
     
   }
 
@@ -71,7 +70,7 @@ class HuffmanSuite extends FunSuite {
     }
     println(encode_sw)
     
-    assert(encode_sw.elapsedTime < quickEncode_sw.elapsedTime)
+    assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
   }
   
   

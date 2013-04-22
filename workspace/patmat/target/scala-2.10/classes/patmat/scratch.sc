@@ -70,4 +70,7 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
                                                   //> res10: Boolean = true
+ 
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode)
+                                                  //> res11: Boolean = true
 }

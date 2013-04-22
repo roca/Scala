@@ -52,13 +52,6 @@ class HuffmanSuite extends FunSuite {
     
   }
   
-   test("mergeCodeTables should not have duplicates") {
-     assert(mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode))
-     assert(mergeCodeTables(convert(frenchCode), convert(frenchCode)).length == (convert(frenchCode) ::: convert(frenchCode)).length/2)
-    
-  }
-
-  
   
   test("quickEncode is faster than encode") {
     val quickEncode_sw = time("quickEncode elapsed time") {
@@ -71,7 +64,7 @@ class HuffmanSuite extends FunSuite {
     }
     println(encode_sw)
     
-    assert(encode_sw.elapsedTime < quickEncode_sw.elapsedTime)
+    assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
   }
   
   

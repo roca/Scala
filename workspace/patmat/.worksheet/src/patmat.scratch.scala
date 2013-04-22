@@ -43,5 +43,7 @@ convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ +
  
  getBits('h', frenchCode);System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(81); val res$10 = 
  
- quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res10: Boolean = """ + $show(res$10))}
+ quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res10: Boolean = """ + $show(res$10));$skip(84); val res$11 = 
+ 
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode);System.out.println("""res11: Boolean = """ + $show(res$11))}
 }
