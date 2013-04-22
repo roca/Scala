@@ -6,6 +6,7 @@ import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import patmat.Huffman._
+import Stopwatch._
 
 @RunWith(classOf[JUnitRunner])
 class HuffmanSuite extends FunSuite {
@@ -45,5 +46,17 @@ class HuffmanSuite extends FunSuite {
     }
   }
   
+ 
+  
+  test("quickEncode is faster than encode") {
+    val quickEncode_sw = time("quickEncode elapsed time") {
+      quickEncode(frenchCode)(decodedSecret)
+    }
+    
+    val encode_sw = time("encode elapsed time") {
+      encode(frenchCode)(decodedSecret)
+    }
+    assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
+  }
   
 }
