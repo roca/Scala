@@ -37,13 +37,17 @@ encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolea
  
  val table = createCodeTable(frenchCode,decodedSecret);System.out.println("""table  : patmat.Huffman.CodeTable = """ + $show(table ));$skip(23); val res$7 = 
   
-convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ + $show(res$7));$skip(38); val res$8 = 
+convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ + $show(res$7));$skip(22); val res$8 = 
+
+convert2(frenchCode);System.out.println("""res8: patmat.Huffman.CodeTable = """ + $show(res$8));$skip(40); val res$9 = 
+
+
  
- codeBits(convert(frenchCode))('h');System.out.println("""res8: List[patmat.Huffman.Bit] = """ + $show(res$8));$skip(28); val res$9 = 
+ codeBits(convert(frenchCode))('h');System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(28); val res$10 = 
  
- getBits('h', frenchCode);System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(81); val res$10 = 
+ getBits('h', frenchCode);System.out.println("""res10: List[patmat.Huffman.Bit] = """ + $show(res$10));$skip(81); val res$11 = 
  
- quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res10: Boolean = """ + $show(res$10));$skip(84); val res$11 = 
+ quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res11: Boolean = """ + $show(res$11));$skip(84); val res$12 = 
  
- mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode);System.out.println("""res11: Boolean = """ + $show(res$11))}
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode);System.out.println("""res12: Boolean = """ + $show(res$12))}
 }

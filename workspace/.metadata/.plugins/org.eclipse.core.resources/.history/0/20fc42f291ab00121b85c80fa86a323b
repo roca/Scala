@@ -71,7 +71,7 @@ class HuffmanSuite extends FunSuite {
     }
     println(encode_sw)
     
-    assert(encode_sw.elapsedTime <= quickEncode_sw.elapsedTime)
+    assert(encode_sw.elapsedTime < quickEncode_sw.elapsedTime)
   }
   
   

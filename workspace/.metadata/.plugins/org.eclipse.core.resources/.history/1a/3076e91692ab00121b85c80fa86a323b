@@ -279,10 +279,6 @@ object Huffman {
     case Fork(left, right, chars, weight) => createCodeTable(tree,chars)
   }
   
-  def convert2(tree: CodeTree): CodeTable = tree match {
-    case Leaf( char, weight) => List(   (char,getBits(char, tree))  )
-    case Fork(left, right, chars, weight) =>  mergeCodeTables(convert2(left), convert2(right))
-  }
   
 
   /**
@@ -302,7 +298,7 @@ object Huffman {
     val codeTable = convert(tree)
     def f(remaining: List[Char],acc: List[Bit]):  List[Bit] = {
       if (remaining.isEmpty) acc
-      else f(remaining.tail, acc ::: codeBits(codeTable)(remaining.head)  )
+      else f(remaining.tail, acc ::: codeBits2(codeTable)(remaining.head)  )
     }
     f(text,List())
     

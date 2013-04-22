@@ -64,11 +64,13 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
                                                   //| (f,List(0, 0, 1, 1, 0, 1)), (j,List(0, 0, 1, 1, 0, 0, 1)), (x,List(0, 0, 1, 
                                                   //| 1, 0, 0, 0)), (d,List(0, 0, 1, 0)), (s,List(0, 0, 0)))
 
-convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((s,List()), (d,List()), (x,List()), (j
-                                                  //| ,List()), (f,List()), (z,List()), (k,List()), (w,List()), (y,List()), (h,Lis
-                                                  //| t()), (q,List()), (o,List()), (l,List()), (m,List()), (p,List()), (u,List())
-                                                  //| , (r,List()), (c,List()), (v,List()), (g,List()), (b,List()), (n,List()), (t
-                                                  //| ,List()), (e,List()), (i,List()), (a,List()))
+convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((s,List(121895)), (d,List(56269)), (x,
+                                                  //| List(5928)), (j,List(8351)), (f,List(16351)), (z,List(2093)), (k,List(745)),
+                                                  //|  (w,List(1747)), (y,List(4725)), (h,List(11298)), (q,List(20889)), (o,List(8
+                                                  //| 2762)), (l,List(83668)), (m,List(45521)), (p,List(46335)), (u,List(96785)), 
+                                                  //| (r,List(100500)), (c,List(50003)), (v,List(24975)), (g,List(13288)), (b,List
+                                                  //| (13822)), (n,List(108812)), (t,List(111103)), (e,List(225947)), (i,List(1154
+                                                  //| 65)), (a,List(117110)))
 
 
  

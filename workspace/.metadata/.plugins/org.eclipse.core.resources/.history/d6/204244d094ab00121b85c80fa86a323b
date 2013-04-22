@@ -280,7 +280,7 @@ object Huffman {
   }
   
   def convert2(tree: CodeTree): CodeTable = tree match {
-    case Leaf( char, weight) => List(   (char,getBits(char, tree))  )
+    case Leaf( char, weight) => List(   (char,List(1))  )
     case Fork(left, right, chars, weight) =>  mergeCodeTables(convert2(left), convert2(right))
   }
   
@@ -299,7 +299,7 @@ object Huffman {
    * and then uses it to perform the actual encoding.
    */
   def quickEncode(tree: CodeTree)(text: List[Char]): List[Bit] = {
-    val codeTable = convert(tree)
+    val codeTable = convert2(tree)
     def f(remaining: List[Char],acc: List[Bit]):  List[Bit] = {
       if (remaining.isEmpty) acc
       else f(remaining.tail, acc ::: codeBits(codeTable)(remaining.head)  )

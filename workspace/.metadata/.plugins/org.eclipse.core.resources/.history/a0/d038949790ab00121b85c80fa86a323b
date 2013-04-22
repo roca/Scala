@@ -54,6 +54,7 @@ encode(frenchCode) (decodedSecret)  == secret     //> res6: Boolean = true
                                                   //| , 1, 1, 0, 1)))
   
 convert(frenchCode)                               //> res7: patmat.Huffman.CodeTable = List((a,List(1, 1, 1, 1)), (i,List(1, 1, 1,
+convert2(frenchCode)
                                                   //|  0)), (e,List(1, 1, 0)), (t,List(1, 0, 1, 1)), (n,List(1, 0, 1, 0)), (b,List
                                                   //| (1, 0, 0, 1, 1, 1, 1)), (g,List(1, 0, 0, 1, 1, 1, 0)), (v,List(1, 0, 0, 1, 1
                                                   //| , 0)), (c,List(1, 0, 0, 1, 0)), (r,List(1, 0, 0, 0)), (u,List(0, 1, 1, 1)), 
@@ -63,22 +64,14 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
                                                   //| k,List(0, 0, 1, 1, 1, 0, 0, 0, 1, 0)), (z,List(0, 0, 1, 1, 1, 0, 0, 0, 0)), 
                                                   //| (f,List(0, 0, 1, 1, 0, 1)), (j,List(0, 0, 1, 1, 0, 0, 1)), (x,List(0, 0, 1, 
                                                   //| 1, 0, 0, 0)), (d,List(0, 0, 1, 0)), (s,List(0, 0, 0)))
-
-convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((s,List()), (d,List()), (x,List()), (j
-                                                  //| ,List()), (f,List()), (z,List()), (k,List()), (w,List()), (y,List()), (h,Lis
-                                                  //| t()), (q,List()), (o,List()), (l,List()), (m,List()), (p,List()), (u,List())
-                                                  //| , (r,List()), (c,List()), (v,List()), (g,List()), (b,List()), (n,List()), (t
-                                                  //| ,List()), (e,List()), (i,List()), (a,List()))
-
-
  
- codeBits(convert(frenchCode))('h')               //> res9: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ codeBits(convert(frenchCode))('h')               //> res8: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
  
- getBits('h', frenchCode)                         //> res10: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ getBits('h', frenchCode)                         //> res9: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
-                                                  //> res11: Boolean = true
+                                                  //> res10: Boolean = true
  
  mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode)
-                                                  //> res12: Boolean = true
+                                                  //> res11: Boolean = true
 }

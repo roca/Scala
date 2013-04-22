@@ -63,22 +63,26 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
                                                   //| k,List(0, 0, 1, 1, 1, 0, 0, 0, 1, 0)), (z,List(0, 0, 1, 1, 1, 0, 0, 0, 0)), 
                                                   //| (f,List(0, 0, 1, 1, 0, 1)), (j,List(0, 0, 1, 1, 0, 0, 1)), (x,List(0, 0, 1, 
                                                   //| 1, 0, 0, 0)), (d,List(0, 0, 1, 0)), (s,List(0, 0, 0)))
-
-convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((s,List()), (d,List()), (x,List()), (j
-                                                  //| ,List()), (f,List()), (z,List()), (k,List()), (w,List()), (y,List()), (h,Lis
-                                                  //| t()), (q,List()), (o,List()), (l,List()), (m,List()), (p,List()), (u,List())
-                                                  //| , (r,List()), (c,List()), (v,List()), (g,List()), (b,List()), (n,List()), (t
-                                                  //| ,List()), (e,List()), (i,List()), (a,List()))
-
-
+convert2(frenchCode)                              //> scala.MatchError: Leaf(s,121895) (of class patmat.Huffman$Leaf)
+                                                  //| 	at patmat.Huffman$.convert2(Huffman.scala:282)
+                                                  //| 	at patmat.Huffman$.convert2(Huffman.scala:288)
+                                                  //| 	at patmat.Huffman$.convert2(Huffman.scala:288)
+                                                  //| 	at patmat.Huffman$.convert2(Huffman.scala:288)
+                                                  //| 	at patmat.scratch$$anonfun$main$1.apply$mcV$sp(patmat.scratch.scala:41)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at patmat.scratch$.main(patmat.scratch.scala:6)
+                                                  //| 	at patmat.scratch.main(patmat.scratch.scala)
  
- codeBits(convert(frenchCode))('h')               //> res9: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ codeBits(convert(frenchCode))('h')
  
- getBits('h', frenchCode)                         //> res10: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ getBits('h', frenchCode)
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
-                                                  //> res11: Boolean = true
  
  mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode)
-                                                  //> res12: Boolean = true
 }

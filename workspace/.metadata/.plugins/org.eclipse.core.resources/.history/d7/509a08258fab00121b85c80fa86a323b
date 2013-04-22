@@ -278,12 +278,6 @@ object Huffman {
   def convert(tree: CodeTree): CodeTable = tree match {
     case Fork(left, right, chars, weight) => createCodeTable(tree,chars)
   }
-  
-  def convert2(tree: CodeTree): CodeTable = tree match {
-    case Leaf( char, weight) => List(   (char,getBits(char, tree))  )
-    case Fork(left, right, chars, weight) =>  mergeCodeTables(convert2(left), convert2(right))
-  }
-  
 
   /**
    * This function takes two code tables and merges them into one. Depending on how you
