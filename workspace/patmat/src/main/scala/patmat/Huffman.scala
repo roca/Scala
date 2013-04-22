@@ -235,12 +235,26 @@ object Huffman {
   // Part 4b: Encoding using code table
 
   type CodeTable = List[(Char, List[Bit])]
+  
+  def createCodeTable(tree: CodeTree,chars: List[Char]): CodeTable = {
+    def f(remaining:List[Char],acc:CodeTable): CodeTable = {
+      if (remaining.isEmpty) acc
+      else f(remaining.tail, (remaining.head,getBits(remaining.head, tree)) :: acc)
+    }
+    f(chars.distinct,List())
+  }
 
   /**
    * This function returns the bit sequence that represents the character `char` in
    * the code table `table`.
    */
-  def codeBits(table: CodeTable)(char: Char): List[Bit] = ???
+  def codeBits(CodeTable: CodeTable)(char: Char): List[Bit] = {
+    CodeTable.head match {
+    case (c,list) => if (c == char) list
+    		  	     else codeBits(CodeTable.tail)(char)
+    }
+    
+  }
 
   /**
    * Given a code tree, create a code table which contains, for every character in the

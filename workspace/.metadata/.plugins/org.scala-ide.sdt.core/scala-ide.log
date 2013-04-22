@@ -2223,3 +2223,4 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
 	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:498)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2013-04-22 10:00:23,584  WARN [Worker-1] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

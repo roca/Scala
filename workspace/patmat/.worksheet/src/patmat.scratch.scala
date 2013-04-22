@@ -31,5 +31,9 @@ decode(t1,List(0,1,1));System.out.println("""res4: List[Char] = """ + $show(res$
  
 decodedSecret;System.out.println("""res5: List[Char] = """ + $show(res$5));$skip(48); val res$6 = 
 
- encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolean = """ + $show(res$6))}
+ encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolean = """ + $show(res$6));$skip(59); 
+ 
+ 
+ val table = createCodeTable(frenchCode,decodedSecret);System.out.println("""table  : patmat.Huffman.CodeTable = """ + $show(table ))}
+     
 }

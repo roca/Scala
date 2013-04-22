@@ -43,4 +43,13 @@ decode(t1,List(0,1,1))                            //> res4: List[Char] = List(a,
 decodedSecret                                     //> res5: List[Char] = List(h, u, f, f, m, a, n, e, s, t, c, o, o, l)
 
  encode(frenchCode) (decodedSecret)  == secret    //> res6: Boolean = true
+ 
+ 
+ val table = createCodeTable(frenchCode,decodedSecret)
+                                                  //> table  : patmat.Huffman.CodeTable = List((l,List(0, 1, 0, 1)), (o,List(0, 1,
+                                                  //|  0, 0)), (c,List(1, 0, 0, 1, 0)), (t,List(1, 0, 1, 1)), (s,List(0, 0, 0)), (
+                                                  //| e,List(1, 1, 0)), (n,List(1, 0, 1, 0)), (a,List(1, 1, 1, 1)), (m,List(0, 1, 
+                                                  //| 1, 0, 0)), (f,List(0, 0, 1, 1, 0, 1)), (u,List(0, 1, 1, 1)), (h,List(0, 0, 1
+                                                  //| , 1, 1, 0, 1)))
+     
 }
