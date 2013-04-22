@@ -21,9 +21,15 @@ object scratch {;import org.scalaide.worksheet.runtime.library.WorksheetSupport.
  combine(c);System.out.println("""res0: List[patmat.Huffman.CodeTree] = """ + $show(res$0));$skip(80); val res$1 = 
  
     
-makeCodeTree(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3),Leaf('x',4));System.out.println("""res1: patmat.Huffman.CodeTree = """ + $show(res$1));$skip(41); val res$2 = 
+makeCodeTree(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3),Leaf('x',4));System.out.println("""res1: patmat.Huffman.CodeTree = """ + $show(res$1));$skip(39); val res$2 = 
  
+ until(singleton, combine)(leaflist);System.out.println("""res2: List[patmat.Huffman.CodeTree] = """ + $show(res$2));$skip(49); val res$3 = 
+ createCodeTree(List('a', 'b', 'a','c','c','c'));System.out.println("""res3: patmat.Huffman.CodeTree = """ + $show(res$3));$skip(63); 
+   
+ val t1 = Fork(Leaf('a',2), Leaf('b',3), List('a','b'), 5);System.out.println("""t1  : patmat.Huffman.Fork = """ + $show(t1 ));$skip(23); val res$4 = 
+decode(t1,List(0,1,1));System.out.println("""res4: List[Char] = """ + $show(res$4));$skip(16); val res$5 = 
  
- until(singleton, combine)(leaflist);System.out.println("""res2: List[patmat.Huffman.CodeTree] = """ + $show(res$2));$skip(51); val res$3 = 
-   createCodeTree(List('a', 'b', 'a','c','c','c'));System.out.println("""res3: patmat.Huffman.CodeTree = """ + $show(res$3))}
+decodedSecret;System.out.println("""res5: List[Char] = """ + $show(res$5));$skip(48); val res$6 = 
+
+ encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolean = """ + $show(res$6))}
 }

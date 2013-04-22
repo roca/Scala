@@ -167,8 +167,37 @@ object Huffman {
    * This function decodes the bit sequence `bits` using the code tree `tree` and returns
    * the resulting list of characters.
    */
-  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = ???
-
+  def getBranch(bit: Int, tree: CodeTree): CodeTree = tree match {
+    case Fork(left, right, chars, weight) => if (bit  == 0) left else right
+    case Leaf(char, weight) => tree
+  }
+  def getBits(char: Char, tree: CodeTree): List[Bit] = {
+    def f(branch: CodeTree,acc: List[Bit]):  List[Bit] = {
+      branch match {
+        case Leaf(char, weight) => acc
+        case Fork(left, right, char_list, weight) => if (chars(left).contains(char)) f(left,0 :: acc) 
+                                                 	 else f(right,1 :: acc)
+      } 
+    }
+    f(tree,List()).reverse
+  }
+  
+  
+  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = {
+    
+     def f(remainingBits: List[Bit],branch: CodeTree,acc:List[Char]): List[Char] = {
+       
+       if (remainingBits.size == 0) acc
+       else {
+    	     val new_branch = getBranch(remainingBits.head,branch)
+	         new_branch match {
+	         	case Fork(left, right, chars, weight) => f(remainingBits.tail,new_branch,acc)
+	         	case Leaf(char, weight) => f(remainingBits.tail,tree, char :: acc)
+	         }
+       }
+     }
+     f(bits,tree,List()).reverse
+  }
   /**
    * A Huffman coding tree for the French language.
    * Generated from the data given at
@@ -185,17 +214,22 @@ object Huffman {
   /**
    * Write a function that returns the decoded secret
    */
-  def decodedSecret: List[Char] = ???
-
-
-
+  def decodedSecret: List[Char] =  decode(frenchCode,secret)
+  
   // Part 4a: Encoding using Huffman tree
 
   /**
    * This function encodes `text` using the code tree `tree`
    * into a sequence of bits.
    */
-  def encode(tree: CodeTree)(text: List[Char]): List[Bit] = ???
+  def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+    def f(remaining: List[Char],acc: List[Bit]):  List[Bit] = {
+      if (remaining.isEmpty) acc
+      else f(remaining.tail, acc ::: getBits(remaining.head, tree) )
+    }
+    f(text,List())
+    
+  }
 
 
   // Part 4b: Encoding using code table
