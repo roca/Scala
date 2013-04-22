@@ -22,6 +22,7 @@ object scratch {
                                                   //| ),3), Leaf(x,4))
                            
                                  
+                                 
  
  combine(c)                                       //> res0: List[patmat.Huffman.CodeTree] = List(Fork(Fork(Leaf(e,1),Leaf(t,2),Lis
                                                   //| t(e, t),3),Leaf(x,4),List(e, t, x),7))
@@ -66,7 +67,6 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
  codeBits(convert(frenchCode))('h')               //> res8: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
  
  getBits('h', frenchCode)                         //> res9: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
- 
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
                                                   //> res10: Boolean = true

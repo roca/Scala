@@ -14,8 +14,9 @@ object scratch {;import org.scalaide.worksheet.runtime.library.WorksheetSupport.
 );System.out.println("""sampleTree  : patmat.Huffman.CodeTree = """ + $show(sampleTree ));$skip(70); 
       
  val leaflist = List(Leaf('e', 1), Leaf('t', 2), Leaf('x', 4));System.out.println("""leaflist  : List[patmat.Huffman.Leaf] = """ + $show(leaflist ));$skip(27); 
- val c = combine(leaflist);System.out.println("""c  : List[patmat.Huffman.CodeTree] = """ + $show(c ));$skip(76); val res$0 = 
+ val c = combine(leaflist);System.out.println("""c  : List[patmat.Huffman.CodeTree] = """ + $show(c ));$skip(110); val res$0 = 
                            
+                                 
                                  
  
  combine(c);System.out.println("""res0: List[patmat.Huffman.CodeTree] = """ + $show(res$0));$skip(80); val res$1 = 
@@ -40,8 +41,7 @@ convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ +
  
  codeBits(convert(frenchCode))('h');System.out.println("""res8: List[patmat.Huffman.Bit] = """ + $show(res$8));$skip(28); val res$9 = 
  
- getBits('h', frenchCode);System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(83); val res$10 = 
- 
+ getBits('h', frenchCode);System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(81); val res$10 = 
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res10: Boolean = """ + $show(res$10))}
 }

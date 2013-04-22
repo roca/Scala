@@ -47,16 +47,26 @@ class HuffmanSuite extends FunSuite {
   }
   
  
+  test("quickEncode == encode") {
+     assert(encode(frenchCode)(decodedSecret) == quickEncode(frenchCode)(decodedSecret))
+    
+  }
+  
   
   test("quickEncode is faster than encode") {
     val quickEncode_sw = time("quickEncode elapsed time") {
       quickEncode(frenchCode)(decodedSecret)
     }
+    println(quickEncode_sw)
     
     val encode_sw = time("encode elapsed time") {
       encode(frenchCode)(decodedSecret)
     }
+    println(encode_sw)
+    
     assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
   }
+  
+  
   
 }
