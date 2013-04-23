@@ -1,9 +1,11 @@
 package patmat
 
 import Huffman._
+import scala.io._
+import Stopwatch._
+import sys.process._
 
-
-object scratch {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(95); 
+object scratch {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(152); 
   println("Welcome to the Scala worksheet");$skip(52); 
   val list = times(List('a', 'b', 'a','c','c','c'));System.out.println("""list  : List[(Char, Int)] = """ + $show(list ));$skip(36); 
   val m = makeOrderedLeafList(list);System.out.println("""m  : List[patmat.Huffman.Leaf] = """ + $show(m ));$skip(97); 
@@ -32,31 +34,60 @@ decode(t1,List(0,1,1));System.out.println("""res4: List[Char] = """ + $show(res$
  
 decodedSecret;System.out.println("""res5: List[Char] = """ + $show(res$5));$skip(47); val res$6 = 
 
-encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolean = """ + $show(res$6));$skip(59); 
+encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolean = """ + $show(res$6));$skip(16); val res$7 = 
  
  
- val table = createCodeTable(frenchCode,decodedSecret);System.out.println("""table  : patmat.Huffman.CodeTable = """ + $show(table ));$skip(23); val res$7 = 
+ frenchCode;System.out.println("""res7: patmat.Huffman.CodeTree = """ + $show(res$7));$skip(57); 
+ 
+ val table = createCodeTable(frenchCode,decodedSecret);System.out.println("""table  : patmat.Huffman.CodeTable = """ + $show(table ));$skip(23); val res$8 = 
   
-convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ + $show(res$7));$skip(22); val res$8 = 
+convert(frenchCode);System.out.println("""res8: patmat.Huffman.CodeTable = """ + $show(res$8));$skip(22); val res$9 = 
 
-convert2(frenchCode);System.out.println("""res8: patmat.Huffman.CodeTable = """ + $show(res$8));$skip(42); val res$9 = 
+convert2(frenchCode);System.out.println("""res9: patmat.Huffman.CodeTable = """ + $show(res$9));$skip(42); val res$10 = 
 
 
 
 
  
- codeBits(convert(frenchCode))('h');System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(37); val res$10 = 
- codeBits(convert2(frenchCode))('h');System.out.println("""res10: List[patmat.Huffman.Bit] = """ + $show(res$10));$skip(28); val res$11 = 
+ codeBits(convert(frenchCode))('h');System.out.println("""res10: List[patmat.Huffman.Bit] = """ + $show(res$10));$skip(37); val res$11 = 
+ codeBits(convert2(frenchCode))('h');System.out.println("""res11: List[patmat.Huffman.Bit] = """ + $show(res$11));$skip(28); val res$12 = 
  
- getBits('h', frenchCode);System.out.println("""res11: List[patmat.Huffman.Bit] = """ + $show(res$11));$skip(42); val res$12 = 
+ getBits('h', frenchCode);System.out.println("""res12: List[patmat.Huffman.Bit] = """ + $show(res$12));$skip(42); val res$13 = 
  
- quickEncode(frenchCode)(decodedSecret);System.out.println("""res12: List[patmat.Huffman.Bit] = """ + $show(res$12));$skip(81); val res$13 = 
+ quickEncode(frenchCode)(decodedSecret);System.out.println("""res13: List[patmat.Huffman.Bit] = """ + $show(res$13));$skip(81); val res$14 = 
  
- quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res13: Boolean = """ + $show(res$13));$skip(84); val res$14 = 
+ quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res14: Boolean = """ + $show(res$14));$skip(84); val res$15 = 
 
- mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert2(frenchCode);System.out.println("""res14: Boolean = """ + $show(res$14));$skip(95); val res$15 = 
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert2(frenchCode);System.out.println("""res15: Boolean = """ + $show(res$15));$skip(95); val res$16 = 
                                                   
-convert2(frenchCode) == convert(frenchCode);System.out.println("""res15: Boolean = """ + $show(res$15))}
+convert2(frenchCode) == convert(frenchCode);System.out.println("""res16: Boolean = """ + $show(res$16));$skip(37); 
 
 
+val vimLocation: String = "pwd".!!;System.out.println("""vimLocation  : String = """ + $show(vimLocation ));$skip(68); 
+
+
+def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath;System.out.println("""getCurrentDirectory: => String""");$skip(30); val res$17 = 
+         
+getCurrentDirectory;System.out.println("""res17: String = """ + $show(res$17));$skip(89); 
+
+val s = Source.fromFile("~/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala");System.out.println("""s  : scala.io.BufferedSource = """ + $show(s ));$skip(28); 
+var cl: List[Char] = List();System.out.println("""cl  : List[Char] = """ + $show(cl ));$skip(75); 
+   s.getLines.foreach( (line) => {
+    cl =string2Chars(line) ::: cl
+   });$skip(38); 
+   
+val treeCode = createCodeTree(cl);System.out.println("""treeCode  : patmat.Huffman.CodeTree = """ + $show(treeCode ));$skip(117); 
+   
+ val quickEncode_sw = time("quickEncode elapsed time") {
+   quickEncode(treeCode)(List('s','t','a','r','t'))
+  };System.out.println("""quickEncode_sw  : patmat.Stopwatch = """ + $show(quickEncode_sw ));$skip(113); 
+  
+  
+  
+  val encode_sw = time("quickEncode elapsed time") {
+   encode(treeCode)(List('s','t','a','r','t'))
+  };System.out.println("""encode_sw  : patmat.Stopwatch = """ + $show(encode_sw ))}
+  
+   
+  
 }
