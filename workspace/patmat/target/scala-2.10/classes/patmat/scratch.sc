@@ -64,21 +64,38 @@ convert(frenchCode)                               //> res7: patmat.Huffman.CodeT
                                                   //| (f,List(0, 0, 1, 1, 0, 1)), (j,List(0, 0, 1, 1, 0, 0, 1)), (x,List(0, 0, 1, 
                                                   //| 1, 0, 0, 0)), (d,List(0, 0, 1, 0)), (s,List(0, 0, 0)))
 
-convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((s,List()), (d,List()), (x,List()), (j
-                                                  //| ,List()), (f,List()), (z,List()), (k,List()), (w,List()), (y,List()), (h,Lis
-                                                  //| t()), (q,List()), (o,List()), (l,List()), (m,List()), (p,List()), (u,List())
-                                                  //| , (r,List()), (c,List()), (v,List()), (g,List()), (b,List()), (n,List()), (t
-                                                  //| ,List()), (e,List()), (i,List()), (a,List()))
+convert2(frenchCode)                              //> res8: patmat.Huffman.CodeTable = List((a,List(1, 1, 1, 1)), (i,List(1, 1, 1,
+                                                  //|  0)), (e,List(1, 1, 0)), (t,List(1, 0, 1, 1)), (n,List(1, 0, 1, 0)), (b,List
+                                                  //| (1, 0, 0, 1, 1, 1, 1)), (g,List(1, 0, 0, 1, 1, 1, 0)), (v,List(1, 0, 0, 1, 1
+                                                  //| , 0)), (c,List(1, 0, 0, 1, 0)), (r,List(1, 0, 0, 0)), (u,List(0, 1, 1, 1)), 
+                                                  //| (p,List(0, 1, 1, 0, 1)), (m,List(0, 1, 1, 0, 0)), (l,List(0, 1, 0, 1)), (o,L
+                                                  //| ist(0, 1, 0, 0)), (q,List(0, 0, 1, 1, 1, 1)), (h,List(0, 0, 1, 1, 1, 0, 1)),
+                                                  //|  (y,List(0, 0, 1, 1, 1, 0, 0, 1)), (w,List(0, 0, 1, 1, 1, 0, 0, 0, 1, 1)), (
+                                                  //| k,List(0, 0, 1, 1, 1, 0, 0, 0, 1, 0)), (z,List(0, 0, 1, 1, 1, 0, 0, 0, 0)), 
+                                                  //| (f,List(0, 0, 1, 1, 0, 1)), (j,List(0, 0, 1, 1, 0, 0, 1)), (x,List(0, 0, 1, 
+                                                  //| 1, 0, 0, 0)), (d,List(0, 0, 1, 0)), (s,List(0, 0, 0)))
+
+
 
 
  
  codeBits(convert(frenchCode))('h')               //> res9: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ codeBits(convert2(frenchCode))('h')              //> res10: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
  
- getBits('h', frenchCode)                         //> res10: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ getBits('h', frenchCode)                         //> res11: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1)
+ 
+ quickEncode(frenchCode)(decodedSecret)           //> res12: List[patmat.Huffman.Bit] = List(0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 
+                                                  //| 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 
+                                                  //| 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 
+                                                  //| 1)
  
  quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret)
-                                                  //> res11: Boolean = true
- 
- mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode)
-                                                  //> res12: Boolean = true
+                                                  //> res13: Boolean = true
+
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert2(frenchCode)
+                                                  //> res14: Boolean = true
+                                                  
+convert2(frenchCode) == convert(frenchCode)       //> res15: Boolean = true
+
+
 }

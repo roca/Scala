@@ -39,15 +39,24 @@ encode(frenchCode) (decodedSecret)  == secret;System.out.println("""res6: Boolea
   
 convert(frenchCode);System.out.println("""res7: patmat.Huffman.CodeTable = """ + $show(res$7));$skip(22); val res$8 = 
 
-convert2(frenchCode);System.out.println("""res8: patmat.Huffman.CodeTable = """ + $show(res$8));$skip(40); val res$9 = 
+convert2(frenchCode);System.out.println("""res8: patmat.Huffman.CodeTable = """ + $show(res$8));$skip(42); val res$9 = 
+
+
 
 
  
- codeBits(convert(frenchCode))('h');System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(28); val res$10 = 
+ codeBits(convert(frenchCode))('h');System.out.println("""res9: List[patmat.Huffman.Bit] = """ + $show(res$9));$skip(37); val res$10 = 
+ codeBits(convert2(frenchCode))('h');System.out.println("""res10: List[patmat.Huffman.Bit] = """ + $show(res$10));$skip(28); val res$11 = 
  
- getBits('h', frenchCode);System.out.println("""res10: List[patmat.Huffman.Bit] = """ + $show(res$10));$skip(81); val res$11 = 
+ getBits('h', frenchCode);System.out.println("""res11: List[patmat.Huffman.Bit] = """ + $show(res$11));$skip(42); val res$12 = 
  
- quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res11: Boolean = """ + $show(res$11));$skip(84); val res$12 = 
+ quickEncode(frenchCode)(decodedSecret);System.out.println("""res12: List[patmat.Huffman.Bit] = """ + $show(res$12));$skip(81); val res$13 = 
  
- mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert(frenchCode);System.out.println("""res12: Boolean = """ + $show(res$12))}
+ quickEncode(frenchCode)(decodedSecret)  == encode(frenchCode) (decodedSecret);System.out.println("""res13: Boolean = """ + $show(res$13));$skip(84); val res$14 = 
+
+ mergeCodeTables(convert(frenchCode), convert(frenchCode)) == convert2(frenchCode);System.out.println("""res14: Boolean = """ + $show(res$14));$skip(95); val res$15 = 
+                                                  
+convert2(frenchCode) == convert(frenchCode);System.out.println("""res15: Boolean = """ + $show(res$15))}
+
+
 }
