@@ -3,7 +3,7 @@ package patmat
 import Huffman._
 import scala.io._
 import Stopwatch._
-
+import sys.process._
 
 object scratch {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
@@ -114,13 +114,24 @@ convert2(frenchCode)                              //> res9: patmat.Huffman.CodeT
                                                   
 convert2(frenchCode) == convert(frenchCode)       //> res16: Boolean = true
 
+/*
+val vimLocation: String = "pwd".!!                //> vimLocation  : String = "/Applications/eclipse/Eclipse.app/Contents/MacOS
+                                                  //| "
+
+
+def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath
+                                                  //> getCurrentDirectory: => String
+         
+getCurrentDirectory                               //> res17: String = /Applications/eclipse/Eclipse.app/Contents/MacOS/.
+
 val s = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
                                                   //> s  : scala.io.BufferedSource = non-empty iterator
-var cl: List[Char] = List()                       //> cl  : List[Char] = List()
-   s.getLines.foreach( (line) => {
-    cl =string2Chars(line) ::: cl
-   })
-   
+ var cl: List[Char] = List()                      //> cl  : List[Char] = List()
+
+ s.getLines.foreach( (line) => {
+    cl = string2Chars(line) ::: cl
+ })
+
 val treeCode = createCodeTree(cl)                 //> treeCode  : patmat.Huffman.CodeTree = Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fo
                                                   //| rk(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fo
                                                   //| rk(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fork(Fo
@@ -137,16 +148,31 @@ val treeCode = createCodeTree(cl)                 //> treeCode  : patmat.Huffman
                                                   //| Output exceeds cutoff limit.
    
  val quickEncode_sw = time("quickEncode elapsed time") {
-   quickEncode(treeCode)(List('s','t','a','r','t'))
-  }                                               //> quickEncode_sw  : patmat.Stopwatch = elapsed time: 49 milliseconds
-  decode(treeCode,quickEncode(treeCode)(List('s','t','a','r','t')))
-                                                  //> res17: List[Char] = List(s, t, a, r, t)
+   quickEncode(treeCode)(cl)
+  }                                               //> quickEncode_sw  : patmat.Stopwatch = elapsed time: 52911 milliseconds
+  
+  
+  
   
   val encode_sw = time("quickEncode elapsed time") {
-   encode(treeCode)(List('s','t','a','r','t'))
-  }                                               //> encode_sw  : patmat.Stopwatch = elapsed time: 1 milliseconds
+   encode(treeCode)(cl)
+  }                                               //> encode_sw  : patmat.Stopwatch = elapsed time: 65443 milliseconds
   
-    decode(treeCode,encode(treeCode)(List('s','t','a','r','t')))
-                                                  //> res18: List[Char] = List(s, t, a, r, t)
-  
+   
+   
+  quickEncode(treeCode)(cl)                       //> res18: List[patmat.Huffman.Bit] = List(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 
+                                                  //| 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+                                                  //| 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                  //| 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 
+                                                  //| 1, 1, 0, 0, 0, 0, 0, 0,
+                                                  //| Output exceeds cutoff limit.
+                                                  */
 }
