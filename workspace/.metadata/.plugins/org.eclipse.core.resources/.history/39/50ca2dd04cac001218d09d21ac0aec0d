@@ -60,7 +60,7 @@ class HuffmanSuite extends FunSuite {
 
   
   
-  test("encode is faster than quickEncode for small data sets") {
+  test("quickEncode is faster than encode") {
     val quickEncode_sw = time("quickEncode elapsed time") {
       quickEncode(frenchCode)(decodedSecret)
     }
@@ -71,7 +71,7 @@ class HuffmanSuite extends FunSuite {
     }
     println(encode_sw)
     
-    assert(encode_sw.elapsedTime <= quickEncode_sw.elapsedTime)
+    assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
   }
   
   

@@ -2228,3 +2228,36 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 2013-04-22 11:43:37,062  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
 2013-04-22 11:43:37,291  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
 2013-04-22 13:26:45,295  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-04-23 15:18:23,804 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at scala.tools.nsc.interactive.Response.get(Response.scala:74)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:137)
+	at scala.tools.eclipse.ScalaPresentationCompiler.askOption(ScalaPresentationCompiler.scala:128)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:104)
+	at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:96)
+	at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+	at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:96)
+	at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:594)
+	at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:603)
+	at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
+	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2013-04-23 15:53:12,478  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - ProgramExecutor actor </Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/scratch.sc> self-healing...
+java.lang.NullPointerException
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.org$scalaide$worksheet$editor$ScriptEditor$DefaultEditorProxy$$doc(ScriptEditor.scala:72)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.getContents(ScriptEditor.scala:74)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.<init>(IncrementalDocumentMixer.scala:30)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$.apply(IncrementalDocumentMixer.scala:16)
+	at org.scalaide.worksheet.runtime.ProgramExecutor$$anonfun$act$1$$anonfun$apply$1.applyOrElse(ProgramExecutor.scala:127)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)

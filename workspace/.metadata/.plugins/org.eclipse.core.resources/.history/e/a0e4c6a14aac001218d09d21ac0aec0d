@@ -3,7 +3,7 @@ package patmat
 import Huffman._
 import scala.io._
 import Stopwatch._
-
+import sys.process._
 
 object scratch {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
@@ -114,9 +114,34 @@ convert2(frenchCode)                              //> res9: patmat.Huffman.CodeT
                                                   
 convert2(frenchCode) == convert(frenchCode)       //> res16: Boolean = true
 
+
+val vimLocation: String = "pwd".!!                //> vimLocation  : String = "/Applications/eclipse/Eclipse.app/Contents/MacOS
+                                                  //| "
+
+
+def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath
+                                                  //> getCurrentDirectory: => String
+         
+getCurrentDirectory                               //> res17: String = /Applications/eclipse/Eclipse.app/Contents/MacOS/.
+
 val s = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
-                                                  //> s  : scala.io.BufferedSource = non-empty iterator
-var cl: List[Char] = List()                       //> cl  : List[Char] = List()
+                                                  //> java.io.FileNotFoundException: ~/Scala/workspace/patmat/src/main/scala/patm
+                                                  //| at/Huffman.scala (No such file or directory)
+                                                  //| 	at java.io.FileInputStream.open(Native Method)
+                                                  //| 	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+                                                  //| 	at scala.io.Source$.fromFile(Source.scala:90)
+                                                  //| 	at scala.io.Source$.fromFile(Source.scala:75)
+                                                  //| 	at scala.io.Source$.fromFile(Source.scala:53)
+                                                  //| 	at patmat.scratch$$anonfun$main$1.apply$mcV$sp(patmat.scratch.scala:73)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at patmat.scratch$.main(patmat.scratch.scala:8)
+                                                  //| 	at patmat.scratch.main(patmat.scratch.scala)
+var cl: List[Char] = List()
    s.getLines.foreach( (line) => {
     cl =string2Chars(line) ::: cl
    })
@@ -125,10 +150,14 @@ val treeCode = createCodeTree(cl)
    
  val quickEncode_sw = time("quickEncode elapsed time") {
    quickEncode(treeCode)(List('s','t','a','r','t'))
-  }                                               //> quickEncode_sw  : patmat.Stopwatch = elapsed time: 2538 milliseconds
-  decode(treeCode,quickEncode(treeCode)(List('s','t','a','r','t')))
+  }
+  
+  
   
   val encode_sw = time("quickEncode elapsed time") {
    encode(treeCode)(List('s','t','a','r','t'))
-  }                                               //> encode_sw  : patmat.Stopwatch = elapsed time: 2600 milliseconds
+  }
+  
+   
+  
 }

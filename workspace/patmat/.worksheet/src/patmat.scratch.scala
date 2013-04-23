@@ -68,26 +68,29 @@ val vimLocation: String = "pwd".!!;System.out.println("""vimLocation  : String =
 
 def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath;System.out.println("""getCurrentDirectory: => String""");$skip(30); val res$17 = 
          
-getCurrentDirectory;System.out.println("""res17: String = """ + $show(res$17));$skip(89); 
+getCurrentDirectory;System.out.println("""res17: String = """ + $show(res$17));$skip(109); 
 
-val s = Source.fromFile("~/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala");System.out.println("""s  : scala.io.BufferedSource = """ + $show(s ));$skip(28); 
-var cl: List[Char] = List();System.out.println("""cl  : List[Char] = """ + $show(cl ));$skip(75); 
-   s.getLines.foreach( (line) => {
-    cl =string2Chars(line) ::: cl
-   });$skip(38); 
-   
-val treeCode = createCodeTree(cl);System.out.println("""treeCode  : patmat.Huffman.CodeTree = """ + $show(treeCode ));$skip(117); 
+val s = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala");System.out.println("""s  : scala.io.BufferedSource = """ + $show(s ));$skip(29); 
+ var cl: List[Char] = List();System.out.println("""cl  : List[Char] = """ + $show(cl ));$skip(73); 
+
+ s.getLines.foreach( (line) => {
+    cl = string2Chars(line) ::: cl
+ });$skip(35); 
+
+val treeCode = createCodeTree(cl);System.out.println("""treeCode  : patmat.Huffman.CodeTree = """ + $show(treeCode ));$skip(94); 
    
  val quickEncode_sw = time("quickEncode elapsed time") {
-   quickEncode(treeCode)(List('s','t','a','r','t'))
-  };System.out.println("""quickEncode_sw  : patmat.Stopwatch = """ + $show(quickEncode_sw ));$skip(113); 
+   quickEncode(treeCode)(cl)
+  };System.out.println("""quickEncode_sw  : patmat.Stopwatch = """ + $show(quickEncode_sw ));$skip(93); 
+  
   
   
   
   val encode_sw = time("quickEncode elapsed time") {
-   encode(treeCode)(List('s','t','a','r','t'))
-  };System.out.println("""encode_sw  : patmat.Stopwatch = """ + $show(encode_sw ))}
+   encode(treeCode)(cl)
+  };System.out.println("""encode_sw  : patmat.Stopwatch = """ + $show(encode_sw ));$skip(39); val res$18 = 
   
    
-  
+   
+  quickEncode(treeCode)(cl);System.out.println("""res18: List[patmat.Huffman.Bit] = """ + $show(res$18))}
 }

@@ -3,7 +3,7 @@ package patmat
 import Huffman._
 import scala.io._
 import Stopwatch._
-
+import sys.process._
 
 object scratch {
   println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
@@ -114,19 +114,40 @@ convert2(frenchCode)                              //> res9: patmat.Huffman.CodeT
                                                   
 convert2(frenchCode) == convert(frenchCode)       //> res16: Boolean = true
 
+
+val vimLocation: String = "pwd".!!                //> vimLocation  : String = "/Applications/eclipse/Eclipse.app/Contents/MacOS
+                                                  //| "
+
+
+def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath
+                                                  //> getCurrentDirectory: => String
+         
+getCurrentDirectory                               //> res17: String = /Applications/eclipse/Eclipse.app/Contents/MacOS/.
+
 val s = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
                                                   //> s  : scala.io.BufferedSource = non-empty iterator
-var cl: List[Char] = List()                       //> cl  : List[Char] = List()
+def fileChars(cl: List[Char]): List[Char] ={
    s.getLines.foreach( (line) => {
-    cl =string2Chars(line) ::: cl
+    fileChars(string2Chars(line) ::: cl)
    })
+   cl
+}                                                 //> fileChars: (cl: List[Char])List[Char]
+
+val cl = fileChars(List())                        //> cl  : List[Char] = List()\
+val treeCode = createCodeTree(cl)
    
  val quickEncode_sw = time("quickEncode elapsed time") {
-   quickEncode(createCodeTree(cl))(List('s','t','a','r','t'))
-  }                                               //> quickEncode_sw  : patmat.Stopwatch = elapsed time: 2538 milliseconds
+   quickEncode(treeCode)(cl)
+  }
+  
+  
   
   
   val encode_sw = time("quickEncode elapsed time") {
-   encode(createCodeTree(cl))(List('s','t','a','r','t'))
-  }                                               //> encode_sw  : patmat.Stopwatch = elapsed time: 2600 milliseconds
+   encode(treeCode)(cl)
+  }
+  
+   
+   
+  quickEncode(treeCode)(cl)
 }
