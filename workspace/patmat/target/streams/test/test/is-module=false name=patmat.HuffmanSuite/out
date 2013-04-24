@@ -7,3 +7,7 @@
 [0m[[0minfo[0m] [0m[32m- decode and encode a very short text should be identity[0m[0m
 [0m[[0minfo[0m] [0m[32m- quickEncode == encode[0m[0m
 [0m[[0minfo[0m] [0m[32m- mergeCodeTables should not have duplicates[0m[0m
+[0m[[0minfo[0m] [0m[31m- encode is slower than quickEncode for large data sets *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.scalatest.exceptions.TestFailedException was thrown. (HuffmanSuite.scala:83)[0m[0m
+[0m[[0minfo[0m] [0m[31m- encode is faster or equal to quickEncode for small data sets *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.scalatest.exceptions.TestFailedException was thrown. (HuffmanSuite.scala:100)[0m[0m
