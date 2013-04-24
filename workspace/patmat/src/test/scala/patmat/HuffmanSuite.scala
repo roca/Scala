@@ -7,6 +7,7 @@ import org.scalatest.junit.JUnitRunner
 
 import patmat.Huffman._
 import Stopwatch._
+import scala.io._
 
 @RunWith(classOf[JUnitRunner])
 class HuffmanSuite extends FunSuite {
@@ -57,11 +58,35 @@ class HuffmanSuite extends FunSuite {
      assert(mergeCodeTables(convert2(frenchCode), convert2(frenchCode)).length == (convert2(frenchCode) ::: convert2(frenchCode)).length/2)
     
   }
+     
+ test("encode is slower than quickEncode for large data sets") {
+    
+	 val file_source = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
+	 val lines = file_source.getLines.toList
+	 def charList(ls:List[String],acc:List[Char]): List[Char]={
+	   if (ls.isEmpty) acc
+	   else charList(ls.tail,string2Chars(ls.head) ::: acc)
+	 }
+	 val cl = charList(lines,List())
+     val treeCode = createCodeTree(cl)
+ 
+			 val quickEncode_sw = time("quickEncode elapsed time") {
+		 		quickEncode(treeCode)(cl)
+	 		}
+	 			println(quickEncode_sw)
+    
+	 		val encode_sw = time("encode elapsed time") {
+	 			encode(treeCode)(cl)
+	 			}
+	 			println(encode_sw)
+    
+	 			assert(encode_sw.elapsedTime > quickEncode_sw.elapsedTime)
+  }
 
+
+   
   
-   /*
-  
-  test("encode is faster than quickEncode for small data sets") {
+  test("encode is faster or equal to quickEncode for small data sets") {
     val quickEncode_sw = time("quickEncode elapsed time") {
       quickEncode(frenchCode)(decodedSecret)
     }
@@ -74,7 +99,7 @@ class HuffmanSuite extends FunSuite {
     
     assert(encode_sw.elapsedTime <= quickEncode_sw.elapsedTime)
   }
-  */
+  
   
   
 }

@@ -62,36 +62,5 @@ convert2(frenchCode);System.out.println("""res9: patmat.Huffman.CodeTable = """ 
                                                   
 convert2(frenchCode) == convert(frenchCode);System.out.println("""res16: Boolean = """ + $show(res$16))}
 
-/*
-val vimLocation: String = "pwd".!!
 
-
-def getCurrentDirectory = new java.io.File( "." ).getAbsolutePath
-         
-getCurrentDirectory
-
-val s = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
- var cl: List[Char] = List()
-
- s.getLines.foreach( (line) => {
-    cl = string2Chars(line) ::: cl
- })
-
-val treeCode = createCodeTree(cl)
-   
- val quickEncode_sw = time("quickEncode elapsed time") {
-   quickEncode(treeCode)(cl)
-  }
-  
-  
-  
-  
-  val encode_sw = time("quickEncode elapsed time") {
-   encode(treeCode)(cl)
-  }
-  
-   
-   
-  quickEncode(treeCode)(cl)
-                                                  */
 }
