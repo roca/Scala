@@ -312,4 +312,19 @@ object Huffman {
     f(text,List())
     
   }
+  
+ /* 
+ import scala.reflect.macros.Context
+import scala.language.experimental.macros
+ 
+   def currentPosition:String = macro _currentPosition;
+   
+def _currentPosition(c:Context):c.Expr[String]={ 
+  import c.universe._;
+  val pos = c.enclosingPosition;
+  c.Expr(Literal(Constant(
+    s"${pos.source.path}" )))
+}
+*/
+
 }

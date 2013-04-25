@@ -58,10 +58,10 @@ class HuffmanSuite extends FunSuite {
      assert(mergeCodeTables(convert2(frenchCode), convert2(frenchCode)).length == (convert2(frenchCode) ::: convert2(frenchCode)).length/2)
     
   }
-     
+   
  test("encode is slower than quickEncode for large data sets") {
-    
-	 val file_source = Source.fromFile("/Users/romel.campbell/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
+   
+	 val file_source = Source.fromFile( "/Users/roca/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala")
 	 val lines = file_source.getLines.toList
 	 def charList(ls:List[String],acc:List[Char]): List[Char]={
 	   if (ls.isEmpty) acc
