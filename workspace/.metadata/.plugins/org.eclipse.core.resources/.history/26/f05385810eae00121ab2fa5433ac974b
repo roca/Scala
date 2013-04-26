@@ -30,6 +30,7 @@ def _currentPosition(c:Context):c.Expr[String]={ import c.universe._;
   c.Expr(Literal(Constant(
     s"${pos.source.path}" )))
 }
+val huffmanFilePath = currentPosition
 
   // Part 1: Basics
 

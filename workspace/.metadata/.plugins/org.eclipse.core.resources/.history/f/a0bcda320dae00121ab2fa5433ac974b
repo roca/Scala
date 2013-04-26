@@ -1,8 +1,6 @@
 package patmat
 
 import common._
-import language.experimental.macros
-import reflect.macros.Context
 
 /**
  * Assignment 4: Huffman coding
@@ -24,12 +22,7 @@ object Huffman {
   case class Fork(left: CodeTree, right: CodeTree, chars: List[Char], weight: Int) extends CodeTree
   case class Leaf(char: Char, weight: Int) extends CodeTree
 
-def currentPosition:String = macro _currentPosition;
-def _currentPosition(c:Context):c.Expr[String]={ import c.universe._;
-  val pos = c.enclosingPosition;
-  c.Expr(Literal(Constant(
-    s"${pos.source.path}" )))
-}
+
 
   // Part 1: Basics
 
