@@ -41,5 +41,18 @@ object listfun {;import org.scalaide.worksheet.runtime.library.WorksheetSupport.
  pack(xs) map (ys => (ys.head,ys.length));System.out.println("""encode: [T](xs: List[T])List[(T, Int)]""");$skip(18); val res$9 = 
  
  
- encode(data);System.out.println("""res9: List[(String, Int)] = """ + $show(res$9))}
+ encode(data);System.out.println("""res9: List[(String, Int)] = """ + $show(res$9));$skip(85); 
+ 
+ def concat[T](xs: List[T], ys: List[T]): List[T] =
+    (xs foldRight ys) (_ :: _);System.out.println("""concat: [T](xs: List[T], ys: List[T])List[T]""");$skip(112); 
+    
+  
+def mapFun[T, U](xs: List[T], f: T => U): List[U] =
+    (xs foldRight List[U]())( (A, B) => f(A) :: B );System.out.println("""mapFun: [T, U](xs: List[T], f: T => U)List[U]""");$skip(81); 
+
+  def lengthFun[T](xs: List[T]): Int =
+    (xs foldRight 0)(  (A, B) => B + 1 );System.out.println("""lengthFun: [T](xs: List[T])Int""");$skip(22); val res$10 = 
+    
+ lengthFun(data);System.out.println("""res10: Int = """ + $show(res$10));$skip(30); val res$11 = 
+ mapFun(nums, ((Int) => Int));System.out.println("""res11: List[Nothing] = """ + $show(res$11))}
 }

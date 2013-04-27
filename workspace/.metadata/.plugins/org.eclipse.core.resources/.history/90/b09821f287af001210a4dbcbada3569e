@@ -57,5 +57,4 @@ def mapFun[T, U](xs: List[T], f: T => U): List[U] =
     (xs foldRight 0)(  (A, B) => B + 1 )          //> lengthFun: [T](xs: List[T])Int
     
  lengthFun(data)                                  //> res10: Int = 7
- mapFun(nums, ((Int) => Int))
 }

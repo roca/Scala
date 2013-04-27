@@ -47,15 +47,4 @@ object listfun {
  
  def concat[T](xs: List[T], ys: List[T]): List[T] =
     (xs foldRight ys) (_ :: _)                    //> concat: [T](xs: List[T], ys: List[T])List[T]
-    
-  
-def mapFun[T, U](xs: List[T], f: T => U): List[U] =
-    (xs foldRight List[U]())( (A, B) => f(A) :: B )
-                                                  //> mapFun: [T, U](xs: List[T], f: T => U)List[U]
-
-  def lengthFun[T](xs: List[T]): Int =
-    (xs foldRight 0)(  (A, B) => B + 1 )          //> lengthFun: [T](xs: List[T])Int
-    
- lengthFun(data)                                  //> res10: Int = 7
- mapFun(nums, ((Int) => Int))
 }

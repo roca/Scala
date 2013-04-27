@@ -12233,3 +12233,6 @@ Binding(COMMAND+SHIFT+U,
 
 !ENTRY org.eclipse.core.net 1 0 2013-04-27 04:47:37.584
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-04-27 18:16:15.211
+!MESSAGE Invalid preference page path: XML Syntax
