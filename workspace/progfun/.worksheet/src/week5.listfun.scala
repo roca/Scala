@@ -44,15 +44,18 @@ object listfun {;import org.scalaide.worksheet.runtime.library.WorksheetSupport.
  encode(data);System.out.println("""res9: List[(String, Int)] = """ + $show(res$9));$skip(85); 
  
  def concat[T](xs: List[T], ys: List[T]): List[T] =
-    (xs foldRight ys) (_ :: _);System.out.println("""concat: [T](xs: List[T], ys: List[T])List[T]""");$skip(112); 
+    (xs foldRight ys) (_ :: _);System.out.println("""concat: [T](xs: List[T], ys: List[T])List[T]""");$skip(111); 
     
   
 def mapFun[T, U](xs: List[T], f: T => U): List[U] =
-    (xs foldRight List[U]())( (A, B) => f(A) :: B );System.out.println("""mapFun: [T, U](xs: List[T], f: T => U)List[U]""");$skip(81); 
+    (xs foldRight List[U]())( (A, B) => f(A) :: B);System.out.println("""mapFun: [T, U](xs: List[T], f: T => U)List[U]""");$skip(81); 
 
   def lengthFun[T](xs: List[T]): Int =
-    (xs foldRight 0)(  (A, B) => B + 1 );System.out.println("""lengthFun: [T](xs: List[T])Int""");$skip(22); val res$10 = 
+    (xs foldRight 0)(  (A, B) => B + 1 );System.out.println("""lengthFun: [T](xs: List[T])Int""");$skip(27); val res$10 = 
     
- lengthFun(data);System.out.println("""res10: Int = """ + $show(res$10));$skip(30); val res$11 = 
- mapFun(nums, ((Int) => Int));System.out.println("""res11: List[Nothing] = """ + $show(res$11))}
+    
+ lengthFun(data);System.out.println("""res10: Int = """ + $show(res$10));$skip(36); val res$11 = 
+  mapFun(nums, ((x:Int) => x * 2) );System.out.println("""res11: List[Int] = """ + $show(res$11));$skip(23); val res$12 = 
+  
+  concat(data,data);System.out.println("""res12: List[String] = """ + $show(res$12))}
 }
