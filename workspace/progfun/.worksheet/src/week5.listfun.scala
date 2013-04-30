@@ -58,4 +58,6 @@ def mapFun[T, U](xs: List[T], f: T => U): List[U] =
   mapFun(nums, ((x:Int) => x * 2) );System.out.println("""res11: List[Int] = """ + $show(res$11));$skip(23); val res$12 = 
   
   concat(data,data);System.out.println("""res12: List[String] = """ + $show(res$12))}
+  
+
 }

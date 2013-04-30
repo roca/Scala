@@ -60,4 +60,6 @@ def mapFun[T, U](xs: List[T], f: T => U): List[U] =
   mapFun(nums, ((x:Int) => x * 2) )               //> res11: List[Int] = List(4, -8, 10, 14, 2)
   
   concat(data,data)                               //> res12: List[String] = List(a, a, a, b, c, c, a, a, a, a, b, c, c, a)
+  
+
 }
