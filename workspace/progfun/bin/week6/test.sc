@@ -7,24 +7,43 @@ object test {
   xs.sum                                          //> res1: Int = 50
   xs.max                                          //> res2: Int = 44
   
-  val s = "Hello World"                           //> s  : String = Hello World
-  s exists(c => c.isUpper)                        //> res3: Boolean = true
-  s forall(c => c.isUpper)                        //> res4: Boolean = false
+  val s = "Hello World.,"                         //> s  : String = Hello World.,
+  s.replaceAll("[^\\w]","")                       //> res3: String = HelloWorld
+  s exists(c => c.isUpper)                        //> res4: Boolean = true
+  s forall(c => c.isUpper)                        //> res5: Boolean = false
   
   val pairs = List(1,2,3) zip s                   //> pairs  : List[(Int, Char)] = List((1,H), (2,e), (3,l))
-  pairs.unzip                                     //> res5: (List[Int], List[Char]) = (List(1, 2, 3),List(H, e, l))
+  pairs.unzip                                     //> res6: (List[Int], List[Char]) = (List(1, 2, 3),List(H, e, l))
   
-  s flatMap (c => List('.',c))                    //> res6: String = .H.e.l.l.o. .W.o.r.l.d
+  s flatMap (c => List('.',c))                    //> res7: String = .H.e.l.l.o. .W.o.r.l.d...,
   
-  s filter(c => c.isUpper)                        //> res7: String = HW
-  val ls = s groupBy(c => c) toList               //> ls  : List[(Char, String)] = List((e,e), ( ," "), (l,lll), (H,H), (W,W), (r,
-                                                  //| r), (o,oo), (d,d))
+  s filter(c => c.isUpper)                        //> res8: String = HW
   
-  ls map {case (x,y) => (x,y.length)}             //> res8: List[(Char, Int)] = List((e,1), ( ,1), (l,3), (H,1), (W,1), (r,1), (o,
-                                                  //| 2), (d,1))
+  val w = "badc"                                  //> w  : String = badc
+  val x = w.sortBy( x => x)                       //> x  : String = abcd
+  val ls = w groupBy(c => c) toList               //> ls  : List[(Char, String)] = List((b,b), (d,d), (a,a), (c,c))
+  
+  ls map {case (x,y) => (x,y.length)}             //> res9: List[(Char, Int)] = List((b,1), (d,1), (a,1), (c,1))
      
  def isPrime(n:Int): Boolean = (2 until n) forall ( d => (n % d) != 0)
                                                   //> isPrime: (n: Int)Boolean
-   isPrime(5)                                     //> res9: Boolean = true
-   isPrime(6)                                     //> res10: Boolean = false
+   isPrime(5)                                     //> res10: Boolean = true
+   isPrime(6)                                     //> res11: Boolean = false
+   
+   type Word = String
+   type Occurrences = List[(Char, Int)]
+   
+   def wordOccurrences(w: Word): Occurrences = {
+    val rw = w.toLowerCase.replaceAll("[^\\w]","")
+    val ls = rw.groupBy(c => c).toList
+    val unsorted_ls = ls.map{case (x,y) => (x,y.length)}
+    unsorted_ls.sortBy{case (x,y) => x}
+  }                                               //> wordOccurrences: (w: week6.test.Word)week6.test.Occurrences
+  
+  wordOccurrences(w)                              //> res12: week6.test.Occurrences = List((a,1), (b,1), (c,1), (d,1))
+  
+  wordOccurrences("abcd") == List(('a', 1), ('b', 1), ('c', 1), ('d', 1))
+                                                  //> res13: Boolean = true
+   wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1))
+                                                  //> res14: Boolean = true
 }

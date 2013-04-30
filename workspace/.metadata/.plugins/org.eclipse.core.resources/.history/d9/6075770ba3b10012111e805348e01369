@@ -1,5 +1,0 @@
-package week6
-
-object test {
-  val xs = Array(1,2,3,44)                        //> xs  : Array[Int] = Array(1, 2, 3, 44)
-}
