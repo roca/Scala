@@ -46,4 +46,9 @@ object test {
                                                   //> res13: Boolean = true
    wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1))
                                                   //> res14: Boolean = true
+  val zs = List("AA","BB","CC")                   //> zs  : List[String] = List(AA, BB, CC)
+  zs.foldRight("")((x,y) => x + y)                //> res15: String = AABBCC
+  
+  "A" + "B"                                       //> res16: String("AB") = AB
+  
 }

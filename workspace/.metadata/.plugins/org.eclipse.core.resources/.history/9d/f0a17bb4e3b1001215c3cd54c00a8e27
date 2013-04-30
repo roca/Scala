@@ -1,0 +1,49 @@
+package week6
+
+object test {
+  val xs = Array(1,2,3,44)
+  xs map ( x => x * 2)
+  
+  xs.sum
+  xs.max
+  
+  val s = "Hello World.,"
+  s.replaceAll("[^\\w]","")
+  s exists(c => c.isUpper)
+  s forall(c => c.isUpper)
+  
+  val pairs = List(1,2,3) zip s
+  pairs.unzip
+  
+  s flatMap (c => List('.',c))
+  
+  s filter(c => c.isUpper)
+  
+  val w = "badc"
+  val x = w.sortBy( x => x)
+  val ls = w groupBy(c => c) toList
+  
+  ls map {case (x,y) => (x,y.length)}
+     
+ def isPrime(n:Int): Boolean = (2 until n) forall ( d => (n % d) != 0)
+   isPrime(5)
+   isPrime(6)
+   
+   type Word = String
+   type Occurrences = List[(Char, Int)]
+   
+   def wordOccurrences(w: Word): Occurrences = {
+    val rw = w.toLowerCase.replaceAll("[^\\w]","")
+    val ls = rw.groupBy(c => c).toList
+    val unsorted_ls = ls.map{case (x,y) => (x,y.length)}
+    unsorted_ls.sortBy{case (x,y) => x}
+  }
+  
+  wordOccurrences(w)
+  
+  wordOccurrences("abcd") == List(('a', 1), ('b', 1), ('c', 1), ('d', 1))
+   wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1))
+  val zs = List('a','b','c')
+  zs.reduce((x,y) => x :: y)
+  
+}

@@ -42,7 +42,11 @@ object Anagrams {
   }
 
   /** Converts a sentence into its character occurrence list. */
-  def sentenceOccurrences(s: Sentence): Occurrences = ???
+  def sentenceOccurrences(s: Sentence): Occurrences = {
+    val big_word = s.foldRight("")((x,y) => x + y) 
+    wordOccurrences(big_word)
+  }
+  
 
   /** The `dictionaryByOccurrences` is a `Map` from different occurrences to a sequence of all
    *  the words that have that occurrence count.
@@ -56,7 +60,7 @@ object Anagrams {
    *
    *  This means that the `dictionaryByOccurrences` map will contain an entry:
    *
-   *    List(('a', 1), ('e', 1), ('t', 1)) -> Seq("ate", "eat", "tea")
+   *    List(('a', 1), ('e', 1), ('t', 1)) -> List("ate", "eat", "tea")
    *
    */
   lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] = ???

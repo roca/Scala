@@ -42,5 +42,10 @@ object test {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
   wordOccurrences(w);System.out.println("""res12: week6.test.Occurrences = """ + $show(res$12));$skip(77); val res$13 = 
   
   wordOccurrences("abcd") == List(('a', 1), ('b', 1), ('c', 1), ('d', 1));System.out.println("""res13: Boolean = """ + $show(res$13));$skip(87); val res$14 = 
-   wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1));System.out.println("""res14: Boolean = """ + $show(res$14))}
+   wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1));System.out.println("""res14: Boolean = """ + $show(res$14));$skip(32); 
+  val zs = List("AA","BB","CC");System.out.println("""zs  : List[String] = """ + $show(zs ));$skip(35); val res$15 = 
+  zs.foldRight("")((x,y) => x + y);System.out.println("""res15: String = """ + $show(res$15));$skip(15); val res$16 = 
+  
+  "A" + "B";System.out.println("""res16: String("AB") = """ + $show(res$16))}
+  
 }
