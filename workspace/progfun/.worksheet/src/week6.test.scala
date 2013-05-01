@@ -1,6 +1,8 @@
 package week6
 
-object test {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(55); 
+
+
+object test {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(57); 
   val xs = Array(1,2,3,44);System.out.println("""xs  : Array[Int] = """ + $show(xs ));$skip(23); val res$0 = 
   xs map ( x => x * 2);System.out.println("""res0: Array[Int] = """ + $show(res$0));$skip(12); val res$1 = 
   
@@ -27,25 +29,7 @@ object test {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
      
  def isPrime(n:Int): Boolean = (2 until n) forall ( d => (n % d) != 0);System.out.println("""isPrime: (n: Int)Boolean""");$skip(14); val res$10 = 
    isPrime(5);System.out.println("""res10: Boolean = """ + $show(res$10));$skip(14); val res$11 = 
-   isPrime(6)
+   isPrime(6);System.out.println("""res11: Boolean = """ + $show(res$11))}
    
-   type Word = String
-   type Occurrences = List[(Char, Int)];System.out.println("""res11: Boolean = """ + $show(res$11));$skip(310); 
-   
-   def wordOccurrences(w: Word): Occurrences = {
-    val rw = w.toLowerCase.replaceAll("[^\\w]","")
-    val ls = rw.groupBy(c => c).toList
-    val unsorted_ls = ls.map{case (x,y) => (x,y.length)}
-    unsorted_ls.sortBy{case (x,y) => x}
-  };System.out.println("""wordOccurrences: (w: week6.test.Word)week6.test.Occurrences""");$skip(24); val res$12 = 
-  
-  wordOccurrences(w);System.out.println("""res12: week6.test.Occurrences = """ + $show(res$12));$skip(77); val res$13 = 
-  
-  wordOccurrences("abcd") == List(('a', 1), ('b', 1), ('c', 1), ('d', 1));System.out.println("""res13: Boolean = """ + $show(res$13));$skip(87); val res$14 = 
-   wordOccurrences("Robert") == List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1));System.out.println("""res14: Boolean = """ + $show(res$14));$skip(32); 
-  val zs = List("AA","BB","CC");System.out.println("""zs  : List[String] = """ + $show(zs ));$skip(35); val res$15 = 
-  zs.foldRight("")((x,y) => x + y);System.out.println("""res15: String = """ + $show(res$15));$skip(15); val res$16 = 
-  
-  "A" + "B";System.out.println("""res16: String("AB") = """ + $show(res$16))}
-  
+    
 }
