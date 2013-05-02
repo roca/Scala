@@ -83,4 +83,7 @@ object test {
 dictionaryByOccurrences.get(List(('a', 1), ('e', 1), ('t', 1))).map(_.toSet)
                                                   //> res7: Option[scala.collection.immutable.Set[forcomp.Anagrams.Word]] = Some(S
                                                   //| et(ate, eat, tea))
+wordAnagrams("player").toSet                      //> res8: scala.collection.immutable.Set[forcomp.Anagrams.Word] = Set(parley, pe
+                                                  //| arly, player, replay)
+wordAnagrams("player").toSet.flatten              //> res9: scala.collection.immutable.Set[Char] = Set(e, y, a, l, p, r)
 }

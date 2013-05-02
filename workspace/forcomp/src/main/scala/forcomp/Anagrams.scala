@@ -71,9 +71,17 @@ object Anagrams {
     grouped_occ_list.map{ case (occ,occ_list) => (occ,occ_list.map{case (occ,w) => w} )}
   
   }
+  def showWords(x: Option[List[Word]]) = x match {
+    case Some(s) => s
+    case None => List()
+  }
 
   /** Returns all the anagrams of a given word. */
-  def wordAnagrams(word: Word): List[Word] = ???
+  def wordAnagrams(word: Word): List[Word] = {
+    
+    val occurrences = wordOccurrences(word)
+    showWords(dictionaryByOccurrences.get(occurrences))
+  }
 
   /** Returns the list of all subsets of the occurrence list.
    *  This includes the occurrence itself, i.e. `List(('k', 1), ('o', 1))`

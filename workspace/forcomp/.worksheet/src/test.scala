@@ -24,5 +24,7 @@ object test {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
  val z = y.groupBy( (x) => x._1);System.out.println("""z  : scala.collection.immutable.Map[forcomp.Anagrams.Occurrences,List[(forcomp.Anagrams.Occurrences, forcomp.Anagrams.Word)]] = """ + $show(z ));$skip(55); 
    val t = z.map{ case (x,y) => (x,y.map(x => x._2) )};System.out.println("""t  : scala.collection.immutable.Map[forcomp.Anagrams.Occurrences,List[forcomp.Anagrams.Word]] = """ + $show(t ));$skip(42); val res$6 = 
    t.filter(  (X) => (X._2.length > 3)  );System.out.println("""res6: scala.collection.immutable.Map[forcomp.Anagrams.Occurrences,List[forcomp.Anagrams.Word]] = """ + $show(res$6));$skip(77); val res$7 = 
-dictionaryByOccurrences.get(List(('a', 1), ('e', 1), ('t', 1))).map(_.toSet);System.out.println("""res7: Option[scala.collection.immutable.Set[forcomp.Anagrams.Word]] = """ + $show(res$7))}
+dictionaryByOccurrences.get(List(('a', 1), ('e', 1), ('t', 1))).map(_.toSet);System.out.println("""res7: Option[scala.collection.immutable.Set[forcomp.Anagrams.Word]] = """ + $show(res$7));$skip(29); val res$8 = 
+wordAnagrams("player").toSet;System.out.println("""res8: scala.collection.immutable.Set[forcomp.Anagrams.Word] = """ + $show(res$8));$skip(37); val res$9 = 
+wordAnagrams("player").toSet.flatten;System.out.println("""res9: scala.collection.immutable.Set[Char] = """ + $show(res$9))}
 }
