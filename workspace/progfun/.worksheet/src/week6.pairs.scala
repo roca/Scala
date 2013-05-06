@@ -24,21 +24,25 @@ def isPrime(n:Int): Boolean = (2 until n) forall ( n % _ != 0);System.out.printl
         } yield (x * y)
     }.sum
    };System.out.println("""scalarProduct2: (xs: List[Double], ys: List[Double])Double""");$skip(25); val res$2 = 
-   scalarProduct2(xs,xs);System.out.println("""res2: Double = """ + $show(res$2));$skip(194); 
+   scalarProduct2(xs,xs)
    
-def combinate(n: Int) = {
-		def comb(k: Int): List[(Int,Int)] = {
-			if (k == 0) List()
-			else
-				for {
-				   i <- comb(k - 1)
-				   	j <- 1 until i
-				  } yield (i,j)
-		}
-		comb(n)
-	};System.out.println("""combinate: (n: Int)List[(Int, Int)]""");$skip(18); val res$3 = 
+   
+   type Occurrence = (Char, Int)
+  type Occurrences = List[Occurrence];System.out.println("""res2: Double = """ + $show(res$2));$skip(209); 
+  
+def expand(in: Occurrences): List[(Char,Int)] =
+    for {
+        o <- in
+        i <- 1 to o._2
+        
+    } yield (o._1,i);System.out.println("""expand: (in: week6.pairs.Occurrences)List[(Char, Int)]""");$skip(163); 
  
  
- combinate(3);System.out.println("""res3: List[(Int, Int)] = """ + $show(res$3))}
- 
+ def combine(in: Occurrences): Seq[Occurrences] =
+    for {
+        len <- 1 to in.length
+        combinations <- in combinations len
+    } yield combinations;System.out.println("""combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]""");$skip(38); val res$3 = 
+    
+   expand(List(('a',2),('b',2)));System.out.println("""res3: List[(Char, Int)] = """ + $show(res$3))}
 }
