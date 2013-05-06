@@ -1,5 +1,0 @@
-package week6
-
-object pairs {
-  println("Welcome to the Scala worksheet")
-}

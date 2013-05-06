@@ -24,5 +24,21 @@ def isPrime(n:Int): Boolean = (2 until n) forall ( n % _ != 0);System.out.printl
         } yield (x * y)
     }.sum
    };System.out.println("""scalarProduct2: (xs: List[Double], ys: List[Double])Double""");$skip(25); val res$2 = 
-   scalarProduct2(xs,xs);System.out.println("""res2: Double = """ + $show(res$2))}
+   scalarProduct2(xs,xs);System.out.println("""res2: Double = """ + $show(res$2));$skip(194); 
+   
+def combinate(n: Int) = {
+		def comb(k: Int): List[(Int,Int)] = {
+			if (k == 0) List()
+			else
+				for {
+				   i <- comb(k - 1)
+				   	j <- 1 until i
+				  } yield (i,j)
+		}
+		comb(n)
+	};System.out.println("""combinate: (n: Int)List[(Int, Int)]""");$skip(18); val res$3 = 
+ 
+ 
+ combinate(3);System.out.println("""res3: List[(Int, Int)] = """ + $show(res$3))}
+ 
 }

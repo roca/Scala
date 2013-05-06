@@ -1,7 +1,0 @@
-package week6
-
-object pairs {
-  val n = 7
-  (1 until n) map (i =>                           //> Welcome to the Scala worksheet
-  (1 until i) map (j => (i, j)))
-}

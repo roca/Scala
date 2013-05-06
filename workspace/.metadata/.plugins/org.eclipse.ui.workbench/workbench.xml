@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="36" version="2.0">
 <workbenchAdvisor/>
 <window height="804" maximized="true" width="1279" x="1280" y="-224">
 <fastViewData fastViewLocation="1024"/>
@@ -10,7 +10,7 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="org.scala-ide.sdt.core.toolbar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -36,34 +36,29 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.scalaide.worksheet.editors.ScriptEditor" name="listfun.sc" partName="listfun.sc" path="/Users/roca/Scala/workspace/progfun/src/week5/listfun.sc" title="listfun.sc" tooltip="progfun/src/week5/listfun.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week5/listfun.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2824" selectionTopPixel="518"/>
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" partName="Anagrams.scala" path="/Users/roca/Scala/workspace/forcomp/src/main/scala/forcomp/Anagrams.scala" title="Anagrams.scala" tooltip="forcomp/src/main/scala/forcomp/Anagrams.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="3189" selectionTopPixel="1148"/>
 </editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Huffman.scala" partName="Huffman.scala" path="/Users/roca/Scala/workspace/patmat/src/main/scala/patmat/Huffman.scala" title="Huffman.scala" tooltip="patmat/src/main/scala/patmat/Huffman.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/patmat/src/main/scala/patmat/Huffman.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="3561"/>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="pairs.sc" partName="pairs.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/pairs.sc" title="pairs.sc" tooltip="progfun/src/week6/pairs.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/pairs.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="762" selectionTopPixel="0"/>
 </editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="List.scala" partName="List.scala" path="/Users/roca/Scala/workspace/progfun/src/week4/List.scala" title="List.scala" tooltip="progfun/src/week4/List.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week4/List.scala"/>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" partName="test.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/test.sc" title="test.sc" tooltip="progfun/src/week6/test.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/test.sc"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="IntSet.scala" partName="IntSet.scala" path="/Users/roca/Scala/workspace/progfun/src/week3/IntSet.scala" title="IntSet.scala" tooltip="progfun/src/week3/IntSet.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week3/IntSet.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="nqueens.sc" partName="nqueens.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/nqueens.sc" title="nqueens.sc" tooltip="progfun/src/week6/nqueens.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/nqueens.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="253" selectionOffset="34" selectionTopPixel="0"/>
 </editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Rational.scala" partName="Rational.scala" path="/Users/roca/Scala/workspace/progfun/src/week3/Rational.scala" title="Rational.scala" tooltip="progfun/src/week3/Rational.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week3/Rational.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="currying.sc" partName="currying.sc" path="/Users/roca/Scala/workspace/progfun/src/week2/currying.sc" title="currying.sc" tooltip="progfun/src/week2/currying.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week2/currying.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="books.sc" partName="books.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/books.sc" title="books.sc" tooltip="progfun/src/week6/books.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/books.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1782" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -125,7 +120,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.scalaide.worksheet.editors.ScriptEditor" activePerspective="org.scala-ide.sdt.core.perspective">
+<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.scala-ide.sdt.core.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="scala.tools.eclipse.PerspectiveFactory" id="org.scala-ide.sdt.core.perspective" label="Scala"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -187,7 +182,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20646179" ratioLeft="262" ratioRight="1007" relationship="2" relative="explorer"/>
-<info folder="true" part="problems" ratio="0.6666667" ratioLeft="624" ratioRight="312" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="problems" ratio="0.8087607" ratioLeft="757" ratioRight="179" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.aptana.terminal.views.terminal:MyProject" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -217,170 +212,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week5/mergesort.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/patmat/src/main/scala/patmat/Huffman.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/objsets/src/main/scala/objsets/TweetSet.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week5/mergesort.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week5/listfun.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week5/mergesort.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week5/listfun.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/patmat/src/main/scala/patmat/Huffman.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun/src/week4/List.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun/src/week3/IntSet.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun/src/week3/Rational.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week2/currying.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/pairs.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/test.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/nqueens.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/books.sc"/>
 </editors>
-<item historyLabel="mergesort.sc" index="0">
-<position/>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="1407" y="0"/>
 </item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="2559" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="45" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1982" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1982" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="2427" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1982" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="1032" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1982" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1872" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="1032" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1910" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="1032" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="98" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="1872" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="623" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="2110" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="1032" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="98" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="98" y="0"/>
-</item>
-<item historyLabel="TweetSet.scala" index="3">
-<position info="not_deleted" x="3712" y="16"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="4">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="821" y="15"/>
-</item>
-<item historyLabel="Huffman.scala" index="2">
-<position info="not_deleted" x="1031" y="0"/>
-</item>
-<item historyLabel="HuffmanSuite.scala" index="4">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="mergesort.sc" index="5">
-<position/>
-</item>
-<item historyLabel="listfun.sc" index="6">
-<position info="not_deleted" x="2230" y="0"/>
-</item>
-<item historyLabel="mergesort.sc" index="5">
-<position/>
-</item>
-<item historyLabel="listfun.sc" index="6">
-<position/>
-</item>
-<item historyLabel="mergesort.sc" index="5">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="listfun.sc" index="6">
-<position info="not_deleted" x="2113" y="0"/>
-</item>
-<item historyLabel="mergesort.sc" index="7">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="listfun.sc" index="8">
-<position info="not_deleted" x="2824" y="0"/>
-</item>
-<item historyLabel="Huffman.scala" index="9">
+<item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="listfun.sc" index="8">
-<position info="not_deleted" x="2821" y="0"/>
+<item historyLabel="pairs.sc" index="1">
+<position info="not_deleted" x="1541" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="9">
+<item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="List.scala" index="10">
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="IntSet.scala" index="11">
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Rational.scala" index="12">
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="1407" y="0"/>
+</item>
+<item historyLabel="test.sc" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="currying.sc" index="13">
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="test.sc" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="listfun.sc" index="8">
-<position info="not_deleted" x="2821" y="0"/>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="1407" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="test.sc" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="1407" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="106" y="23"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="106" y="23"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="84" y="14"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="test.sc" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="34" y="253"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position info="not_deleted" x="1838" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position info="not_deleted" x="1838" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="34" y="253"/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position info="not_deleted" x="1657" y="0"/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="34" y="253"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position info="not_deleted" x="750" y="0"/>
+</item>
+<item historyLabel="nqueens.sc" index="3">
+<position info="not_deleted" x="34" y="253"/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="test.sc" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="books.sc" index="4">
+<position/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="books.sc" index="4">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pairs.sc" index="1">
+<position/>
+</item>
+<item historyLabel="books.sc" index="4">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="books.sc" index="4">
+<position info="not_deleted" x="1782" y="0"/>
+</item>
+<item active="true" historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -388,6 +374,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="explorer"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -395,10 +387,26 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="problems"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="books.sc" tooltip="progfun/src/week6/books.sc">
+<persistable path="/progfun/src/week6/books.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="nqueens.sc" tooltip="progfun/src/week6/nqueens.sc">
+<persistable path="/progfun/src/week6/nqueens.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" tooltip="progfun/src/week6/test.sc">
+<persistable path="/progfun/src/week6/test.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="pairs.sc" tooltip="progfun/src/week6/pairs.sc">
+<persistable path="/progfun/src/week6/pairs.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" tooltip="forcomp/src/main/scala/forcomp/Anagrams.scala">
+<persistable path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="currying.sc" tooltip="progfun/src/week2/currying.sc">
 <persistable path="/progfun/src/week2/currying.sc"/>
 </file>
@@ -428,21 +436,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetSet.scala" tooltip="objsets/src/main/scala/objsets/TweetSet.scala">
 <persistable path="/objsets/src/main/scala/objsets/TweetSet.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="HuffmanSuite.scala" tooltip="patmat/src/test/scala/patmat/HuffmanSuite.scala">
-<persistable path="/patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="scratch.sc" tooltip="patmat/src/main/scala/patmat/scratch.sc">
-<persistable path="/patmat/src/main/scala/patmat/scratch.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="class_organization.sc" tooltip="progfun/src/week3/class_organization.sc">
-<persistable path="/progfun/src/week3/class_organization.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="insets.sc" tooltip="progfun/src/week3/insets.sc">
-<persistable path="/progfun/src/week3/insets.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetData.scala" tooltip="objsets/src/main/scala/objsets/TweetData.scala">
-<persistable path="/objsets/src/main/scala/objsets/TweetData.scala"/>
 </file>
 </mruList>
 </workbench>
