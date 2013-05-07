@@ -189,7 +189,7 @@ object Anagrams {
       if (ol.isEmpty) acc
       else f(ol.tail, showWords(dictionaryByOccurrences.get(ol.head)) :: acc)
     }
-     f(combin,List())
+     f(combin,List()).filter( x => x.length >= 3)
   }
 
 }

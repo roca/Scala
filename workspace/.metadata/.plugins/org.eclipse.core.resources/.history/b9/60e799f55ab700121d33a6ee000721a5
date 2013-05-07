@@ -184,12 +184,6 @@ object Anagrams {
    */
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
     val occurrences = sentenceOccurrences(sentence)
-    val combin = combinations(occurrences)
-    def f(ol: List[Occurrences], acc: List[Sentence]): List[Sentence] ={
-      if (ol.isEmpty) acc
-      else f(ol.tail, showWords(dictionaryByOccurrences.get(ol.head)) :: acc)
-    }
-     f(combin,List())
   }
 
 }

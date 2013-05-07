@@ -187,7 +187,7 @@ object Anagrams {
     val combin = combinations(occurrences)
     def f(ol: List[Occurrences], acc: List[Sentence]): List[Sentence] ={
       if (ol.isEmpty) acc
-      else f(ol.tail, showWords(dictionaryByOccurrences.get(ol.head)) :: acc)
+      else f(ol.tail, dictionaryByOccurrences.get(ol.head) :: acc)
     }
      f(combin,List())
   }
