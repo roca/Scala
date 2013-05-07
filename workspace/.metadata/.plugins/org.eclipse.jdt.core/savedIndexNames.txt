@@ -1,7 +1,7 @@
 INDEX VERSION 1.126+/Users/romel.campbell/Scala/workspace/.metadata/.plugins/org.eclipse.jdt.core
 272178059.index
-1819685514.index
 1993881207.index
+1819685514.index
 3954040986.index
 2370505161.index
 1397014038.index
@@ -14,9 +14,9 @@ INDEX VERSION 1.126+/Users/romel.campbell/Scala/workspace/.metadata/.plugins/org
 1538988648.index
 4074204920.index
 4249315662.index
-3489297892.index
-765977872.index
 3266567714.index
+765977872.index
+3489297892.index
 2218083660.index
 4292771786.index
 4011991818.index
