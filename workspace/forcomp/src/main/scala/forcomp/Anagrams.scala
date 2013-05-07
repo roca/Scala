@@ -106,6 +106,17 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
+  
+	  def expand(in: Occurrences): List[(Char,Int)] =
+	    for {
+	        o <- in
+	        i <- 1 to o._2
+	    } yield (o._1,i)                              
+ 
+	 def hasDuplicates(in: Occurrences): Boolean = {
+	   val ing = in.groupBy( x => x._1).keys.toList
+	   ing.length != in.length
+	 }
   def combinations(occurrences: Occurrences): List[Occurrences] = ???
 
   /** Subtracts occurrence list `y` from occurrence list `x`.

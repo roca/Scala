@@ -41,6 +41,10 @@ def expand(in: Occurrences): List[(Char,Int)] =
         
     } yield (o._1,i)                              //> expand: (in: week6.pairs.Occurrences)List[(Char, Int)]
  
+ def hasDuplicates(in: Occurrences): Boolean = {
+   val ing = in.groupBy( x => x._1).keys.toList
+   ing.length != in.length
+ }                                                //> hasDuplicates: (in: week6.pairs.Occurrences)Boolean
  
  def combine(in: Occurrences): Seq[Occurrences] =
     for {
@@ -50,9 +54,11 @@ def expand(in: Occurrences): List[(Char,Int)] =
     
     val ol = List(('a',2),('b',2))                //> ol  : List[(Char, Int)] = List((a,2), (b,2))
     val e = expand(ol)                            //> e  : List[(Char, Int)] = List((a,1), (a,2), (b,1), (b,2))
-    e.combinations(2).toList                      //> res3: List[List[(Char, Int)]] = List(List((a,1), (a,2)), List((a,1), (b,1))
-                                                  //| , List((a,1), (b,2)), List((a,2), (b,1)), List((a,2), (b,2)), List((b,1), (
-                                                  //| b,2)))
+    val z = e.combinations(0).toList              //> z  : List[List[(Char, Int)]] = List(List())
+    
+    hasDuplicates(ol)                             //> res3: Boolean = false
+    
+    z.filter( x => !hasDuplicates(x))             //> res4: List[List[(Char, Int)]] = List(List())
     /*
    e.groupBy( x => x._1 ).values.toList
    

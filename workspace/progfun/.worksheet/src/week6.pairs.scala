@@ -35,8 +35,12 @@ def expand(in: Occurrences): List[(Char,Int)] =
         o <- in
         i <- 1 to o._2
         
-    } yield (o._1,i);System.out.println("""expand: (in: week6.pairs.Occurrences)List[(Char, Int)]""");$skip(163); 
+    } yield (o._1,i);System.out.println("""expand: (in: week6.pairs.Occurrences)List[(Char, Int)]""");$skip(129); 
  
+ def hasDuplicates(in: Occurrences): Boolean = {
+   val ing = in.groupBy( x => x._1).keys.toList
+   ing.length != in.length
+ };System.out.println("""hasDuplicates: (in: week6.pairs.Occurrences)Boolean""");$skip(161); 
  
  def combine(in: Occurrences): Seq[Occurrences] =
     for {
@@ -45,8 +49,12 @@ def expand(in: Occurrences): List[(Char,Int)] =
     } yield combinations;System.out.println("""combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]""");$skip(40); 
     
     val ol = List(('a',2),('b',2));System.out.println("""ol  : List[(Char, Int)] = """ + $show(ol ));$skip(23); 
-    val e = expand(ol);System.out.println("""e  : List[(Char, Int)] = """ + $show(e ));$skip(29); val res$3 = 
-    e.combinations(2).toList;System.out.println("""res3: List[List[(Char, Int)]] = """ + $show(res$3))}
+    val e = expand(ol);System.out.println("""e  : List[(Char, Int)] = """ + $show(e ));$skip(37); 
+    val z = e.combinations(0).toList;System.out.println("""z  : List[List[(Char, Int)]] = """ + $show(z ));$skip(27); val res$3 = 
+    
+    hasDuplicates(ol);System.out.println("""res3: Boolean = """ + $show(res$3));$skip(43); val res$4 = 
+    
+    z.filter( x => !hasDuplicates(x));System.out.println("""res4: List[List[(Char, Int)]] = """ + $show(res$4))}
     /*
    e.groupBy( x => x._1 ).values.toList
    
