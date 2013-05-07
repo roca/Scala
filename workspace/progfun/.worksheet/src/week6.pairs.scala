@@ -42,12 +42,21 @@ def expand(in: Occurrences): List[(Char,Int)] =
     for {
         len <- 1 to in.length
         combinations <- in combinations len
-    } yield combinations;System.out.println("""combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]""");$skip(48); 
+    } yield combinations;System.out.println("""combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]""");$skip(40); 
     
-    val ol = List(('a',2),('b',2),('c',3));System.out.println("""ol  : List[(Char, Int)] = """ + $show(ol ));$skip(23); 
-    val e = expand(ol);System.out.println("""e  : List[(Char, Int)] = """ + $show(e ));$skip(40); val res$3 = 
-   e.groupBy( x => x._1 ).values.toList;System.out.println("""res3: List[List[(Char, Int)]] = """ + $show(res$3));$skip(144); 
+    val ol = List(('a',2),('b',2));System.out.println("""ol  : List[(Char, Int)] = """ + $show(ol ));$skip(23); 
+    val e = expand(ol);System.out.println("""e  : List[(Char, Int)] = """ + $show(e ));$skip(29); val res$3 = 
+    e.combinations(2).toList;System.out.println("""res3: List[List[(Char, Int)]] = """ + $show(res$3))}
+    /*
+   e.groupBy( x => x._1 ).values.toList
    
-   val z = e.combinations(ol.length).toList.filter(x => x.groupBy( y => y._1).toList.length <  3) ::: e.map( x => List(x)) ::: List(List());System.out.println("""z  : List[List[(Char, Int)]] = """ + $show(z ));$skip(11); val res$4 = 
-  z.length;System.out.println("""res4: Int = """ + $show(res$4))}
+   
+  e.combinations(2).toList
+  for {
+   x <- e.combinations(2).toList
+  }yield x
+   val z = e.combinations(ol.length).toList.filter(x => x.groupBy( y => y._1).toList.length <  2) ::: e.map( x => List(x)) ::: List(List())
+  z.length
+  
+  */
 }

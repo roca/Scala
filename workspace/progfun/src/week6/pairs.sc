@@ -48,23 +48,21 @@ def expand(in: Occurrences): List[(Char,Int)] =
         combinations <- in combinations len
     } yield combinations                          //> combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]
     
-    val ol = List(('a',2),('b',2),('c',3))        //> ol  : List[(Char, Int)] = List((a,2), (b,2), (c,3))
-    val e = expand(ol)                            //> e  : List[(Char, Int)] = List((a,1), (a,2), (b,1), (b,2), (c,1), (c,2), (c,
-                                                  //| 3))
-   e.groupBy( x => x._1 ).values.toList           //> res3: List[List[(Char, Int)]] = List(List((b,1), (b,2)), List((a,1), (a,2))
-                                                  //| , List((c,1), (c,2), (c,3)))
+    val ol = List(('a',2),('b',2))                //> ol  : List[(Char, Int)] = List((a,2), (b,2))
+    val e = expand(ol)                            //> e  : List[(Char, Int)] = List((a,1), (a,2), (b,1), (b,2))
+    e.combinations(2).toList                      //> res3: List[List[(Char, Int)]] = List(List((a,1), (a,2)), List((a,1), (b,1))
+                                                  //| , List((a,1), (b,2)), List((a,2), (b,1)), List((a,2), (b,2)), List((b,1), (
+                                                  //| b,2)))
+    /*
+   e.groupBy( x => x._1 ).values.toList
    
-   val z = e.combinations(ol.length).toList.filter(x => x.groupBy( y => y._1).toList.length <  3) ::: e.map( x => List(x)) ::: List(List())
-                                                  //> z  : List[List[(Char, Int)]] = List(List((a,1), (a,2), (b,1)), List((a,1), 
-                                                  //| (a,2), (b,2)), List((a,1), (a,2), (c,1)), List((a,1), (a,2), (c,2)), List((
-                                                  //| a,1), (a,2), (c,3)), List((a,1), (b,1), (b,2)), List((a,1), (c,1), (c,2)), 
-                                                  //| List((a,1), (c,1), (c,3)), List((a,1), (c,2), (c,3)), List((a,2), (b,1), (b
-                                                  //| ,2)), List((a,2), (c,1), (c,2)), List((a,2), (c,1), (c,3)), List((a,2), (c,
-                                                  //| 2), (c,3)), List((b,1), (b,2), (c,1)), List((b,1), (b,2), (c,2)), List((b,1
-                                                  //| ), (b,2), (c,3)), List((b,1), (c,1), (c,2)), List((b,1), (c,1), (c,3)), Lis
-                                                  //| t((b,1), (c,2), (c,3)), List((b,2), (c,1), (c,2)), List((b,2), (c,1), (c,3)
-                                                  //| ), List((b,2), (c,2), (c,3)), List((c,1), (c,2), (c,3)), List((a,1)), List(
-                                                  //| (a,2)), List((b,1)), List((b,2)), List((c,1)), List((c,2)), List((c,3)), Li
-                                                  //| st())
-  z.length                                        //> res4: Int = 31
+   
+  e.combinations(2).toList
+  for {
+   x <- e.combinations(2).toList
+  }yield x
+   val z = e.combinations(ol.length).toList.filter(x => x.groupBy( y => y._1).toList.length <  2) ::: e.map( x => List(x)) ::: List(List())
+  z.length
+  
+  */
 }
