@@ -52,13 +52,53 @@ def expand(in: Occurrences): List[(Char,Int)] =
         combinations <- in combinations len
     } yield combinations                          //> combine: (in: week6.pairs.Occurrences)Seq[week6.pairs.Occurrences]
     
-    val ol = List(('a',2),('b',2))                //> ol  : List[(Char, Int)] = List((a,2), (b,2))
-    val e = expand(ol)                            //> e  : List[(Char, Int)] = List((a,1), (a,2), (b,1), (b,2))
+    val ol = List(('a',2),('b',2),('c',3))        //> ol  : List[(Char, Int)] = List((a,2), (b,2), (c,3))
+    val e = expand(ol)                            //> e  : List[(Char, Int)] = List((a,1), (a,2), (b,1), (b,2), (c,1), (c,2), (c,
+                                                  //| 3))
     val z = e.combinations(0).toList              //> z  : List[List[(Char, Int)]] = List(List())
     
     hasDuplicates(ol)                             //> res3: Boolean = false
     
     z.filter( x => !hasDuplicates(x))             //> res4: List[List[(Char, Int)]] = List(List())
+    
+    def expandOccurrences(in: Occurrences): List[(Char,Int)] = {
+	    for {
+	        o <- in
+	        i <- 1 to o._2
+       } yield (o._1,i)
+  }                                               //> expandOccurrences: (in: week6.pairs.Occurrences)List[(Char, Int)]
+  def hasDuplicateOccurrences(in: Occurrences): Boolean = {
+	   val in_grpd = in.groupBy( x => x._1).keys.toList
+	   in_grpd.length != in.length
+  }                                               //> hasDuplicateOccurrences: (in: week6.pairs.Occurrences)Boolean
+  
+  
+  def combinations(occurrences: Occurrences): List[Occurrences] = {
+    val expanded = expandOccurrences(occurrences)
+    def f(n:Int, acc:List[Occurrences]): List[Occurrences] ={
+      if (n == 0) acc
+      else {
+        f(n-1,expanded.combinations(n).toList.filter( x => !hasDuplicateOccurrences(x)) ::: acc)
+      }
+    }
+    f(occurrences.length,List(List()))
+  }                                               //> combinations: (occurrences: week6.pairs.Occurrences)List[week6.pairs.Occurr
+                                                  //| ences]
+  
+  combinations(ol)                                //> res5: List[week6.pairs.Occurrences] = List(List((a,1)), List((a,2)), List((
+                                                  //| b,1)), List((b,2)), List((c,1)), List((c,2)), List((c,3)), List((a,1), (b,1
+                                                  //| )), List((a,1), (b,2)), List((a,1), (c,1)), List((a,1), (c,2)), List((a,1),
+                                                  //|  (c,3)), List((a,2), (b,1)), List((a,2), (b,2)), List((a,2), (c,1)), List((
+                                                  //| a,2), (c,2)), List((a,2), (c,3)), List((b,1), (c,1)), List((b,1), (c,2)), L
+                                                  //| ist((b,1), (c,3)), List((b,2), (c,1)), List((b,2), (c,2)), List((b,2), (c,3
+                                                  //| )), List((a,1), (b,1), (c,1)), List((a,1), (b,1), (c,2)), List((a,1), (b,1)
+                                                  //| , (c,3)), List((a,1), (b,2), (c,1)), List((a,1), (b,2), (c,2)), List((a,1),
+                                                  //|  (b,2), (c,3)), List((a,2), (b,1), (c,1)), List((a,2), (b,1), (c,2)), List(
+                                                  //| (a,2), (b,1), (c,3)), List((a,2), (b,2), (c,1)), List((a,2), (b,2), (c,2)),
+                                                  //|  List((a,2), (b,2), (c,3)), List())
+  
+  (ol.toSet -- ol.toSet).toList                   //> res6: List[(Char, Int)] = List()
+    
     /*
    e.groupBy( x => x._1 ).values.toList
    

@@ -107,17 +107,28 @@ object Anagrams {
    *  in the example above could have been displayed in some other order.
    */
   
-	  def expand(in: Occurrences): List[(Char,Int)] =
+  def expandOccurrences(in: Occurrences): List[(Char,Int)] = {
 	    for {
 	        o <- in
 	        i <- 1 to o._2
-	    } yield (o._1,i)                              
- 
-	 def hasDuplicates(in: Occurrences): Boolean = {
-	   val ing = in.groupBy( x => x._1).keys.toList
-	   ing.length != in.length
-	 }
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+       } yield (o._1,i)                              
+  }
+  def hasDuplicateOccurrences(in: Occurrences): Boolean = {
+	   val in_grpd = in.groupBy( x => x._1).keys.toList
+	   in_grpd.length != in.length
+  }
+  
+  
+  def combinations(occurrences: Occurrences): List[Occurrences] = {
+    val expanded = expandOccurrences(occurrences)
+    def f(n:Int, acc:List[Occurrences]): List[Occurrences] ={
+      if (n == 0) acc
+      else {
+        f(n-1,expanded.combinations(n).toList.filter( x => !hasDuplicateOccurrences(x)) ::: acc)
+      }
+    }
+    f(occurrences.length,List(List()))
+  }
 
   /** Subtracts occurrence list `y` from occurrence list `x`.
    * 
@@ -129,7 +140,7 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = ???
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = (x.toSet -- y.toSet).toList
 
   /** Returns a list of all anagram sentences of the given sentence.
    *  

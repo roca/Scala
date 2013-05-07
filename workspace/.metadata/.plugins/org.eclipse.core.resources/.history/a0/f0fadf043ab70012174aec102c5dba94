@@ -1,0 +1,98 @@
+package week6
+
+object pairs {
+
+def isPrime(n:Int): Boolean = (2 until n) forall ( n % _ != 0)
+   
+  val n = 7
+  (1 until n) flatMap (i =>
+   (1 until i) map (j => (i, j))) filter (pair => isPrime(pair._1 + pair._2))
+  for {
+   i <- 1 until n
+   	j <- 1 until i
+   		if isPrime( i + j)
+  } yield (i,j)
+   
+   val xs = List(1.0,2.0,3.0)
+   def scalarProduct(xs: List[Double], ys: List[Double]) : Double = {
+     (xs zip ys).map{ case (x, y) => x * y }.sum
+   }
+   
+   def scalarProduct2(xs: List[Double], ys: List[Double]) : Double = {
+    {for {
+         (x,y) <- (xs zip ys)
+        } yield (x * y)
+    }.sum
+   }
+   scalarProduct2(xs,xs)
+   
+   
+   type Occurrence = (Char, Int)
+  type Occurrences = List[Occurrence]
+  
+def expand(in: Occurrences): List[(Char,Int)] =
+    for {
+        o <- in
+        i <- 1 to o._2
+        
+    } yield (o._1,i)
+ 
+ def hasDuplicates(in: Occurrences): Boolean = {
+   val ing = in.groupBy( x => x._1).keys.toList
+   ing.length != in.length
+ }
+ 
+ def combine(in: Occurrences): Seq[Occurrences] =
+    for {
+        len <- 1 to in.length
+        combinations <- in combinations len
+    } yield combinations
+    
+    val ol = List(('a',2),('b',2),('c',3))
+    val e = expand(ol)
+    val z = e.combinations(0).toList
+    
+    hasDuplicates(ol)
+    
+    z.filter( x => !hasDuplicates(x))
+    
+    def expandOccurrences(in: Occurrences): List[(Char,Int)] = {
+	    for {
+	        o <- in
+	        i <- 1 to o._2
+       } yield (o._1,i)
+  }
+  def hasDuplicateOccurrences(in: Occurrences): Boolean = {
+	   val in_grpd = in.groupBy( x => x._1).keys.toList
+	   in_grpd.length != in.length
+  }
+  
+  
+  def combinations(occurrences: Occurrences): List[Occurrences] = {
+    val expanded = expandOccurrences(occurrences)
+    def f(n:Int, acc:List[Occurrences]): List[Occurrences] ={
+      if (n == 0) acc
+      else {
+        f(n-1,expanded.combinations(n).toList.filter( x => !hasDuplicateOccurrences(x)) ::: acc)
+      }
+    }
+    f(occurrences.length,List(List()))
+  }
+  
+  combinations(ol)
+  
+  ol.toSet - ol.toSet
+    
+    /*
+   e.groupBy( x => x._1 ).values.toList
+   
+   
+  e.combinations(2).toList
+  for {
+   x <- e.combinations(2).toList
+  }yield x
+   val z = e.combinations(ol.length).toList.filter(x => x.groupBy( y => y._1).toList.length <  2) ::: e.map( x => List(x)) ::: List(List())
+  z.length
+  
+  */
+}
