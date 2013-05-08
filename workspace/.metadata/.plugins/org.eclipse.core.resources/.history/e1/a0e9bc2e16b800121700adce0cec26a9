@@ -1,0 +1,12 @@
+
+import forcomp.Anagrams._
+
+object test {
+val sentence = List("Yes", "man")
+val occurrences = sentenceOccurrences(sentence)
+val combin = combinations(occurrences)
+
+ sentenceAnagrams(sentence).filter(x => (x.length > 1))
+   'a' + 'b'
+
+}

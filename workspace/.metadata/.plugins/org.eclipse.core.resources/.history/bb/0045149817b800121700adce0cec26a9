@@ -1,0 +1,8 @@
+
+//import forcomp.Anagrams._
+
+object test {
+
+ List('a','b').toString                           //> res0: String = List(a, b)
+
+}

@@ -182,14 +182,22 @@ object Anagrams {
    *
    *  Note: There is only one anagram of an empty sentence.
    */
+
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
-    val occurrences = sentenceOccurrences(sentence)
-    val combin = combinations(occurrences)
-    def f(ol: List[Occurrences], acc: List[Sentence]): List[Sentence] ={
-      if (ol.isEmpty) acc
-      else f(ol.tail, showWords(dictionaryByOccurrences.get(ol.head)) :: acc)
+    def f(remainingChars: Word, acc: List[Sentence]): List[Sentence] ={
+      if (remainingChars.isEmpty) acc
+      else {
+    	   val occurrences = wordOccurrences(remainingChars)
+    	   val combin = combinations(occurrences)
+    	   val words = showWords(dictionaryByOccurrences.get(combin.head))
+    	   val remainingOcc = subtract(occurrences,combin.head).map(x => x._1).mkString("")
+           if(words.isEmpty) f(ol.tail, words :: acc)
+           else
+         }
+      }
     }
-     f(combin,List())
+     val big_word = sentence.foldRight("")((x,y) => x + y) 
+     f(big_word,List())
   }
 
 }
