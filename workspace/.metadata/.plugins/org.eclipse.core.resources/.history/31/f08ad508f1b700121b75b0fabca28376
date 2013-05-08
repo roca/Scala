@@ -1,0 +1,38 @@
+
+import forcomp.Anagrams._
+
+object test {
+val sentence = List("Yes","man")                  //> sentence  : List[String] = List(Yes, man)
+val occurrences = sentenceOccurrences(sentence)   //> occurrences  : forcomp.Anagrams.Occurrences = List((a,1), (e,1), (m,1), (n,1
+                                                  //| ), (s,1), (y,1))
+val combin = combinations(occurrences)            //> combin  : List[forcomp.Anagrams.Occurrences] = List(List((a,1)), List((e,1))
+                                                  //| , List((m,1)), List((n,1)), List((s,1)), List((y,1)), List((a,1), (e,1)), Li
+                                                  //| st((a,1), (m,1)), List((a,1), (n,1)), List((a,1), (s,1)), List((a,1), (y,1))
+                                                  //| , List((e,1), (m,1)), List((e,1), (n,1)), List((e,1), (s,1)), List((e,1), (y
+                                                  //| ,1)), List((m,1), (n,1)), List((m,1), (s,1)), List((m,1), (y,1)), List((n,1)
+                                                  //| , (s,1)), List((n,1), (y,1)), List((s,1), (y,1)), List((a,1), (e,1), (m,1)),
+                                                  //|  List((a,1), (e,1), (n,1)), List((a,1), (e,1), (s,1)), List((a,1), (e,1), (y
+                                                  //| ,1)), List((a,1), (m,1), (n,1)), List((a,1), (m,1), (s,1)), List((a,1), (m,1
+                                                  //| ), (y,1)), List((a,1), (n,1), (s,1)), List((a,1), (n,1), (y,1)), List((a,1),
+                                                  //|  (s,1), (y,1)), List((e,1), (m,1), (n,1)), List((e,1), (m,1), (s,1)), List((
+                                                  //| e,1), (m,1), (y,1)), List((e,1), (n,1), (s,1)), List((e,1), (n,1), (y,1)), L
+                                                  //| ist((e,1), (s,1), (y,1)), List((m,1), (n,1), (s,1)), List((m,1), (n,1), (y,1
+                                                  //| )), List((m,1), (s,1), (
+                                                  //| Output exceeds cutoff limit.
+sentenceAnagrams(sentence).combinations(2).toList.map( x => x.head ::: x.tail)
+                                                  //> res0: List[List[Object]] = List(List(seamy, List(mens)), List(seamy, List(ma
+                                                  //| ny)), List(seamy, List(Mans)), List(seamy, List(yes)), List(seamy, List(men)
+                                                  //| ), List(seamy, List(say)), List(seamy, List(San)), List(seamy, List(Sam)), L
+                                                  //| ist(seamy, List(man)), List(seamy, List(sea)), List(seamy, List(Mae)), List(
+                                                  //| seamy, List(my)), List(seamy, List(en)), List(seamy, List(as)), List(seamy, 
+                                                  //| List(an)), List(seamy, List(am)), List(mens, List(many)), List(mens, List(Ma
+                                                  //| ns)), List(mens, List(yes)), List(mens, List(men)), List(mens, List(say)), L
+                                                  //| ist(mens, List(San)), List(mens, List(Sam)), List(mens, List(man)), List(men
+                                                  //| s, List(sea)), List(mens, List(Mae)), List(mens, List(my)), List(mens, List(
+                                                  //| en)), List(mens, List(as)), List(mens, List(an)), List(mens, List(am)), List
+                                                  //| (many, List(Mans)), List(many, List(yes)), List(many, List(men)), List(many,
+                                                  //|  List(say)), List(many, List(San)), List(many, List(Sam)), List(many, List(m
+                                                  //| an)), List(many, List(se
+                                                  //| Output exceeds cutoff limit.
+
+}

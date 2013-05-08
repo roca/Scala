@@ -1,0 +1,14 @@
+
+import forcomp.Anagrams._
+
+object test {
+val sentence = List("Yes")                        //> sentence  : List[String] = List(Yes)
+val occurrences = sentenceOccurrences(sentence)   //> occurrences  : forcomp.Anagrams.Occurrences = List((e,1), (s,1), (y,1))
+val combin = combinations(occurrences)            //> combin  : List[forcomp.Anagrams.Occurrences] = List(List((e,1)), List((s,1))
+                                                  //| , List((y,1)), List((e,1), (s,1)), List((e,1), (y,1)), List((s,1), (y,1)), L
+                                                  //| ist((e,1), (s,1), (y,1)), List())
+
+ sentenceAnagrams(sentence).filter(x => (x.length > 1))
+                                                  //> res0: List[forcomp.Anagrams.Sentence] = List()
+
+}
