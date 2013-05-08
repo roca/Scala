@@ -4995,3 +4995,29 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
 2013-05-06 18:25:01,421  WARN [Worker-1] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
 2013-05-07 17:22:06,357  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-05-07 21:34:49,418 ERROR [Thread-1] - System.err - Exception in thread "Thread-1"
+2013-05-07 21:34:49,419 ERROR [Thread-1] - System.err - org.eclipse.swt.SWTException: Invalid thread access
+2013-05-07 21:34:49,419 ERROR [Thread-1] - System.err - at org.eclipse.swt.SWT.error(SWT.java:4282)
+2013-05-07 21:34:49,419 ERROR [Thread-1] - System.err - at org.eclipse.swt.SWT.error(SWT.java:4197)
+2013-05-07 21:34:49,419 ERROR [Thread-1] - System.err - at org.eclipse.swt.SWT.error(SWT.java:4168)
+2013-05-07 21:34:49,419 ERROR [Thread-1] - System.err - at org.eclipse.swt.widgets.Widget.error(Widget.java:774)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.swt.widgets.Widget.dispose(Widget.java:661)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.swt.widgets.Shell.closeWidget(Shell.java:611)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.swt.widgets.Shell.windowWillClose(Shell.java:2262)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.swt.widgets.Display.windowProc(Display.java:5445)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.equinox.launcher.JNIBridge._takedown_splash(Native Method)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.equinox.launcher.JNIBridge.takeDownSplash(JNIBridge.java:167)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.equinox.launcher.Main.takeDownSplash(Main.java:2050)
+2013-05-07 21:34:49,420 ERROR [Thread-1] - System.err - at org.eclipse.equinox.launcher.Main$SplashHandler.run(Main.java:111)
+2013-05-07 21:45:22,912 ERROR [FSEvent thread] - System.err - java.io.FileNotFoundException: /Users/roca/Scala/.git/index.lock
+2013-05-07 21:45:22,980 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.stat(Native Method)
+2013-05-07 21:45:22,980 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.<init>(JNotifyAdapterMacOSX.java:68)
+2013-05-07 21:45:22,980 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:305)
+2013-05-07 21:45:22,980 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:268)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.access$0(JNotifyAdapterMacOSX.java:266)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX.batchEndEvent(JNotifyAdapterMacOSX.java:539)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$1.batchEnd(JNotifyAdapterMacOSX.java:143)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.callbackInBatch(JNotify_macosx.java:141)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.nativeNotifyLoop(Native Method)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.access$5(JNotify_macosx.java:81)
+2013-05-07 21:45:22,981 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx$1.run(JNotify_macosx.java:70)

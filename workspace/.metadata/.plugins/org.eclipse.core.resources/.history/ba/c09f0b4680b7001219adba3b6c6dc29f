@@ -1,0 +1,21 @@
+
+import forcomp.Anagrams._
+
+object test {
+val sentence = List("Linux", "rulez")                                                //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+val occurrences = sentenceOccurrences(sentence)
+val combin = combinations(occurrences)
+
+                                                  //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
+                                                  //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+                                                  //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
+                                                  //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+                                                  //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
+                                                  //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+                                                  //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
+                                                  //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+                                                  //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
+                                                  //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
+                                                  //| t(), List(), List(), Lis
+                                                  //| Output exceeds cutoff limit.
+}

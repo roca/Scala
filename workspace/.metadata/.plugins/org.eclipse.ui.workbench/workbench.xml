@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="42" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
 <window height="804" maximized="true" width="1279" x="1280" y="-224">
 <fastViewData fastViewLocation="1024"/>
@@ -34,41 +34,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" partName="Anagrams.scala" path="/Users/roca/Scala/workspace/forcomp/src/main/scala/forcomp/Anagrams.scala" title="Anagrams.scala" tooltip="forcomp/src/main/scala/forcomp/Anagrams.scala" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="693" selectionTopPixel="1201"/>
+<editorState selectionHorizontalPixel="0" selectionLength="50" selectionOffset="5736" selectionTopPixel="2227"/>
 </editor>
-<editor activePart="true" focus="true" id="org.scalaide.worksheet.editors.ScriptEditor" name="pairs.sc" partName="pairs.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/pairs.sc" title="pairs.sc" tooltip="progfun/src/week6/pairs.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/pairs.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2307" selectionTopPixel="315"/>
+<editor activePart="true" focus="true" id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" partName="test.sc" path="/Users/roca/Scala/workspace/forcomp/src/main/scala/forcomp/test.sc" title="test.sc" tooltip="forcomp/src/main/scala/forcomp/test.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/main/scala/forcomp/test.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="733" selectionTopPixel="0"/>
 </editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" partName="test.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/test.sc" title="test.sc" tooltip="progfun/src/week6/test.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/test.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="nqueens.sc" partName="nqueens.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/nqueens.sc" title="nqueens.sc" tooltip="progfun/src/week6/nqueens.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/nqueens.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="253" selectionOffset="34" selectionTopPixel="0"/>
-</editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="books.sc" partName="books.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/books.sc" title="books.sc" tooltip="progfun/src/week6/books.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/books.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1782" selectionTopPixel="22"/>
-</editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="maps.sc" partName="maps.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/maps.sc" title="maps.sc" tooltip="progfun/src/week6/maps.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/maps.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="578" selectionTopPixel="0"/>
-</editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="polynomials.sc" partName="polynomials.sc" path="/Users/roca/Scala/workspace/progfun/src/week6/polynomials.sc" title="polynomials.sc" tooltip="progfun/src/week6/polynomials.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week6/polynomials.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="516" selectionTopPixel="0"/>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" partName="AnagramsSuite.scala" path="/Users/roca/Scala/workspace/forcomp/src/test/scala/forcomp/AnagramsSuite.scala" title="AnagramsSuite.scala" tooltip="forcomp/src/test/scala/forcomp/AnagramsSuite.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="1918" selectionTopPixel="952"/>
 </editor>
 </editors>
 <views>
@@ -223,164 +203,164 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/pairs.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/test.sc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/nqueens.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/books.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/pairs.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/maps.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/polynomials.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/nqueens.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun/src/week6/books.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/forcomp/src/main/scala/forcomp/test.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
 </editors>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="1407" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="1407" y="0"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="106" y="23"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="106" y="23"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="84" y="14"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="34" y="253"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position info="not_deleted" x="1838" y="0"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position info="not_deleted" x="1838" y="0"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="34" y="253"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position info="not_deleted" x="1657" y="0"/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="34" y="253"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position info="not_deleted" x="750" y="0"/>
-</item>
-<item historyLabel="nqueens.sc" index="3">
-<position info="not_deleted" x="34" y="253"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="books.sc" index="4">
-<position/>
-</item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="books.sc" index="4">
+<item historyLabel="books.sc" index="1">
 <position/>
 </item>
 <item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pairs.sc" index="1">
-<position/>
-</item>
-<item historyLabel="books.sc" index="4">
-<position/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="books.sc" index="4">
+<item historyLabel="books.sc" index="1">
 <position info="not_deleted" x="1782" y="0"/>
 </item>
 <item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pairs.sc" index="5">
+<item historyLabel="pairs.sc" index="2">
 <position info="not_deleted" x="2859" y="0"/>
 </item>
-<item historyLabel="maps.sc" index="6">
+<item historyLabel="maps.sc" index="3">
 <position info="not_deleted" x="578" y="0"/>
 </item>
-<item historyLabel="polynomials.sc" index="7">
+<item historyLabel="polynomials.sc" index="4">
 <position info="not_deleted" x="516" y="0"/>
 </item>
-<item historyLabel="pairs.sc" index="5">
+<item historyLabel="pairs.sc" index="2">
 <position/>
 </item>
-<item historyLabel="polynomials.sc" index="7">
+<item historyLabel="polynomials.sc" index="4">
 <position info="not_deleted" x="516" y="0"/>
 </item>
 <item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="693" y="0"/>
 </item>
-<item historyLabel="pairs.sc" index="5">
+<item historyLabel="pairs.sc" index="2">
 <position/>
 </item>
-<item historyLabel="nqueens.sc" index="8">
+<item historyLabel="nqueens.sc" index="5">
 <position info="not_deleted" x="34" y="253"/>
 </item>
 <item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="693" y="0"/>
 </item>
-<item historyLabel="pairs.sc" index="5">
+<item historyLabel="pairs.sc" index="2">
 <position/>
 </item>
-<item historyLabel="books.sc" index="9">
+<item historyLabel="books.sc" index="6">
 <position info="not_deleted" x="1782" y="0"/>
 </item>
-<item active="true" historyLabel="pairs.sc" index="5">
+<item historyLabel="pairs.sc" index="2">
+<position info="not_deleted" x="2307" y="0"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="693" y="0"/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1898" y="37"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="6691" y="16"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="2672" y="8"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="168" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="6748" y="95"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="6748" y="95"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="273" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="6691" y="16"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="6964" y="47"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1918" y="16"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="78" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="73" y="0"/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1918" y="16"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1918" y="16"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1918" y="16"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position info="not_deleted" x="733" y="0"/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item historyLabel="AnagramsSuite.scala" index="8">
+<position info="not_deleted" x="1918" y="16"/>
+</item>
+<item historyLabel="test.sc" index="7">
+<position/>
+</item>
+<item historyLabel="Anagrams.scala" index="9">
+<position info="not_deleted" x="5736" y="50"/>
+</item>
+<item active="true" historyLabel="test.sc" index="7">
 <position/>
 </item>
 </navigationHistory>
@@ -400,6 +380,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" tooltip="forcomp/src/test/scala/forcomp/AnagramsSuite.scala">
+<persistable path="/forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" tooltip="forcomp/src/main/scala/forcomp/test.sc">
+<persistable path="/forcomp/src/main/scala/forcomp/test.sc"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="polynomials.sc" tooltip="progfun/src/week6/polynomials.sc">
 <persistable path="/progfun/src/week6/polynomials.sc"/>
 </file>
@@ -438,12 +424,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="listfun.sc" tooltip="progfun/src/week5/listfun.sc">
 <persistable path="/progfun/src/week5/listfun.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="mergesort.sc" tooltip="progfun/src/week5/mergesort.sc">
-<persistable path="/progfun/src/week5/mergesort.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="nth.sc" tooltip="progfun/src/week4/nth.sc">
-<persistable path="/progfun/src/week4/nth.sc"/>
 </file>
 </mruList>
 </workbench>
