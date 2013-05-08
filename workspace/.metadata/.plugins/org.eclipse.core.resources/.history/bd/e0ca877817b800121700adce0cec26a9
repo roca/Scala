@@ -1,8 +1,0 @@
-
-//import forcomp.Anagrams._
-
-object test {
-
- List('a','b').toString                           //> x  : String = ab
-
-}

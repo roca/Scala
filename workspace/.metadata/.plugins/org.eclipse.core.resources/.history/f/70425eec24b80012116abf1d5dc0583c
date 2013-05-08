@@ -1,0 +1,16 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("a", "b")                     //> sentence  : List[String] = List(a, b)
+sentence.foldRight("")((x,y) => x + y)            //> res0: String = ab
+
+           val big_word = sentence.foldRight("")((x,y) => x + y)
+                                                  //> big_word  : String = ab
+    	   val occurrences = wordOccurrences(big_word)
+                                                  //> occurrences  : forcomp.Anagrams.Occurrences = List((a,1), (b,1))
+    	   val combin = combinations(occurrences) //> combin  : List[forcomp.Anagrams.Occurrences] = List(List((a,1)), List((b,1))
+                                                  //| , List((a,1), (b,1)), List())
+
+}

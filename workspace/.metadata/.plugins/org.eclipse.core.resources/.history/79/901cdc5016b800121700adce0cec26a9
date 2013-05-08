@@ -1,8 +1,0 @@
-
-//import forcomp.Anagrams._
-
-object test {
-
- val x = 'a' + 'b'
-
-}
