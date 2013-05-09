@@ -5148,3 +5148,4 @@ java.lang.InterruptedException
 2013-05-09 10:48:41,723 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.nativeNotifyLoop(Native Method)
 2013-05-09 10:48:41,723 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.access$5(JNotify_macosx.java:81)
 2013-05-09 10:48:41,723 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx$1.run(JNotify_macosx.java:70)
+2013-05-09 14:05:34,710  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

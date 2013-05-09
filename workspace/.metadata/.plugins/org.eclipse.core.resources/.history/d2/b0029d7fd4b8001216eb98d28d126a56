@@ -195,7 +195,7 @@ object Anagrams {
 		    	          word <- showWords(dictionaryByOccurrences.get(occurrence))
 		    	             s = {println(word)
 		    	                  if (word.isEmpty)   f(subtract(remainingOccurrences,occurrence),  acc)
-		    	                  else f(subtract(remainingOccurrences,occurrence), showWords(dictionaryByOccurrences.get(occurrence)) :: acc)}
+		    	                  else f(subtract(remainingOccurrences,occurrence), wordAnagrams(word) :: acc)}
 		    	   } yield s.flatten.filter(x => x.length > 0)
            
   	           }

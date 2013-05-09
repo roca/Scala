@@ -6,7 +6,8 @@ object test {
 val sentence = List("Linux", "rulez")             //> sentence  : List[String] = List(Linux, rulez)
 
 
-sentenceAnagrams(sentence)                        //> en
+                                                  //> en
+sentenceAnagrams(sentence)
                                                   //| re
                                                   //| ex
                                                   //| ill
