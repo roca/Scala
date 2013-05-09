@@ -1,0 +1,15 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("Linux", "rulez")             //> sentence  : List[String] = List(Linux, rulez)
+wordAnagrams("ILoveyou")                          //> res0: List[forcomp.Anagrams.Word] = List(Linux)
+
+
+
+
+
+
+
+ }

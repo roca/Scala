@@ -1,0 +1,18 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("Linux", "rulez")             //> sentence  : List[String] = List(You, olive)
+sentenceAnagrams(sentence).distinct.length        //> res0: Int = 5
+wordAnagrams("Io")                                //> res1: List[forcomp.Anagrams.Word] = List(Io)
+
+dictionaryByOccurrences(wordOccurrences("Io"))    //> res2: List[forcomp.Anagrams.Word] = List(Io)
+
+
+
+
+
+
+
+ }

@@ -1,0 +1,25 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("You", "olive")               //> sentence  : List[String] = List(You, olive)
+sentenceAnagrams(sentence)                        //> res0: List[forcomp.Anagrams.Sentence] = List(List(vie), List(Eli, lie, vie, 
+                                                  //| Lev, evil, Levi, live, veil, vile), List(Io, Eli, lie, vie, Leo, Lev, oil, e
+                                                  //| vil, Levi, live, veil, vile, love, olive), List(Io, Eli, lie, vie, Leo, Lev,
+                                                  //|  oil, Lou, lieu, evil, Levi, live, veil, vile, love, olive), List(Io, Eli, l
+                                                  //| ie, vie, Leo, Lev, oil, Lou, lieu, evil, Levi, live, veil, vile, love, olive
+                                                  //| ), List(Io, Eli, lie, vie, Leo, Lev, Ely, oil, ivy, Lou, Loy, you, lieu, evi
+                                                  //| l, Levi, live, veil, vile, love, levy, oily, olive))
+wordAnagrams("Io")                                //> res1: List[forcomp.Anagrams.Word] = List(Io)
+
+showWords(dictionaryByOccurrences.get(wordOccurrences("Io")))
+                                                  //> res2: List[forcomp.Anagrams.Word] = List(Io)
+
+
+
+
+
+
+
+ }
