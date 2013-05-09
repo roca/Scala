@@ -4,9 +4,7 @@ import forcomp.Anagrams._
 object test {
 
 val sentence = List("Linux", "rulez")             //> sentence  : List[String] = List(Linux, rulez)
-
-sentence.foldRight("")((x,y) => x + y)            //> res0: String = Linuxrulez
-sentenceAnagrams(sentence)                        //> res1: List[forcomp.Anagrams.Sentence] = List(List(re, rue, lure, rule, rulez
+sentenceAnagrams(sentence)                        //> res0: List[forcomp.Anagrams.Sentence] = List(List(re, rue, lure, rule, rulez
                                                   //| ), List(re, ex, rue, Rex, lure, rule, rulez), List(re, ex, rue, Rex, Zulu, l
                                                   //| ure, rule, rulez), List(en, re, ex, nu, Len, Zen, rue, Rex, Zulu, run, urn, 
                                                   //| lure, rule, rulez), List(en, re, ex, in, nu, Eli, lie, ire, Len, Zen, rue, R

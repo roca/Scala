@@ -194,8 +194,9 @@ object Anagrams {
     	     val s = for {
     	      occurrence <- combinations(wordOccurrences(remainingWord))
     	        word <- showWords(dictionaryByOccurrences.get(occurrence))
+    	         nextWord = subtract(wordOccurrences(remainingWord),occurrence).map( x => x._1).mkString
     	    } yield word
-    	    f(remainingWord.tail , s :: acc  )
+    	    f(subtract(wordOccurrences(remainingWord),occurrence).map( x => x._1).mkString , s.distinct :: acc  )
     	  }
 		    	 
   	           

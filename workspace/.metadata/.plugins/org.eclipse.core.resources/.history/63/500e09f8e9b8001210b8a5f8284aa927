@@ -185,19 +185,22 @@ object Anagrams {
 
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
            val big_word = sentence.foldRight("")((x,y) => x + y) 
-    	   val occurrences = wordOccurrences(big_word)
-    	def f(remainingOccurrences: List[Occurrence] ,acc: List[Sentence] ): List[Sentence]= {
-    	  
-    	  if (remainingOccurrences.isEmpty) acc
+    	   
+    	def f(remainingWord: Word ,acc: List[Sentence] ): List[Sentence]= {
+    	  //println(acc)
+    	  if (remainingWord.isEmpty) acc
     	  else {
-		    	  for {
-		    	     occurrence <- combinations(remainingOccurrences)
-		    	       words <- showWords(dictionaryByOccurrences.get(occurrence))
-		    	         s <- f(subtract(remainingOccurrences,occurrence),List(words) :: acc)
-		    	   } yield s
-           
-  	    }}
-         f(occurrences,List())
+    	    
+    	     val s = for {
+    	      occurrence <- combinations(wordOccurrences(remainingWord))
+    	        word <- showWords(dictionaryByOccurrences.get(occurrence))
+    	    } yield word
+    	    f(remainingWord.tail , s.distinct :: acc  )
+    	  }
+		    	 
+  	           
+    	  }
+         f(big_word,List()).filter(x => x.length > 0)
   }
 
 }
