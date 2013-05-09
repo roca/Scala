@@ -193,10 +193,11 @@ object Anagrams {
 		    	  for {
 		    	     occurrence <- combinations(remainingOccurrences)
 		    	          word <- showWords(dictionaryByOccurrences.get(occurrence))
-		    	             s = f(subtract(remainingOccurrences,occurrence), wordAnagrams(word) :: acc)
-		    	   } yield s
+		    	             s = {if (word.isEmpty)   f(subtract(remainingOccurrences,occurrence),  acc)
+		    	                  else f(subtract(remainingOccurrences,occurrence), wordAnagrams(word) :: acc)}
+		    	   } yield s.flatten
            
-  	    }.flatten
+  	           }
     	  }
          f(occurrences,List())
   }

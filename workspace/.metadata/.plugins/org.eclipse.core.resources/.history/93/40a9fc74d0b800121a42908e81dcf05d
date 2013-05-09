@@ -8,8 +8,8 @@ sentenceAnagrams(sentence)                        //> res0: List[forcomp.Anagram
                                                   //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
                                                   //| t(), List(), List(), List(), List(), List(), List(), List(), List(), List(),
                                                   //|  List(), List(), List(), List(), List(), List(), List(), List(), List(), Lis
-                                                  //| t(), List(), List(), List(), List(), List())
 
+                                                  //| t(), List(), List(), List(), List(), List())
 
 
 
