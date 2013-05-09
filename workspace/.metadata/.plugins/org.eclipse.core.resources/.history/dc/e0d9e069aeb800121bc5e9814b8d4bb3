@@ -1,0 +1,16 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("You", "olive")               //> sentence  : List[String] = List(You, olive)
+val big_word = sentence.foldRight("")((x,y) => x + y) 
+val occurrences = wordOccurrences(big_word)
+    	   
+    	   for {
+    	     c <- combinations(occurrences)
+    	   } yield showWords(dictionaryByOccurrences.get(c)
+    	   
+    	   
+    	   
+ }

@@ -1,0 +1,8 @@
+
+import forcomp.Anagrams._
+
+object test {
+
+val sentence = List("Linux", "rulez")
+sentenceAnagrams(sentence
+ }
