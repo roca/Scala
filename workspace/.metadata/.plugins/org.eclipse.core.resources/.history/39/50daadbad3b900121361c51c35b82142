@@ -142,7 +142,7 @@ object Anagrams {
    */
   def subtract(x: Occurrences, y: Occurrences): Occurrences = {
     val stringX = x.map( occurrence => occurrence._1.toString*occurrence._2).mkString
-    val stringY = y.map( occurrence => occurrence._1.toString*occurrence._2).mkString
+    val stringY = x.map( occurrence => occurrence._1.toString*occurrence._2).mkString
     wordOccurrences(stringX.diff(stringY))
   }
 
@@ -188,10 +188,12 @@ object Anagrams {
    */
 
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+           val big_word = sentence.foldRight("")((x,y) => x + y) 
     	   
     	def f(remainingWordOccurrences: Occurrences): List[Sentence]= {
-    	  if (remainingWordOccurrences.isEmpty) List(Nil)
-    	  else {
+    	  //println(remainingWordOccurrences)
+    	  //if (remainingWordOccurrences.isEmpty) List(List()) 
+    	  //else {
     	    
     	     for {
     	      occurrence <- combinations(remainingWordOccurrences)
@@ -200,11 +202,11 @@ object Anagrams {
     	                
     	    } yield  word::rest
     	    
-    	   }
+    	 // }
 		    	 
   	           
     	  }
-         f(sentenceOccurrences(sentence))
+         f(wordOccurrences(big_word)).filter(x => x.length > 0)
   }
 
 }

@@ -188,8 +188,10 @@ object Anagrams {
    */
 
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+           val big_word = sentence.foldRight("")((x,y) => x + y) 
     	   
     	def f(remainingWordOccurrences: Occurrences): List[Sentence]= {
+    	  //println(remainingWordOccurrences)
     	  if (remainingWordOccurrences.isEmpty) List(Nil)
     	  else {
     	    
@@ -204,7 +206,7 @@ object Anagrams {
 		    	 
   	           
     	  }
-         f(sentenceOccurrences(sentence))
+         f(wordOccurrences(big_word)).filter(x => x.length > 0)
   }
 
 }

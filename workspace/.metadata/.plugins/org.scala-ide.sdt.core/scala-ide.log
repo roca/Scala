@@ -5633,3 +5633,6 @@ java.lang.InterruptedException
 2013-05-10 20:35:24,298 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.nativeNotifyLoop(Native Method)
 2013-05-10 20:35:24,298 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.access$5(JNotify_macosx.java:81)
 2013-05-10 20:35:24,298 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx$1.run(JNotify_macosx.java:70)
+2013-05-10 20:42:06,571 ERROR [Worker-32] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2013-05-10 20:42:06,572 ERROR [Worker-32] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2013-05-10 20:42:06,572 ERROR [Worker-32] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

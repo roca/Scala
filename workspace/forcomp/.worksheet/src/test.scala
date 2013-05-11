@@ -43,9 +43,15 @@ val sentence1 = List("Linux", "rulez");System.out.println("""sentence1  : List[S
          List("say", "men"),
          List("yes","man")
        );System.out.println("""anas2  : List[List[String]] = """ + $show(anas2 ));$skip(35); 
-val sentence2 = List("Yes", "man");System.out.println("""sentence2  : List[String] = """ + $show(sentence2 ));$skip(29); val res$0 = 
+val sentence2 = List("Yes", "man");System.out.println("""sentence2  : List[String] = """ + $show(sentence2 ));$skip(53); val res$0 = 
 
-sentenceAnagrams(sentence1);System.out.println("""res0: List[forcomp.Anagrams.Sentence] = """ + $show(res$0))}
+
+
+
+sentenceAnagrams(sentence2).toSet == anas2.toSet;System.out.println("""res0: Boolean = """ + $show(res$0));$skip(49); val res$1 = 
+sentenceAnagrams(sentence1).toSet == anas1.toSet;System.out.println("""res1: Boolean = """ + $show(res$1));$skip(26); val res$2 = 
+
+sentenceAnagrams(List());System.out.println("""res2: List[forcomp.Anagrams.Sentence] = """ + $show(res$2))}
                              
 
                       

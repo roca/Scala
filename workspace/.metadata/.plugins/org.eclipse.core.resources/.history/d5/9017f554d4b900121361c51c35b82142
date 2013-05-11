@@ -57,11 +57,7 @@ val sentence2 = List("Yes", "man")                //> sentence2  : List[String] 
 
 
 
-sentenceAnagrams(sentence2).toSet == anas2.toSet  //> res0: Boolean = true
-sentenceAnagrams(sentence1).toSet == anas1.toSet  //> res1: Boolean = true
-
-sentenceAnagrams(List())
- sentenceAnagrams(List("You","olive"))
+sentenceAnagrams(List())                          //> res0: List[forcomp.Anagrams.Sentence] = List()
                              
 
                       
