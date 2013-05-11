@@ -140,7 +140,11 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = (x.toSet -- y.toSet).toList
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = {
+    val stringX = x.map( occurrence => occurrence._1.toString*occurrence._2).mkString
+    val stringY = x.map( occurrence => occurrence._1.toString*occurrence._2).mkString
+    wordOccurrences(stringX.diff(stringY))
+  }
 
   /** Returns a list of all anagram sentences of the given sentence.
    *  
@@ -186,22 +190,23 @@ object Anagrams {
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
            val big_word = sentence.foldRight("")((x,y) => x + y) 
     	   
-    	def f(remainingWord: Word ,acc: List[Sentence] ): List[Sentence]= {
-    	  //println(acc)
-    	  if (remainingWord.isEmpty) acc
-    	  else {
+    	def f(remainingWordOccurrences: Occurrences): List[Sentence]= {
+    	  //println(remainingWordOccurrences)
+    	  //if (remainingWordOccurrences.isEmpty) List(List()) 
+    	  //else {
     	    
-    	     val s = for {
-    	      occurrence <- combinations(wordOccurrences(remainingWord))
+    	     for {
+    	      occurrence <- combinations(remainingWordOccurrences)
     	        word <- showWords(dictionaryByOccurrences.get(occurrence))
-    	         nextWord = subtract(wordOccurrences(remainingWord),occurrence).map( x => x._1).mkString
-    	    } yield word
-    	    f(subtract(wordOccurrences(remainingWord),occurrence).map( x => x._1).mkString , s.distinct :: acc  )
-    	  }
+    	         rest <- f(subtract(remainingWordOccurrences,occurrence))
+    	                
+    	    } yield  word::rest
+    	    
+    	 // }
 		    	 
   	           
     	  }
-         f(big_word,List()).filter(x => x.length > 0)
+         f(wordOccurrences(big_word)).filter(x => x.length > 0)
   }
 
 }
