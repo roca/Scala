@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="37" version="2.0">
+<workbench progressCount="28" version="2.0">
 <workbenchAdvisor/>
 <window height="804" maximized="true" width="1279" x="1280" y="-224">
 <fastViewData fastViewLocation="1024"/>
@@ -33,22 +33,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" partName="Anagrams.scala" path="/Users/roca/Scala/workspace/forcomp/src/main/scala/forcomp/Anagrams.scala" title="Anagrams.scala" tooltip="forcomp/src/main/scala/forcomp/Anagrams.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7425" selectionTopPixel="2663"/>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="FunSets.scala" partName="FunSets.scala" path="/Users/roca/Scala/workspace/funsets/src/main/scala/funsets/FunSets.scala" title="FunSets.scala" tooltip="funsets/src/main/scala/funsets/FunSets.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/funsets/src/main/scala/funsets/FunSets.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="79" selectionTopPixel="1478"/>
 </editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="test.sc" partName="test.sc" path="/Users/roca/Scala/workspace/forcomp/src/main/scala/forcomp/test.sc" title="test.sc" tooltip="forcomp/src/main/scala/forcomp/test.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/main/scala/forcomp/test.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2888" selectionTopPixel="570"/>
-</editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" partName="AnagramsSuite.scala" path="/Users/roca/Scala/workspace/forcomp/src/test/scala/forcomp/AnagramsSuite.scala" title="AnagramsSuite.scala" tooltip="forcomp/src/test/scala/forcomp/AnagramsSuite.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="1840" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="IntSet.scala" partName="IntSet.scala" path="/Users/roca/Scala/workspace/progfun/src/week3/IntSet.scala" title="IntSet.scala" tooltip="progfun/src/week3/IntSet.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun/src/week3/IntSet.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="98"/>
 </editor>
 </editors>
 <views>
@@ -65,7 +60,6 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="644"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -206,34 +200,12 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/main/scala/forcomp/Anagrams.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/forcomp/src/main/scala/forcomp/test.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/main/scala/streams/StringParserTerrain.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/main/scala/streams/GameDef.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/main/scala/streams/Solver.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/funsets/src/main/scala/funsets/FunSets.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun/src/week3/IntSet.scala"/>
 </editors>
-<item historyLabel="test.sc" index="2">
-<position/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3727" y="17"/>
-</item>
-<item historyLabel="AnagramsSuite.scala" index="1">
-<position info="not_deleted" x="411" y="54"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3727" y="17"/>
-</item>
-<item historyLabel="AnagramsSuite.scala" index="1">
-<position info="not_deleted" x="411" y="54"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3727" y="17"/>
-</item>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="2738" y="0"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3727" y="17"/>
-</item>
-<item historyLabel="test.sc" index="2">
-<position info="not_deleted" x="1370" y="0"/>
-</item>
 <item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="3727" y="17"/>
 </item>
@@ -354,8 +326,35 @@
 <item historyLabel="AnagramsSuite.scala" index="1">
 <position info="not_deleted" x="1840" y="3"/>
 </item>
-<item active="true" historyLabel="Anagrams.scala" index="0">
+<item historyLabel="Anagrams.scala" index="0">
 <position info="not_deleted" x="7425" y="0"/>
+</item>
+<item historyLabel="StringParserTerrain.scala" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="GameDef.scala" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Solver.scala" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="GameDef.scala" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="StringParserTerrain.scala" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FunSets.scala" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FunSets.scala" index="6">
+<position info="not_deleted" x="200" y="3"/>
+</item>
+<item historyLabel="FunSets.scala" index="6">
+<position info="not_deleted" x="79" y="7"/>
+</item>
+<item active="true" historyLabel="IntSet.scala" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -374,6 +373,21 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="IntSet.scala" tooltip="progfun/src/week3/IntSet.scala">
+<persistable path="/progfun/src/week3/IntSet.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="FunSets.scala" tooltip="funsets/src/main/scala/funsets/FunSets.scala">
+<persistable path="/funsets/src/main/scala/funsets/FunSets.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Solver.scala" tooltip="streams/src/main/scala/streams/Solver.scala">
+<persistable path="/streams/src/main/scala/streams/Solver.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="GameDef.scala" tooltip="streams/src/main/scala/streams/GameDef.scala">
+<persistable path="/streams/src/main/scala/streams/GameDef.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="StringParserTerrain.scala" tooltip="streams/src/main/scala/streams/StringParserTerrain.scala">
+<persistable path="/streams/src/main/scala/streams/StringParserTerrain.scala"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="nqueens.sc" tooltip="progfun/src/week6/nqueens.sc">
 <persistable path="/progfun/src/week6/nqueens.sc"/>
 </file>
@@ -403,21 +417,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="currying.sc" tooltip="progfun/src/week2/currying.sc">
 <persistable path="/progfun/src/week2/currying.sc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Rational.scala" tooltip="progfun/src/week3/Rational.scala">
-<persistable path="/progfun/src/week3/Rational.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="IntSet.scala" tooltip="progfun/src/week3/IntSet.scala">
-<persistable path="/progfun/src/week3/IntSet.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="List.scala" tooltip="progfun/src/week4/List.scala">
-<persistable path="/progfun/src/week4/List.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Huffman.scala" tooltip="patmat/src/main/scala/patmat/Huffman.scala">
-<persistable path="/patmat/src/main/scala/patmat/Huffman.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="listfun.sc" tooltip="progfun/src/week5/listfun.sc">
-<persistable path="/progfun/src/week5/listfun.sc"/>
 </file>
 </mruList>
 </workbench>
