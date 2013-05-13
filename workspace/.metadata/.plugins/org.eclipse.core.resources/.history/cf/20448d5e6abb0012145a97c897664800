@@ -1,0 +1,6 @@
+package streams
+
+object scratch {
+val v = Vector(1,2)                               //> v  : scala.collection.immutable.Vector[Int] = Vector(1, 2)
+v(1)
+}
