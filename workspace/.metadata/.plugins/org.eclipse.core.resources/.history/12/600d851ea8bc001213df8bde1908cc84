@@ -1,8 +1,0 @@
-import streams._
-
-object scratch {
-val v = Vector(1,2)
-v.length
-Pos(1,2)
-
-}

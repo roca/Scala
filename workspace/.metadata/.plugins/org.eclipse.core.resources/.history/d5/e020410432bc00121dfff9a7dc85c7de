@@ -1,9 +1,0 @@
-import streams.StringParserTerrain
-import streams.GameDef
-
-object scratch {
-val v = Vector(1,2)
-v.length
-
-val x = terrain(Pos(4,11))
-}

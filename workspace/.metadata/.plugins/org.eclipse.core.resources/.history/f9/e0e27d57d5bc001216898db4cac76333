@@ -1,0 +1,48 @@
+package streams
+
+import common._
+import streams._
+
+trait Level1 extends GameDef with Solver with StringParserTerrain {
+      /* terrain for level 1*/
+
+    val level =
+    """ooo-------
+      |oSoooo----
+      |ooooooooo-
+      |-ooooooooo
+      |-----ooToo
+      |------ooo-""".stripMargin
+
+   
+  }
+
+object scratch extends Level1{
+
+terrain(Pos(1,100))                               //> res0: Boolean = true
+
+val n  = neighborsWithHistory(Block(Pos(1,1),Pos(1,1)), List(Left,Up))
+                                                  //> java.lang.IndexOutOfBoundsException: -1
+                                                  //| 	at scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:137)
+                                                  //| 
+                                                  //| 	at scala.collection.immutable.Vector.apply(Vector.scala:127)
+                                                  //| 	at streams.StringParserTerrain$class.f$1(StringParserTerrain.scala:58)
+                                                  //| 	at streams.StringParserTerrain$$anonfun$terrainFunction$1.apply(StringPa
+                                                  //| rserTerrain.scala:60)
+                                                  //| 	at streams.StringParserTerrain$$anonfun$terrainFunction$1.apply(StringPa
+                                                  //| rserTerrain.scala:60)
+                                                  //| 	at streams.GameDef$Block.isLegal(GameDef.scala:159)
+                                                  //| 	at streams.GameDef$Block$$anonfun$legalNeighbors$1.apply(GameDef.scala:1
+                                                  //| 46)
+                                                  //| 	at streams.GameDef$Block$$anonfun$legalNeighbors$1.apply(GameDef.scala:1
+                                                  //| 45)
+                                                  //| 	at scala.collection.TraversableLike$WithFilter$$anonfun$map$2.apply(Trav
+                                                  //| ersableLike.scala:722)
+                                                  //| 	at scala.collection.immutable.List.foreach(List.scala:318)
+                                                  //| 	at scala.collection.TraversableLike$WithFilter.map(TraversableLike.scala
+                                                  //| :721)
+                                                  //| 	at streams.GameDef$Block.legalNe
+                                                  //| Output exceeds cutoff limit.
+    
+  
+}

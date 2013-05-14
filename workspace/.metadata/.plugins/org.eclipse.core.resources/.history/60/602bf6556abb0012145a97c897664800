@@ -1,5 +1,0 @@
-package streams
-
-object scratch {                                  //> Welcome to the Scala worksheet
-val v = Vector(1,2)
-}

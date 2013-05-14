@@ -1,8 +1,0 @@
-import streams.StringParserTerrain
-
-object scratch {
-val v = Vector(1,2)
-v.length
-
-terrain(Pos(4,11))
-}

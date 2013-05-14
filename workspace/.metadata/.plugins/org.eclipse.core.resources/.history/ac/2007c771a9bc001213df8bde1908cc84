@@ -1,9 +1,0 @@
-import streams._
-
-
-object scratch extends GameDef {
-val v = Vector(1,2)                               //> v  : scala.collection.immutable.Vector[Int] = Vector(1, 2)
-v.length                                          //> res0: Int = 2
-
-Pos(1,2)
-}
