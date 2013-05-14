@@ -1,0 +1,9 @@
+import streams._
+
+
+object scratch extends GameDef {
+val v = Vector(1,2)
+v.length
+
+Pos(1,2)
+}
