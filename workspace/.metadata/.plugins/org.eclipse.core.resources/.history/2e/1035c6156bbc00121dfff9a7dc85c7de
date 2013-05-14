@@ -84,7 +84,7 @@ trait GameDef {
    * This function returns the block at the start position of
    * the game.
    */
-  def startBlock: Block = new Block(startPos,startPos)
+  def startBlock: Block = ???
 
   /**
    * A block is represented by the position of the two cubes that
@@ -150,7 +150,7 @@ trait GameDef {
     /**
      * Returns `true` if the block is entirely inside the terrain.
      */
-    def isLegal: Boolean = terrain(b1) && terrain(b2)
+    def isLegal: Boolean = ???
 
   }
 }

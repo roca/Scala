@@ -1,5 +1,4 @@
-import streams.StringParserTerrain._
-import streams.GameDef._
+import streams._
 
 object scratch {
 val v = Vector(1,2)
