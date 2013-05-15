@@ -160,6 +160,6 @@ trait GameDef {
 
   }
   
-   
+    type blockWithHistory = (Block, List[Move])
 
 }

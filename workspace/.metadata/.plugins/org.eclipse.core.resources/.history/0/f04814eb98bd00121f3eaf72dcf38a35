@@ -159,7 +159,4 @@ trait GameDef {
     def isLegal: Boolean = terrain(b1) && terrain(b2)
 
   }
-  
-   
-
 }
