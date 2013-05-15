@@ -35,19 +35,7 @@ val n  = neighborsWithHistory(Block(Pos(1,1),Pos(1,1)), List(Left,Up)).toSet
   ).toStream,
 
   Set(Block(Pos(1,2),Pos(1,3)), Block(Pos(1,1),Pos(1,1)))
-)                                                 //> scala.NotImplementedError: an implementation is missing
-                                                  //| 	at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
-                                                  //| 	at streams.Solver$class.newNeighborsOnly(Solver.scala:43)
-                                                  //| 	at streams.scratch$.newNeighborsOnly(streams.scratch.scala:20)
-                                                  //| 	at streams.scratch$$anonfun$main$1.apply$mcV$sp(streams.scratch.scala:28
-                                                  //| )
-                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
-                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
-                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
-                                                  //| orksheetSupport.scala:65)
-                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
-                                                  //| ksheetSupport.scala:75)
-                                                  //| 	at streams.scratch$.main(streams.scratch.scala:20)
-                                                  //| 	at streams.scratch.main(streams.scratch.scala)
+)                                                 //> res1: Stream[(streams.scratch.Block, List[streams.scratch.Move])] = Stream((
+                                                  //| Block(Pos(2,1),Pos(3,1)),List(Down, Left, Up)), ?)
   
 }
