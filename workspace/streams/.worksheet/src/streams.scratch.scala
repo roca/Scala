@@ -23,7 +23,15 @@ terrain(Pos(3,1));System.out.println("""res0: Boolean = """ + $show(res$0));$ski
 
 
 
-val n  = neighborsWithHistory(Block(Pos(1,1),Pos(1,1)), List(Left,Up)).toSet;System.out.println("""n  : scala.collection.immutable.Set[(streams.scratch.Block, List[streams.scratch.Move])] = """ + $show(n ))}
-    
+val n  = neighborsWithHistory(Block(Pos(1,1),Pos(1,1)), List(Left,Up)).toSet;System.out.println("""n  : scala.collection.immutable.Set[(streams.scratch.Block, List[streams.scratch.Move])] = """ + $show(n ));$skip(208); val res$1 = 
+  
+ newNeighborsOnly(
+  Set(
+    (Block(Pos(1,2),Pos(1,3)), List(Right,Left,Up)),
+    (Block(Pos(2,1),Pos(3,1)), List(Down,Left,Up))
+  ).toStream,
+
+  Set(Block(Pos(1,2),Pos(1,3)), Block(Pos(1,1),Pos(1,1)))
+);System.out.println("""res1: Stream[(streams.scratch.Block, List[streams.scratch.Move])] = """ + $show(res$1))}
   
 }
