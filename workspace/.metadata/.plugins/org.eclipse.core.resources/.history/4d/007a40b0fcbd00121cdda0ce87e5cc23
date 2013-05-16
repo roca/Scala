@@ -47,7 +47,7 @@ class Pouring(capacity: Vector[Int]) {
   	}
   	    val initialPath = new Path(Nil)
   	    
-  	    def from(paths: Set[Path]): Stream[Set[Path]] = 
+  	    def from(paths: Set[Path]): Stream[Set[Path]] = {
   	      if (paths.isEmpty) Stream.Empty
   	      else {
   	        val more = for {

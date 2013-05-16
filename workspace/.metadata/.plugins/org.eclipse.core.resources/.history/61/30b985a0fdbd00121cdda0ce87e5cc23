@@ -6,5 +6,5 @@ object test {
                                                   //| ek7.test.problem.Move] = Vector(Empty(0), Empty(1), Fill(0), Fill(1), Pour(0,
                                                   //| 1), Pour(1,0))
   
-  
+  // problem.pathSets.take(3)
 }
