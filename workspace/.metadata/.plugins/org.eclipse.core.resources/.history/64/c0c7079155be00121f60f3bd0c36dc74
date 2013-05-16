@@ -48,4 +48,5 @@ primes.take(100).toList                           //> res1: List[Int] = List(2, 
                                                   //| .0, 2.0, 2.0, 2.0, 2.0, 2.0)
    
    
+                                                  //> res4: List[Int] = List(1, 2, 6, 42, 1806)
 }

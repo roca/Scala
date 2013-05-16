@@ -48,4 +48,8 @@ primes.take(100).toList                           //> res1: List[Int] = List(2, 
                                                   //| .0, 2.0, 2.0, 2.0, 2.0, 2.0)
    
    
+   def fact(n:Int): Stream[Int]= n #:: fact(n * (n+1))
+                                                  //> fact: (n: Int)Stream[Int]
+   
+   fact(2).take(5).toList                         //> res4: List[Int] = List(2, 2, 2, 2, 2)
 }

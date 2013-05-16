@@ -30,4 +30,6 @@ primes.take(100).toList;System.out.println("""res1: List[Int] = """ + $show(res$
    sqrtStream(4).take(10).toList;System.out.println("""res2: List[Double] = """ + $show(res$2));$skip(63); val res$3 = 
    
    sqrtStream(4).filter(isGoodEnough(_,4)).take(10).toList;System.out.println("""res3: List[Double] = """ + $show(res$3))}
+   
+   
 }
