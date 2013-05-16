@@ -74,24 +74,9 @@ trait Solver extends GameDef {
    * construct the correctly sorted stream.
    */
   def from(initial: Stream[(Block, List[Move])],
-           explored: Set[Block]): Stream[(Block, List[Move])] = {
-    
-     
-         if (initial.isEmpty) Stream.Empty
-  	      else {
-  	        val more = for {
-  	          neighbor <- newNeighborsOnly(initial,explored)
-  	             n <- neighborsWithHistory(neighbor._1,neighbor._2)
-  	        } yield n
-  	        initial.head #:: from(more,explored ++ (more map (_._1)))
-  	       }
-  	        
-  	       
-  	      
-  }
+           explored: Set[Block]): Stream[(Block, List[Move])] = ???
            
-/*
- * def from(paths: Set[Path],explored: Set[State]): Stream[Set[Path]] = 
+/** def from(paths: Set[Path],explored: Set[State]): Stream[Set[Path]] = 
   	      if (paths.isEmpty) Stream.Empty
   	      else {
   	        val more = for {
