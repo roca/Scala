@@ -1,0 +1,23 @@
+package week7
+
+object test {
+  val problem = new Pouring(Vector(4,7))          //> problem  : week7.Pouring = week7.Pouring@5557c2bd
+  problem.moves                                   //> res0: scala.collection.immutable.IndexedSeq[Product with Serializable with we
+                                                  //| ek7.test.problem.Move] = Vector(Empty(0), Empty(1), Fill(0), Fill(1), Pour(0,
+                                                  //| 1), Pour(1,0))
+  problem.solutions(6)                            //> res1: List[Set[week7.test.problem.Path]] = List(Set(--> Vector(0, 0)), Set(E
+                                                  //| mpty(1)--> Vector(0, 0), Fill(0)--> Vector(4, 0), Pour(0,1)--> Vector(0, 0),
+                                                  //|  Empty(0)--> Vector(0, 0), Pour(1,0)--> Vector(0, 0), Fill(1)--> Vector(0, 7
+                                                  //| )), Set(Fill(1) Pour(1,0)--> Vector(4, 3), Empty(0) Pour(1,0)--> Vector(0, 0
+                                                  //| ), Empty(0) Fill(0)--> Vector(4, 0), Empty(0) Pour(0,1)--> Vector(0, 0), Pou
+                                                  //| r(0,1) Pour(0,1)--> Vector(0, 0), Pour(1,0) Pour(1,0)--> Vector(0, 0), Pour(
+                                                  //| 0,1) Pour(1,0)--> Vector(0, 0), Pour(0,1) Empty(0)--> Vector(0, 0), Pour(1,0
+                                                  //| ) Empty(0)--> Vector(0, 0), Empty(0) Empty(1)--> Vector(0, 0), Pour(0,1) Fil
+                                                  //| l(0)--> Vector(4, 0), Fill(1) Pour(0,1)--> Vector(0, 7), Empty(1) Empty(0)--
+                                                  //| > Vector(0, 0), Fill(0) Pour(0,1)--> Vector(0, 4), Pour(1,0) Fill(1)--> Vect
+                                                  //| or(0, 7), Fill(1) Empty(1)--> Vector(0, 0), Fill(0) Fill(0)--> Vector(4, 0),
+                                                  //|  Empty(1) Pour(1,0)--> Vector(0, 0), Empty(0) Empty(0)--> Vector(0, 0), Pour
+                                                  //| (1,0) Pour(0,1)--> Vecto
+                                                  //| Output exceeds cutoff limit.
+  
+}

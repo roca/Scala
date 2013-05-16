@@ -1,0 +1,29 @@
+package week7
+
+object test {
+  val problem = new Pouring(Vector(4,9))          //> problem  : week7.Pouring = week7.Pouring@5557c2bd
+  problem.moves                                   //> res0: scala.collection.immutable.IndexedSeq[Product with Serializable with we
+                                                  //| ek7.test.problem.Move] = Vector(Empty(0), Empty(1), Fill(0), Fill(1), Pour(0,
+                                                  //| 1), Pour(1,0))
+  problem.solutions(6)                            //> java.lang.OutOfMemoryError: Java heap space
+  
+                                                  //| 	at scala.collection.immutable.HashSet$HashTrieSet.updated0(HashSet.scala
+                                                  //| :233)
+                                                  //| 	at scala.collection.immutable.HashSet.$plus(HashSet.scala:56)
+                                                  //| 	at scala.collection.immutable.HashSet.$plus(HashSet.scala:33)
+                                                  //| 	at scala.collection.mutable.SetBuilder.$plus$eq(SetBuilder.scala:24)
+                                                  //| 	at scala.collection.mutable.SetBuilder.$plus$eq(SetBuilder.scala:22)
+                                                  //| 	at scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Grow
+                                                  //| able.scala:48)
+                                                  //| 	at scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Grow
+                                                  //| able.scala:48)
+                                                  //| 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+                                                  //| 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+                                                  //| 	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+                                                  //| 	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+                                                  //| 	at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:
+                                                  //| 48)
+                                                  //| 	at scala.colle
+                                                  //| Output exceeds cutoff limit.
+  
+}
