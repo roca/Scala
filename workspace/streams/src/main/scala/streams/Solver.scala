@@ -80,9 +80,10 @@ trait Solver extends GameDef {
          if (initial.isEmpty) Stream.Empty
   	      else {
   	        val more = for {
-  	          neighbor <- newNeighborsOnly(initial,explored)
-  	             n <- neighborsWithHistory(neighbor._1,neighbor._2)
-  	        } yield n
+  	          neighbor <- initial
+  	          neighbors_with_history <- neighborsWithHistory(neighbor._1,neighbor._2)
+  	          new_neighbors <- newNeighborsOnly(neighbors_with_history,explored)
+  	        } yield new_neighbors
   	        initial.head #:: from(more,explored ++ (more map (_._1)))
   	       }
   	        
@@ -105,7 +106,14 @@ trait Solver extends GameDef {
   /**
    * The stream of all paths that begin at the starting block.
    */
-  lazy val pathsFromStart: Stream[(Block, List[Move])] = ???
+  lazy val pathsFromStart: Stream[(Block, List[Move])] = {
+    val paths = from(Stream((startBlock, List())),Set(startBlock))
+    
+        for {
+          path <- paths
+          if (path._1 == startBlock)
+        } yield path
+  }
 
   /**
    * Returns a stream of all possible pairs of the goal block along

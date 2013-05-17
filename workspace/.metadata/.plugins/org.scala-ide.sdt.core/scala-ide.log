@@ -5881,3 +5881,15 @@ java.lang.InterruptedException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
 2013-05-16 10:12:49,222  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-05-16 20:19:32,151 ERROR [FSEvent thread] - System.err - java.io.FileNotFoundException: /Users/roca/Scala/.git/index.lock
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.stat(Native Method)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.<init>(JNotifyAdapterMacOSX.java:68)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:305)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:268)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.access$0(JNotifyAdapterMacOSX.java:266)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX.batchEndEvent(JNotifyAdapterMacOSX.java:539)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$1.batchEnd(JNotifyAdapterMacOSX.java:143)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.callbackInBatch(JNotify_macosx.java:141)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.nativeNotifyLoop(Native Method)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.access$5(JNotify_macosx.java:81)
+2013-05-16 20:19:32,181 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx$1.run(JNotify_macosx.java:70)

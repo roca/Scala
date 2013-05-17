@@ -2978,3 +2978,389 @@ Binding(COMMAND+SHIFT+U,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2013-05-16 19:39:34.851 -----------------------------------------------
+eclipse.buildId=3.0.0-vfinal-20130326-1146-Typesafe
+java.version=1.6.0_45
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/roca/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/roca/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2013-05-16 19:40:23.259
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-05-16 19:40:23.259
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-05-16 19:40:23.259
+!MESSAGE A conflict occurred for COMMAND+SHIFT+U:
+Binding(COMMAND+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+U,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.upload,Upload...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		com.aptana.ide.syncing.ui.handlers.UploadHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 1 0 2013-05-16 19:40:24.214
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:06:51.440
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:06:51.666
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:06:51.668
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:10:36.607
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:10:36.608
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:10:36.608
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:19:31.853
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:19:31.854
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:19:31.854
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:22:34.139
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:22:34.140
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:22:34.140
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:23:14.253
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:23:14.254
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:23:14.254
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:23:27.372
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:23:27.372
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:23:27.372
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:34:40.441
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:34:40.441
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:34:40.441
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:35:15.036
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:35:15.036
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:35:15.036
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-05-16 20:35:38.682
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: streams
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:682)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:545)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:496)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:96)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at scala.tools.eclipse.contribution.weaving.jdt.builderoptions.ScalaJavaBuilder.build(ScalaJavaBuilder.java:27)
+	at scala.tools.eclipse.ScalaBuilder.build(ScalaBuilder.scala:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-05-16 20:35:38.682
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 com.aptana.git.core 4 128 2013-05-16 20:35:38.682
+!MESSAGE fatal: pathspec 'workspace/streams/target/scala-2.10/classes/streams/scratch.sc' did not match any files
+
+!ENTRY org.eclipse.ui 4 4 2013-05-16 20:47:11.776
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-05-17 04:53:24.418 -----------------------------------------------
+eclipse.buildId=3.0.0-vfinal-20130326-1146-Typesafe
+java.version=1.6.0_45
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/roca/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/roca/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-05-17 04:55:36.013
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2013-05-17 04:58:59.652
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-05-17 04:58:59.653
+!MESSAGE A conflict occurred for COMMAND+SHIFT+U:
+Binding(COMMAND+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+U,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.upload,Upload...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		com.aptana.ide.syncing.ui.handlers.UploadHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2013-05-17 05:01:09.594
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-05-17 05:01:09.594
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		ActionHandler(org.eclipse.jdt.ui.actions.RenameAction@f3d9c4),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui 4 4 2013-05-17 07:32:52.909
+!MESSAGE Invalid preference page path: XML Syntax
