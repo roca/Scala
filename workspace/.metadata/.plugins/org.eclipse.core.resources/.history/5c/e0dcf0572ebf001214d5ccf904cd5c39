@@ -1,0 +1,28 @@
+package streams
+
+import common._
+import streams._
+
+trait Level1 extends GameDef with Solver with StringParserTerrain {
+      /* terrain for level 1*/
+
+    val level =
+    """ooo-------
+      |oSoooo----
+      |ooooooooo-
+      |-ooooooooo
+      |-----ooToo
+      |------ooo-""".stripMargin
+
+   
+  }
+
+object scratch extends Level1{
+
+ val initial = Stream((startBlock, List()))
+ 
+  	        val more = for {
+  	          neighbor <- initial
+  	          neighbors_with_history <- newNeighborsOnly(neighborsWithHistory(neighbor._1,neighbor._2),explored)
+  	        } yield neighbors_with_history
+}
