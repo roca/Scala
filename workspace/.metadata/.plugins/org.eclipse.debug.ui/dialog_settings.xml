@@ -12,9 +12,14 @@
 		<item value="271" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
+	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
+		<item value="702" key="DIALOG_WIDTH"/>
+		<item value="682" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
 		<item value="925" key="DIALOG_WIDTH"/>
-		<item value="scala.application, org.eclipse.jdt.junit.launchconfig, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
+		<item value="org.eclipse.jdt.junit.launchconfig, scala.application, scala.scalatest, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
 		<item value="682" key="DIALOG_HEIGHT"/>
 		<item value="237" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
@@ -23,6 +28,11 @@
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item value="253" key="DIALOG_WIDTH"/>
 		<item value="406" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_CONFIGURATION_TYPE_DIALOG">
+		<item value="253" key="DIALOG_WIDTH"/>
+		<item value="282" key="DIALOG_HEIGHT"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

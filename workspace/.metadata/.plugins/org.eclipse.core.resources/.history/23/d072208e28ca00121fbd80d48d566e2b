@@ -1,0 +1,23 @@
+package main.scala.rosalind
+
+
+import scala.io.Source._
+
+object Wabbits {
+  def main(args: Array[String]): Unit = {
+
+  val dna_seq = fromFile(args(0), "utf-8").getLines.mkString
+    println(dnaCount(dna_seq).mkString(" "))
+  }
+
+  def dnaCount(dnaSequence: String): IndexedSeq[Int] = {
+
+  	for {
+  		c <- "ACGT"
+  		count = dnaSequence.count(n => n.toUpper == c)
+  	} yield count
+
+
+  }
+
+}

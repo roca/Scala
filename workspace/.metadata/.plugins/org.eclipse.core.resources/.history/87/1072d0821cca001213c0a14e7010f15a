@@ -1,0 +1,32 @@
+package test.scala.rosalind
+
+
+import org.scalatest.FunSuite
+
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
+
+class BioinfTestSuite {
+
+  
+  "DnaCount test" should " be valid "  in {
+    val dna_seq = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+    assert(dnaCount(dna_seq).mkString(" ") == "20 12 17 21")
+
+  }
+
+
+  "TranscribeDna test" should " be valid "  in {
+    val dna_seq = "GATGGAACTTGACTACGTAAATT"
+    assert(transcribe(dna_seq) == "GAUGGAACUUGACUACGUAAAUU")
+
+  }
+
+
+   "Reverse Complement test" should " be valid "  in {
+      val dna_seq = "AAAACCCGGT"
+      assert(reverse_complement(dna_seq) == "ACCGGGTTTT")
+
+    }
+
+}

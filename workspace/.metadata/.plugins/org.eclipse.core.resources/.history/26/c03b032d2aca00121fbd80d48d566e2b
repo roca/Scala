@@ -1,0 +1,13 @@
+package test.scala.rosalind
+
+
+import DnaCount._
+import TranscribeDna._
+import Complement._
+import RabbitCount._
+
+object scratch {
+    val dna_seq = "GATGGAACTTGACTACGTAAATT"
+    
+   transcribe(dna_seq)
+}

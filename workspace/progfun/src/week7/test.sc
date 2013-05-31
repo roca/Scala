@@ -9,5 +9,13 @@ object test {
  problem.solutions(17)                            //> res1: Stream[week7.test.problem.Path] = Stream(Fill(0) Fill(1) Pour(0,2) Pou
                                                   //| r(1,2) Fill(0) Pour(0,2)--> Vector(0, 0, 17), ?)
   
+  val dnaSequence = "AAAAAAA"                     //> dnaSequence  : String = AAAAAAA
+  val codes = "ACGT"                              //> codes  : String = ACGT
+
+  	val answer = for {
+  		c <- codes
+  		count = dnaSequence.count(n => n.toUpper == c)
+  	} yield count                             //> answer  : scala.collection.immutable.IndexedSeq[Int] = Vector(7, 0, 0, 0)
   
+  answer.toList                                   //> res2: List[Int] = List(7, 0, 0, 0)
 }

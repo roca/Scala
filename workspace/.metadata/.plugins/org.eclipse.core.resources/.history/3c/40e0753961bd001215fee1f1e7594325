@@ -1,5 +1,0 @@
-package week7
-
-object streams {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
-}

@@ -120,4 +120,11 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1368795802183_117" label="Window Working Set" name="Aggregate for window 1368795802183"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1368803182589_118" label="Window Working Set" name="Aggregate for window 1368803182589"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1368819451579_119" label="Window Working Set" name="Aggregate for window 1368819451578"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1369244144600_120" label="Window Working Set" name="Aggregate for window 1369244144599"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1369247726116_121" label="Window Working Set" name="Aggregate for window 1369247726115"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1369333558662_122" label="Window Working Set" name="Aggregate for window 1369333558662"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1370006761347_123" label="Window Working Set" name="Aggregate for window 1370006761347"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1370013894765_124" label="Window Working Set" name="Aggregate for window 1370013894765"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1370024892272_125" label="Window Working Set" name="Aggregate for window 1370024892272"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1370027580769_126" label="Window Working Set" name="Aggregate for window 1370027580769"/>
 </workingSetManager>
