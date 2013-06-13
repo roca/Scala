@@ -1,9 +1,0 @@
-package main.scala.rosalind
-
-
-
-object scratch {
-    val dna_seq = "GATGGAACTTGACTACGTAAATT"
-    
-    transcribe(dna_seq) 
-}
