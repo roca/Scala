@@ -3,7 +3,9 @@ import Main._
 
 object scratch {
   
-  fibonacci(100)                                  //> res0: BigInt = 573147844013817084101
+  fibonacci(100)                                  //> res0: Double = 5.7314784401381714E20
+
+  
   
   
 }

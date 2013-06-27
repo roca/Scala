@@ -21,7 +21,7 @@ class PascalSuite extends FunSuite {
   }
   
     test("Fibonacci") {
-    assert(fibonacci(7) === 21.0)
+    assert(fibonacci(7) === 21)
   }
 
 }
