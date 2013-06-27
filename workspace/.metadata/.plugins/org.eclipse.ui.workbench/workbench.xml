@@ -38,17 +38,17 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" partName="Main.scala" path="/Users/roca/Scala/workspace/recfun/src/main/scala/recfun/Main.scala" title="Main.scala" tooltip="recfun/src/main/scala/recfun/Main.scala" workbook="DefaultEditorWorkbook">
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" partName="Main.scala" path="/Users/roca/Scala/workspace/recfun/src/main/scala/recfun/Main.scala" title="Main.scala" tooltip="recfun/src/main/scala/recfun/Main.scala" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/recfun/src/main/scala/recfun/Main.scala"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="831" selectionTopPixel="195"/>
 </editor>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="PascalSuite.scala" partName="PascalSuite.scala" path="/Users/roca/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala" title="PascalSuite.scala" tooltip="recfun/src/test/scala/recfun/PascalSuite.scala" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="PascalSuite.scala" partName="PascalSuite.scala" path="/Users/roca/Scala/workspace/recfun/src/test/scala/recfun/PascalSuite.scala" title="PascalSuite.scala" tooltip="recfun/src/test/scala/recfun/PascalSuite.scala" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/recfun/src/test/scala/recfun/PascalSuite.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="156" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="202" selectionTopPixel="0"/>
 </editor>
 <editor id="org.scalaide.worksheet.editors.ScriptEditor" name="scratch.sc" partName="scratch.sc" path="/Users/roca/Scala/workspace/recfun/src/main/scala/recfun/scratch.sc" title="scratch.sc" tooltip="recfun/src/main/scala/recfun/scratch.sc" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/recfun/src/main/scala/recfun/scratch.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="52" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="52" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -63,6 +63,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="644"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -107,7 +110,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.scala-ide.sdt.core.perspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.scala-ide.sdt.core.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="scala.tools.eclipse.PerspectiveFactory" id="org.scala-ide.sdt.core.perspective" label="Scala"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -199,163 +202,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/main/scala/streams/Solver.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/test/scala/streams/BloxorzSuite.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun/src/week7/Pouring.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/streams/src/main/scala/streams/Solver.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/recfun/src/main/scala/recfun/Main.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/recfun/src/test/scala/recfun/PascalSuite.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/recfun/src/main/scala/recfun/scratch.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/recfun/src/test/scala/recfun/PascalSuite.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/recfun/src/main/scala/recfun/scratch.sc"/>
 </editors>
-<item historyLabel="Solver.scala" index="0">
-<position info="not_deleted" x="3163" y="0"/>
-</item>
-<item historyLabel="Pouring.scala" index="2">
+<item historyLabel="BloxorzSuite.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Solver.scala" index="3">
-<position info="not_deleted" x="2963" y="0"/>
-</item>
-<item historyLabel="Pouring.scala" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BloxorzSuite.scala" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Pouring.scala" index="2">
+<item historyLabel="Pouring.scala" index="1">
 <position info="not_deleted" x="729" y="0"/>
 </item>
-<item historyLabel="BloxorzSuite.scala" index="1">
+<item historyLabel="BloxorzSuite.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Pouring.scala" index="2">
+<item historyLabel="Pouring.scala" index="1">
 <position info="not_deleted" x="729" y="0"/>
 </item>
-<item historyLabel="BloxorzSuite.scala" index="1">
+<item historyLabel="BloxorzSuite.scala" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Pouring.scala" index="2">
-<position info="not_deleted" x="729" y="0"/>
-</item>
-<item historyLabel="BloxorzSuite.scala" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Solver.scala" index="3">
+<item historyLabel="Solver.scala" index="2">
 <position info="not_deleted" x="3114" y="0"/>
 </item>
-<item historyLabel="Pouring.scala" index="2">
+<item historyLabel="Pouring.scala" index="1">
 <position info="not_deleted" x="729" y="0"/>
 </item>
-<item historyLabel="Solver.scala" index="3">
+<item historyLabel="Solver.scala" index="2">
 <position info="not_deleted" x="2979" y="0"/>
 </item>
-<item historyLabel="Pouring.scala" index="2">
+<item historyLabel="Pouring.scala" index="1">
 <position info="not_deleted" x="1726" y="37"/>
 </item>
-<item historyLabel="Solver.scala" index="3">
+<item historyLabel="Solver.scala" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Solver.scala" index="3">
+<item historyLabel="Solver.scala" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="662" y="0"/>
 </item>
-<item historyLabel="PascalSuite.scala" index="5">
+<item historyLabel="PascalSuite.scala" index="4">
 <position info="not_deleted" x="189" y="18"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="662" y="0"/>
 </item>
-<item historyLabel="PascalSuite.scala" index="5">
+<item historyLabel="PascalSuite.scala" index="4">
 <position info="not_deleted" x="189" y="18"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="666" y="9"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="60" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="718" y="0"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="118" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="763" y="0"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="763" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="615" y="0"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="61" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="599" y="9"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="58" y="0"/>
 </item>
-<item historyLabel="PascalSuite.scala" index="5">
+<item historyLabel="PascalSuite.scala" index="4">
 <position info="not_deleted" x="189" y="18"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="390" y="6"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="63" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="434" y="161"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="304" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="434" y="161"/>
 </item>
-<item historyLabel="PascalSuite.scala" index="5">
+<item historyLabel="PascalSuite.scala" index="4">
 <position info="not_deleted" x="156" y="11"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="434" y="161"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position/>
 </item>
-<item historyLabel="PascalSuite.scala" index="5">
+<item historyLabel="PascalSuite.scala" index="4">
 <position info="not_deleted" x="156" y="11"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="666" y="9"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="50" y="0"/>
 </item>
-<item historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="831" y="0"/>
 </item>
-<item historyLabel="scratch.sc" index="6">
+<item historyLabel="scratch.sc" index="5">
 <position info="not_deleted" x="52" y="0"/>
 </item>
-<item active="true" historyLabel="Main.scala" index="4">
+<item historyLabel="Main.scala" index="3">
 <position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="6">
+<position info="not_deleted" x="156" y="11"/>
+</item>
+<item historyLabel="scratch.sc" index="7">
+<position info="not_deleted" x="52" y="9"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="6">
+<position info="not_deleted" x="460" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="3">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="scratch.sc" index="7">
+<position info="not_deleted" x="52" y="9"/>
+</item>
+<item active="true" historyLabel="PascalSuite.scala" index="6">
+<position info="not_deleted" x="460" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
