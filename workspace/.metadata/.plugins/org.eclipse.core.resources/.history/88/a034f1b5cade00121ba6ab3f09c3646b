@@ -1,0 +1,8 @@
+package recfun
+import Main._
+
+object scratch {
+  fibonacci(50)                                   //> res0: Int = 89
+  
+  
+}

@@ -1,0 +1,16 @@
+package recfun
+import Main._
+
+object scratch {
+  
+  def factorial(n: BigInt): BigInt = {
+	   def loop(acc: BigInt,n: BigInt): BigInt = {
+	     if (n == 0) acc
+	     else loop( acc * n , n - 1)
+	   }
+	 loop(1,n)
+	}                                         //> factorial: (n: Int)Int
+    factorial(17)                                 //> res0: Int = -288522240
+  
+  
+}

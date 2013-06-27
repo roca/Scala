@@ -1,0 +1,7 @@
+package recfun
+import Main._
+
+object scratch {
+  fibonacci(6)                                    //> res0: Int = 21
+  
+}

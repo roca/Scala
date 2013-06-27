@@ -1,0 +1,28 @@
+package recfun
+import Main._
+
+object scratch {
+  
+  def factorial(n: BigInt): BigInt = {
+	   def loop(acc: BigInt,n: BigInt): BigInt = {
+	     if (n == 0) acc
+	     else loop( acc * n , n - 1)
+	   }
+	 loop(1,n)
+	}                                         //> factorial: (n: BigInt)BigInt
+    fibonacci(100)                                //> java.lang.ArithmeticException: / by zero
+                                                  //| 	at recfun.Main$.pascal(Main.scala:27)
+                                                  //| 	at recfun.Main$.f$1(Main.scala:33)
+                                                  //| 	at recfun.Main$.fibonacci(Main.scala:35)
+                                                  //| 	at recfun.scratch$$anonfun$main$1.apply$mcV$sp(recfun.scratch.scala:13)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at recfun.scratch$.main(recfun.scratch.scala:4)
+                                                  //| 	at recfun.scratch.main(recfun.scratch.scala)
+  
+  
+}

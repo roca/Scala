@@ -6760,3 +6760,18 @@ java.lang.InterruptedException
 	at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:27)
 	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2013-06-26 21:30:00,679 ERROR [FSEvent thread] - System.err - java.io.FileNotFoundException: /Users/roca/Scala/.git/index.lock
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.stat(Native Method)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$JNFile.<init>(JNotifyAdapterMacOSX.java:68)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:305)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.scan(JNotifyAdapterMacOSX.java:268)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$WatchData.access$0(JNotifyAdapterMacOSX.java:266)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX.batchEndEvent(JNotifyAdapterMacOSX.java:539)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotifyAdapterMacOSX$1.batchEnd(JNotifyAdapterMacOSX.java:143)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.callbackInBatch(JNotify_macosx.java:141)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.nativeNotifyLoop(Native Method)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx.access$5(JNotify_macosx.java:81)
+2013-06-26 21:30:00,934 ERROR [FSEvent thread] - System.err - at net.contentobjects.jnotify.macosx.JNotify_macosx$1.run(JNotify_macosx.java:70)
+2013-06-26 22:01:43,201 ERROR [Worker-22] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2013-06-26 22:01:43,201 ERROR [Worker-22] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2013-06-26 22:01:43,201 ERROR [Worker-22] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

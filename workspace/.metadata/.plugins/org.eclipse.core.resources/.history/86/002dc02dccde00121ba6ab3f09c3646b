@@ -1,0 +1,25 @@
+package recfun
+import Main._
+
+object scratch {
+  
+  def factorial(n: Int): Int = {
+	   def loop(acc: Int,n: Int): Int = {
+	     if (n == 0) acc
+	     else loop( acc * n , n - 1)
+	   }
+	 loop(1,n)
+	}
+                                                  //| 	at recfun.Main$.pascal(Main.scala:27)
+    factorial(0)                                  //| 	at recfun.scratch$$anonfun$main$1.apply$mcV$sp(recfun.scratch.scala:5)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at recfun.scratch$.main(recfun.scratch.scala:4)
+                                                  //| 	at recfun.scratch.main(recfun.scratch.scala)
+  
+  
+}

@@ -15,16 +15,24 @@ object Main {
    * Exercise 1
    * Used this as a reference : http://www.mathsisfun.com/pascals-triangle.html
    */
-  def abs(x:Int) = if (x < 0) -x else x
-  def pascal(c: Int, r: Int): Int = {
-   def factorial(n: Int): Int = {
-	   def loop(acc: Int,n: Int): Int = {
+  def abs(x:BigInt) = if (x < 0) -x else x
+  def pascal(c: BigInt, r: BigInt): BigInt = {
+   def factorial(n: BigInt): BigInt = {
+	   def loop(acc: BigInt,n: BigInt): BigInt = {
 	     if (n == 0) acc
 	     else loop( acc * n , n - 1)
 	   }
 	 loop(1,n)
 	}
    factorial(r) / ( factorial(c) * factorial(abs(r-c)) )
+  }
+  
+  def fibonacci(n: BigInt): BigInt = {
+    def f(c: BigInt, r: BigInt, acc: BigInt ): BigInt = {
+      if (r - c < 0) acc
+      else f(c + 1,r -1, acc + pascal(c,r))
+    }
+    f(0,n,0)
   }
 
   /**
