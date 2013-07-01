@@ -1,0 +1,182 @@
+Programming Scala
+Venkat Subramaniam
+@venkat_s
+venkats@agiledeveloper.com
+http://www.agiledeveloper.com
+
+
+Exploring Scala:
+✓ What's Scala
+✓ Why Scala?
+✓ What does Scala provide?
+✓ a hybrid action
+✓ Script vs. class
+✓ Writing a script
+✓ Writing a stand alone compiled program
+✓ the App Trait
+✓ Using Scala REPL
+✓ Scala conciseness
+	✓ looping options for vs. foreach
+✓ sensible defaults
+	✓ optional class
+	✓ optional semicolon
+	✓ optional return
+	✓ public by default
+	✓ catch is optional (but exceptions are not suppressed)
+✓ import defaults: java.lang, scala, scala.Predef
+✓ val vs. var
+✓ honor immutability
+	✓ List as immutable collection
+	✓ Set and Map in two flavors
+✓ type declaration
+✓ data types
+	✓ Any, AnyRef, AnyVal, Nothing
+✓ tuples
+✓ Scala to Java type mapping
+✓ creating functions
+✓ higher order functions
+✓ imperative style to find max of elements
+✓ functional style using foldLeft
+✓ refactoring to conciseness
+✓ no operators
+✓ : decoration and operand summersault
+✓ double values - imperative vs. functional style
+✓ exception handling
+✓ Console class
+✓ String interpolation
+	✓ s
+	✓ f
+	✓ raw
+Exercise:
+
+OOP the Scala way:
+✓ Pure OO
+✓ Scala Class to Java Mapping
+✓ Rich Wrappers
+✓ String convenience functions
+	✓ capitalize, reverse
+✓ value based vs. reference based comparision
+✓ heredocs
+	✓ stripMargin
+✓ Symbols (Symbol and its name)
+✓ Creating a class
+✓ Auxiliary constructors
+✓ JavaBean convention
+	✓ @BeanProperty
+✓ access modifiers
+✓ overriding methods
+✓ static methods through singletons and companion objects
+✓ singleton
+✓ companion objects
+✓ apply and update methods
+✓ RTTI
+✓ Default values
+✓ implicit values
+✓ Named parameters
+✓ creating parametrized types
+✓ Using parametrized types
+✓ _ for parametrized type
+✓ substituability and parameterized types
+✓ covariance and contravariance
+  ✓ T <: UpperBound - moveFruits example
+✓ Using contravariance - copyFromTo example
+✓ More control at author time with +T for covariance
+	✓ printPair ImmutablePair example
+✓ Traits
+✓ Chaining traits
+✓ self type
+✓ Implicit functions
+	- example using org.joda.time.DateTime and 2 days ago, 5 days from_now
+	- format using E MM/dd/yyyy
+✓ implicit classes
+✓ value classes
+✓ pattern matching
+	✓ literals and constants
+	✓ wildcard
+	✓ tuples
+	✓ list of items (_* and val @ _*)
+	✓ with types
+	✓ with if guard
+	✓ gotcha with lowercase constants
+✓ case classes
+✓ matching and case classes
+✓ extractors
+✓ combining extractors
+✓ regular expressions
+	"".r, pattern findFirstIn str, findAllIn, replaceFirstIn
+✓ XML as first class citizen
+✓ XPath Query
+✓ Pattern matching
+	✓ getting simple content
+	✓ grabbing all contents using _* and iterating using symbol @ ... <-
+✓ Reading XML - XML.load
+✓ creating XML
+Exercise:
+
+
+Functional Programming:
+- Immutability
+- Functional programming
+- What's good about that?
+		- referential transparency
+- function values and closures
+- from imperative to functional for totaling over a range of values
+- multiple parameter list - currying
+- partially applied functions
+- reusing function values
+- closures
+- execute around method pattern
+- loan pattern
+Exercise:
+
+
+Scala Collections:
+- collections in Scala
+  - scala.collection.immutable
+	- scala.collection.mutable
+	- Traversable, Iterable, Seq, Set, Map, ...
+- Traversable trait
+- Immutable collections
+	- List, Stream, Vector, Stack, Queue, ...
+- Mutable collections
+	- ArrayBuffer, ListBuffer, StringBuffer, LinkedList, ...
+- how are immutable lists handled?
+- using lists
+- list vs. vector
+- tries
+- using Set
+- using Map
+- using internal iterators
+- for expression - list comprehension
+	for([pattern <- generator; definition*]+; filter*) [yield] expression
+	- doubleEven using the for list comprehension (filter if ...)
+	- using definition - for(friend <- friends; last = friend.last) yield last
+- lazy vs. strict collections
+- most collections strict, streams are lazy, convert strict to lazy using views.
+- using Stream,  #:: and take
+- Views
+- parallel collections
+Exercise:
+
+Developing with Scala:
+- parser combinator - scala.util.parsing.combinator._
+  - RegexParsers
+	- JavaTokenParsers
+	- val skipWhitespace
+	- EOL = sys.props("line.seperator")
+  - space = """\s""".r
+- ~, |, ?, *, <~ - as methods
+- ^^ method - parse and perform action
+- creating a DSL with parser combinator
+	- parseAll(handler, input) match { Sucess(result, next)}, NoSuccess => scala.sys.error(failure.msg)
+- unit testing
+- web development
+- futures and promises
+- scala.concurrent._
+- creating a simple future
+- using promises - Promise's success and failure methods, Futures's onComplete
+- Concurrency
+	- what's wrong with JDK solutions
+	- Akka and Scala
+	- creating an actor
+	- using actors

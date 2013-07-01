@@ -1,0 +1,94 @@
+10
+
+dir
+225
+https://www.agiledeveloper.com/svn/code/gilt070113/examples/exploring_scala
+https://www.agiledeveloper.com/svn/code
+
+
+
+2013-07-01T16:32:15.208255Z
+190
+venkats@agiledeveloper.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1e81dee0-2241-4859-a8c8-ee16f12c0b5b
+
+scala_vs_java_mapping_of_types
+dir
+
+using_tuples
+dir
+
+double_values_imperative_and_functional
+dir
+
+decoration_and_operand_summersault
+dir
+
+creating_functions
+dir
+
+type_declaration_and_type_inference
+dir
+
+using_app_trait
+dir
+
+using_colon_instead_of_foldleft
+dir
+
+functional_style_to_find_max
+dir
+
+stand_alone_compiled_program
+dir
+
+imperative_style_to_find_max
+dir
+
+functional_style_for_max_refactoring_1
+dir
+
+looping_options_for_and_foreach
+dir
+
+functional_style_for_max_refactoring_2
+dir
+
+functional_style_for_max_refactoring_3
+dir
+
+exception_handling
+dir
+
+data_types_and_Nothing
+dir
+
+using_console
+dir
+
+vals_vs_vars
+dir
+
+a_simple_script
+dir
+
+operators_and_precedence
+dir
+
+string_interpolation
+dir
+

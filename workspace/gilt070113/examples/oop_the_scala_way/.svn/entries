@@ -1,0 +1,124 @@
+10
+
+dir
+225
+https://www.agiledeveloper.com/svn/code/gilt070113/examples/oop_the_scala_way
+https://www.agiledeveloper.com/svn/code
+
+
+
+2013-07-01T20:07:40.229878Z
+221
+venkats@agiledeveloper.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1e81dee0-2241-4859-a8c8-ee16f12c0b5b
+
+implicit_conversion
+dir
+
+value_based_vs_reference_based_comparison
+dir
+
+value_classes
+dir
+
+case_classes_and_patterns
+dir
+
+overriding_methods
+dir
+
+using_underscore_for_parametric_type
+dir
+
+self_type_and_cake_pattern
+dir
+
+access_control
+dir
+
+using_companion_to_control_object_creation
+dir
+
+named_parameters
+dir
+
+rich_wrappers
+dir
+
+chain_traits
+dir
+
+using_from_java
+dir
+
+upperbound_to_override_the_restriction
+dir
+
+controlling_object_creation_first_attempt
+dir
+
+using_traits
+dir
+
+implict_classes
+dir
+
+creating_singleton
+dir
+
+using_BeanProperty
+dir
+
+playing_with_implicity
+dir
+
+patterns_with_list
+dir
+
+pattern_matching
+dir
+
+auxililary_constructor
+dir
+
+symbols
+dir
+
+using_apply
+dir
+
+gotchas_with_parametric_type
+dir
+
+using_heredocs_and_stripMargin
+dir
+
+string_conversion_functions
+dir
+
+substituitability_is_preserved
+dir
+
+using_default_values
+dir
+
+creating_classes
+dir
+
+creating_xml
+dir
+
