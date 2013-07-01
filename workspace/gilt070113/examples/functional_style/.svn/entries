@@ -1,14 +1,14 @@
 10
 
 dir
-225
+238
 https://www.agiledeveloper.com/svn/code/gilt070113/examples/functional_style
 https://www.agiledeveloper.com/svn/code
 
 
 
-2013-07-01T20:42:41.510057Z
-225
+2013-07-01T21:18:18.842838Z
+231
 venkats@agiledeveloper.com
 
 
@@ -25,4 +25,22 @@ venkats@agiledeveloper.com
 
 
 1e81dee0-2241-4859-a8c8-ee16f12c0b5b
+
+using_closure
+dir
+
+attempt_to_be_idiomatic_to_pass_function_values
+dir
+
+function_values
+dir
+
+using_partially_applied_functions
+dir
+
+currying_to_split_into_multiple_parameter_list
+dir
+
+reusing_lambda_expressions
+dir
 
