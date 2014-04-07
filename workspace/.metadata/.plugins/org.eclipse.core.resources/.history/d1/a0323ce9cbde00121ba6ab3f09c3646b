@@ -1,8 +1,0 @@
-package recfun
-import Main._
-
-object scratch {
-  factorial(50)
-  
-  
-}

@@ -1,8 +1,0 @@
-package recfun
-import Main._
-
-object scratch {
-  pascal(100,100)                                 //> res0: Int = 1
-  
-  
-}

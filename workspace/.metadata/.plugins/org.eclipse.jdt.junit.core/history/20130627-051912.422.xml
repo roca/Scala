@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="PascalSuite" project="recfun" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="recfun.PascalSuite" time="0.049">
-    <testcase name="pascal: col=0,row=2" classname="recfun.PascalSuite" time="0.046"/>
-    <testcase name="pascal: col=1,row=2" classname="recfun.PascalSuite" time="0.001"/>
-    <testcase name="pascal: col=1,row=3" classname="recfun.PascalSuite" time="0.0"/>
-    <testcase name="Fibonacci" classname="recfun.PascalSuite" time="0.001"/>
-  </testsuite>
-</testrun>
